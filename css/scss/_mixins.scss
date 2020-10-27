@@ -1,0 +1,15 @@
+
+$coco-font:'sans-serif';
+$lato-font: 'aerial';
+
+@mixin p_text{
+    font-family: $coco-font;
+    font-size: 12px;
+}
+
+@mixin box-event{
+    height: 15vh;
+    margin-bottom: 12px;
+    display: flex;    
+    align-items: center;
+}
