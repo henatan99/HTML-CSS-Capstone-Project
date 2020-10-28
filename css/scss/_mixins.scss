@@ -14,6 +14,10 @@ $lato-font: 'aerial';
     min-height: 15vh;
     margin-bottom: 12px;
     display: flex;    
+    @media (min-width: 768px){
+        flex-direction: column;
+        width: auto;
+    }
     align-items: center;        
 }
 
@@ -144,6 +148,12 @@ $lato-font: 'aerial';
 @mixin more-button-font{
     font-size: $h-6;
     color: $color-black;
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin see-program-font {
+    font-size: $h-6;
+    color: $color-light;
     font-family: 'Roboto', sans-serif;
 }
 

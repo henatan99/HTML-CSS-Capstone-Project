@@ -33,6 +33,9 @@ a {
   width: 100%;
   background-image: url(/assets/background-img/main_bg.jpg);
   padding: 0 18px 70px 18px; }
+  @media (min-width: 768px) {
+    .front {
+      padding: 3rem 15% 70px 15%; } }
   .front .concert-title {
     position: relative; }
     .front .concert-title img {
@@ -40,7 +43,7 @@ a {
       position: absolute;
       bottom: 0;
       right: 0; }
-    .front .concert-title h1 {
+    .front .concert-title h1 a {
       font-size: 2.2rem;
       color: #ec5242;
       font-weight: 900;
@@ -51,8 +54,7 @@ a {
       font-weight: 100;
       font-family: 'Roboto', sans-serif; }
   .front .concert-info {
-    border-width: 1px solid;
-    border-color: black;
+    border: 1px solid black;
     font-size: 0.704rem;
     color: #272a31;
     line-height: 1rem;
@@ -67,6 +69,9 @@ a {
   width: 100%;
   background: #272a31;
   height: fit-content; }
+  @media (min-width: 768px) {
+    .events-section {
+      position: relative; } }
   .events-section .event-header {
     width: 100%;
     min-height: 15vh;
@@ -78,45 +83,72 @@ a {
     color: #d3d3d3;
     font-weight: 500;
     font-family: 'Roboto', sans-serif; }
-  .events-section article {
+    @media (min-width: 768px) {
+      .events-section .event-header {
+        flex-direction: column;
+        width: auto; } }
+  @media (min-width: 768px) {
+    .events-section .event-articles {
+      display: flex;
+      padding: 0 10% 12% 10%; } }
+  .events-section .event-articles article {
     background: #d3d3d3;
     width: 100%;
     min-height: 15vh;
     margin-bottom: 12px;
     display: flex;
     align-items: center; }
-    .events-section article div {
+    @media (min-width: 768px) {
+      .events-section .event-articles article {
+        flex-direction: column;
+        width: auto; } }
+    @media (min-width: 768px) {
+      .events-section .event-articles article {
+        margin: 1px;
+        text-align: center; } }
+    .events-section .event-articles article div {
       display: flex;
       justify-content: center;
       width: 18%;
       height: fit-content;
       text-align: center;
       margin: 0; }
-      .events-section article div img {
+      @media (min-width: 768px) {
+        .events-section .event-articles article div {
+          width: 100%;
+          margin: 0.75rem; } }
+      .events-section .event-articles article div img {
         width: 32px;
         height: auto;
         border: 1px solid; }
-    .events-section article h2 {
+    .events-section .event-articles article h2 {
       width: 23%;
       height: fit-content;
-      margin: 0;
-      font-size: 1.056rem;
-      color: #ec5242;
-      line-height: 1rem;
-      font-weight: 600;
-      font-family: 'Roboto', sans-serif; }
-    .events-section article p {
+      margin: 0; }
+      @media (min-width: 768px) {
+        .events-section .event-articles article h2 {
+          width: 100%; } }
+      .events-section .event-articles article h2 a {
+        font-size: 1.056rem;
+        color: #ec5242;
+        line-height: 1rem;
+        font-weight: 600;
+        font-family: 'Roboto', sans-serif; }
+    .events-section .event-articles article p {
       width: 59%;
       padding: 10px;
       font-size: 0.704rem;
       color: #272a31;
       line-height: 1rem;
       font-family: 'Roboto', sans-serif; }
+      @media (min-width: 768px) {
+        .events-section .event-articles article p {
+          width: 100%; } }
   .events-section .button-div {
     display: flex;
     padding: 2rem; }
     .events-section .button-div button {
-      border: 1px solid yellow;
+      border: 1px solid;
       width: 100%;
       padding: 1.5rem 10% 1.5rem 10%;
       margin: 0;
@@ -127,11 +159,24 @@ a {
         font-weight: 500;
         line-height: 1rem;
         font-family: 'Roboto', sans-serif; }
+    @media (min-width: 768px) {
+      .events-section .button-div {
+        display: none; } }
+  .events-section .see-program {
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+    text-align: center; }
+    .events-section .see-program a {
+      font-size: 1.056rem;
+      color: #d3d3d3;
+      font-family: 'Roboto', sans-serif; }
 
 .artists {
   width: 100%;
   background: #d3d3d3;
-  height: fit-content; }
+  height: fit-content;
+  padding: 0 5% 0 5%; }
   .artists .artists-header {
     width: 100%;
     min-height: 15vh;
@@ -144,29 +189,41 @@ a {
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
     color: #272a31; }
-  .artists .artists-article {
+    @media (min-width: 768px) {
+      .artists .artists-header {
+        flex-direction: column;
+        width: auto; } }
+  @media (min-width: 768px) {
+    .artists .artists-article-wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%;
+      justify-content: center; } }
+  .artists .artists-article-wrapper .artists-article {
     margin-bottom: 3rem; }
-    .artists .artists-article .artist-info h2 {
+    @media (min-width: 768px) {
+      .artists .artists-article-wrapper .artists-article {
+        width: 50%; } }
+    .artists .artists-article-wrapper .artists-article .artist-info h2 a {
       font-size: 1.1rem;
       color: #272a31;
       font-weight: 500;
       font-family: 'Roboto', sans-serif;
       padding-bottom: 0.5rem; }
-    .artists .artists-article .artist-info .about {
+    .artists .artists-article-wrapper .artists-article .artist-info .about {
       font-size: 0.704rem;
       color: #ec5242;
       line-height: 1rem;
       font-family: 'Roboto', sans-serif;
       font-style: italic;
       padding-bottom: 1.2rem; }
-    .artists .artists-article .artist-info .story {
+    .artists .artists-article-wrapper .artists-article .artist-info .story {
       font-size: 0.616rem;
       color: #272a31;
       line-height: 1rem;
       font-family: 'Roboto', sans-serif; }
   .artists .button-more {
-    display: flex;
-    padding: 0 0 2rem 0; }
+    display: flex; }
     .artists .button-more button {
       border: 1px solid #272a31;
       width: 100%;
@@ -179,5 +236,45 @@ a {
         font-family: 'Roboto', sans-serif; }
       .artists .button-more button p:after {
         content: ">"; }
+
+footer {
+  width: 100%; }
+  footer .partners {
+    width: 100%;
+    height: 13rem;
+    padding: 1rem 2rem 1rem 2rem;
+    background: #272a31;
+    text-align: center;
+    line-height: 2rem; }
+    @media (min-width: 768px) {
+      footer .partners {
+        height: 10rem; } }
+    footer .partners .partners-header {
+      width: 100%;
+      font-size: 1.1rem;
+      color: #d3d3d3;
+      font-weight: 500;
+      font-family: 'Roboto', sans-serif; }
+    footer .partners .partners-logo {
+      width: 100%;
+      padding: 1rem;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center; }
+      footer .partners .partners-logo img {
+        margin: 3%; }
+  @media (min-width: 768px) {
+    footer .copyright {
+      height: 10rem; } }
+  footer .copyright .cc {
+    font-size: 0.704rem;
+    color: #272a31;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif; }
+  footer .copyright .cc-statement {
+    font-size: 0.616rem;
+    color: #272a31;
+    line-height: 1rem;
+    font-family: 'Roboto', sans-serif; }
 
 /*# sourceMappingURL=main_style.css.map */

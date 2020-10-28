@@ -53,6 +53,9 @@ a{
     width: 100%;     
     background-image: url(/assets/background-img/main_bg.jpg);
     padding: 0 18px 70px 18px;
+    @media (min-width: 768px) {            
+        padding: 3rem 15% 70px 15%;
+    }
     .concert-title{    
         position: relative;             
             
@@ -63,7 +66,7 @@ a{
             right: 0;
         }
     
-        h1{
+        h1 a{
             @include title-font;            
         }
 
@@ -88,39 +91,68 @@ a{
 .events-section {
     width: 100%;
     background: $color-black;
-    height: fit-content;
+    height: fit-content;   
+    @media (min-width: 768px) {            
+        position: relative;                 
+    } 
+    
     .event-header {
         @include event-header-box;  
         @include events-header-font;              
     }
-    
-    article {
-        background: $color-light;
-        @include event-box;        
-        div {display: flex;
-            justify-content: center;            
-            width: 18%;
-            height: fit-content;
-            text-align: center;
-            margin: 0;
-            img{ 
-                width: 32px;;                    
-                height: auto;  
-                border: 1px solid;              
+
+
+    .event-articles {
+        @media (min-width: 768px) {            
+            display: flex;  
+            padding: 0 10% 12% 10%;                   
+        }
+        article {
+            background: $color-light;
+            @include event-box;     
+            @media (min-width: 768px) {            
+                margin: 1px;  
+                text-align: center;    
+            }       
+              
+            div {display: flex;            
+                justify-content: center;            
+                width: 18%;
+                @media (min-width: 768px) {            
+                    width: 100%;
+                    margin: 0.75rem;
+                }
+                height: fit-content;
+                text-align: center;
+                margin: 0;
+                img{ 
+                    width: 32px;;                    
+                    height: auto;  
+                    border: 1px solid;              
+                }
+            }         
+            h2 {            
+                width: 23%; 
+                @media (min-width: 768px) {            
+                    width: 100%;
+                }
+                height: fit-content;
+                margin: 0;
+                a {
+                    @include event-type-font;
+                } 
             }
-        }         
-        h2 {            
-            width: 23%; 
-            height: fit-content;
-            margin: 0;
-            @include event-type-font;
+            p{
+                width: 59%;     
+                @media (min-width: 768px) {            
+                    width: 100%;
+                }       
+                padding: 10px;       
+                @include event-info-font;     
+            }
         }
-        p{
-            width: 59%;            
-            padding: 10px;       
-            @include event-info-font;     
-        }
-    } 
+
+    }        
     
     .button-div{
         display: flex;        
@@ -130,7 +162,20 @@ a{
             a{
                 @include join-button-font;  
             }   
-        }   
+        } 
+        @media (min-width: 768px) {            
+            display: none;
+        }         
+    }
+
+    .see-program {
+        position: absolute;
+        bottom: 3rem;
+        width: 100%;
+        text-align: center;
+        a {
+            @include see-program-font;
+        }
     }
 }
 
@@ -138,33 +183,44 @@ a{
 .artists {
     width: 100%;
     background: $color-light;
-    height: fit-content;
+    height: fit-content;   
+    padding: 0 5% 0 5%;
     
     .artists-header {
         @include artists-header-box;  
         @include artists-header-font;              
     }  
     
-    .artists-article {
-        margin-bottom: 3rem;
-        .artist-info {
-            h2{
-                @include artists-name;
-                padding-bottom: 0.5rem;
+    .artists-article-wrapper {
+        @media (min-width: 768px) {            
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            justify-content: center;
+        } 
+        .artists-article {
+            @media (min-width: 768px) {            
+                width: 50%;
             }
-            .about {
-                @include artist-about-font;
-                padding-bottom: 1.2rem;
-            }
-            .story {
-                @include min-font;
+            margin-bottom: 3rem;
+            .artist-info {
+                h2 a{
+                    @include artists-name;
+                    padding-bottom: 0.5rem;
+                }
+                .about {
+                    @include artist-about-font;
+                    padding-bottom: 1.2rem;
+                }
+                .story {
+                    @include min-font;
+                }
             }
         }
-    }
+    }    
 
     .button-more{
-        display: flex;        
-        padding: 0 0 2rem 0;        
+        display: flex;             
         button{
             @include more-button;  
             p{
@@ -174,8 +230,47 @@ a{
                 content:">";
             }
         }   
-    }
-    
-    
+    }     
 }
 
+// Footer section 
+
+footer{
+    width: 100%;
+    .partners {
+        width: 100%;
+        height: 13rem;
+        @media (min-width: 768px){height: 10rem;}
+        padding: 1rem 2rem 1rem 2rem ;
+        background: $color-black;    
+        text-align: center;
+        line-height: 2rem;
+    
+        .partners-header {
+            width: 100%;
+            @include partners-header-font;             
+        }    
+    
+        .partners-logo {
+            width: 100%;  
+            padding: 1rem;
+            display: flex;   
+            flex-flow: row wrap;   
+            justify-content: center;    
+            img{
+                margin: 3%;
+            }    
+        }    
+    }
+    
+    .copyright {
+        @media (min-width: 768px){height: 10rem;}
+        .cc {
+            @include cc-font;
+        }
+        .cc-statement {
+            @include min-font;
+        }
+    }
+
+}
