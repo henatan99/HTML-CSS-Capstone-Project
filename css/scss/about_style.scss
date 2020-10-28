@@ -23,10 +23,7 @@ a{
 
 .nav-lg {    
     ul{
-        list-style: none;     
-        li {
-            a {text-decoration: none;}
-        }
+        list-style: none;            
     }   
 } 
 
@@ -51,15 +48,8 @@ a{
     text-align: center;
     background-image: url(/assets/background-img/main_bg.jpg);
     padding: 0 18px 70px 18px;
-    .concert-title{    
-        position: relative;             
-            
-        img{
-            width: 18%;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-        }
+    .concert-title{                 
+       
     
         h1{
             @include title-font;            
@@ -75,34 +65,103 @@ a{
         @include concert-info-font;
     }
 
-    h2{
-        @include date-font;
+    .contact{
+        margin: 2rem 0 0 0;        
     }
 }
 
 .logo {
     width: 100%;     
     text-align: center;
+    margin-bottom: 2rem; 
+    h2{
+        margin-bottom: 1rem;
+    }  
+    p{
+        margin-bottom: 2rem;
+    } 
+}
+
+.contact{
+    width: 100%;   
+    padding: 0 10% 0 10%;  
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .upcoming {
     width: 100%;   
     padding: 0 10% 0 10%;  
     text-align: center;
-    img{
+    .upcoming-title{
+        margin-bottom: 1rem;
+    }
+    .upcoming-info {
+        margin-bottom: 1rem;
+        @include concert-info-font;
+    }
+    .upcoming-article {
+        background: $color-red;
+    }
+    .upcoming-article{
+        background-image: url("/assets/images/thailand.jpg");
         width: 100%;
         height: 12rem;
         object-fit: cover;
         margin-bottom: 3%;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1{            
+            @include upcoming-date-font;
+            padding: 0.5rem;
+        }    
+        h2{
+            @include upcoming-place-font;
+            padding: 0.5rem;
+        }    
+    }    
 }
 
-.partners {
+.contact, .logo, .upcoming {
+    padding: 0 10% 0 10%;
+}
+
+footer{
     width: 100%;
-    height: 13rem;
-    background: $color-black;
-}
-
-.copyright {
+    .partners {
+        width: 100%;
+        height: 13rem;
+        padding: 1rem 2rem 1rem 2rem ;
+        background: $color-black;    
+        text-align: center;
+        line-height: 2rem;
     
+        .partners-header {
+            width: 100%;
+            @include partners-header-font;             
+        }    
+    
+        .partners-logo {
+            width: 100%;  
+            padding: 1rem;
+            display: flex;   
+            flex-flow: row wrap;   
+            justify-content: center;    
+            img{
+                margin: 3%;
+            }    
+        }    
+    }
+    
+    .copyright {
+        .cc {
+            @include cc-font;
+        }
+        .cc-statement {
+            @include min-font;
+        }
+    }
+
 }

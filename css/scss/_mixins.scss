@@ -80,14 +80,14 @@ $lato-font: 'aerial';
     font-family: 'Roboto', sans-serif;
 }
 
-
-
 @mixin  min-font {
     font-size: $h-8;
     color: $color-black;  
     line-height: 1rem;  
     font-family: 'Roboto', sans-serif;
 }
+
+
 
 @mixin artists-name {
     font-size: $h-5;
@@ -109,10 +109,17 @@ $lato-font: 'aerial';
 }
 
 @mixin join-button {
-    border: 1px solid yellow;  
-    width: 100%;  
-    $width:100%;
+    border: 1px solid;  
+    width: 100%;      
     padding: 1.5rem 10% 1.5rem 10%;
+    margin: 0;
+    background: $color-red;
+}
+
+@mixin join-button-small {
+    border: 1px solid ;  
+    width: 100%;      
+    padding: 0.5rem 5% 0.5rem 5%;
     margin: 0;
     background: $color-red;
 }
@@ -138,6 +145,66 @@ $lato-font: 'aerial';
     font-size: $h-6;
     color: $color-black;
     font-family: 'Roboto', sans-serif;
+}
+
+
+// about page styling
+@mixin upcoming-date-font {
+    font-size: $h-5;
+    color: $color-light;
+    font-weight: $font-500;    
+    font-family: 'Roboto', sans-serif;
+ }
+
+ @mixin upcoming-place-font {
+    font-size: $h-7;
+    color: $color-light;
+    font-weight: $font-500;    
+    font-family: 'Roboto', sans-serif;
+ } 
+
+ @mixin partners-header-font {
+    font-size: $h-5;
+    color: $color-light;
+    font-weight: $font-500;    
+    font-family: 'Roboto', sans-serif;
+ }
+
+ @mixin cc-font {
+    font-size: $h-7;
+    color: $color-black;
+    font-weight: $font-700;    
+    font-family: 'Roboto', sans-serif;
+ }
+
+// Ticket Page Stylings
+
+@mixin create-border-radius() {
+    @if variable-exists(base-radius) {
+        border-radius: $base-radius;        
+    }
+    @else {
+        @error "Please define the variable '$base-radius'.";
+    }
+}
+
+$element-height: 2rem; 
+$base-radius:$element-height*0.5;  
+@mixin ticket-border-box-1{        
+    height: $element-height; 
+    border: 1px solid $color-black;
+    @include create-border-radius();
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin ticket-border-box-2{
+    height: 4rem; 
+    border: 1px solid $color-black;
+    border-radius: 1px;
+    display: flex;
+    align-items: center;    
 }
 
 
