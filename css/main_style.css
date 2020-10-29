@@ -10,14 +10,17 @@ a {
   height: 20vh;
   background: #d3d3d3;
 }
+
 .navbar-mobile .nav-dropdown .iconify {
   margin: 20px 0 0 30px;
   font-size: 33px;
 }
+
 .navbar-mobile .nav-dropdown .drop-content {
   display: none;
   padding-left: 30px;
 }
+
 .navbar-mobile .nav-dropdown .drop-content a {
   background: #272a31;
   margin-right: 0.4rem;
@@ -27,9 +30,11 @@ a {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
 }
+
 .navbar-mobile .nav-dropdown:hover {
   cursor: pointer;
 }
+
 .navbar-mobile .nav-dropdown:hover .drop-content {
   display: flex;
 }
@@ -37,6 +42,7 @@ a {
 .nav-lg ul {
   list-style: none;
 }
+
 .nav-lg ul li a {
   text-decoration: none;
 }
@@ -46,6 +52,7 @@ a {
   height: 25px;
   background: #272a31;
 }
+
 .navbar-1 .navbar1-ul {
   float: right;
   margin-right: 15%;
@@ -54,6 +61,7 @@ a {
   display: flex;
   align-items: center;
 }
+
 .navbar-1 .navbar1-ul li {
   font-size: 0.616rem;
   color: #272a31;
@@ -68,6 +76,7 @@ a {
   height: 50px;
   padding: 0 15% 0 15%;
 }
+
 .navbar-2 ul {
   width: 65%;
 }
@@ -81,32 +90,38 @@ main {
   background-image: url(/assets/background-img/main_bg.jpg);
   padding: 0 18px 70px 18px;
 }
+
 @media (min-width: 768px) {
   .front {
     padding: 3rem 15% 70px 15%;
   }
 }
+
 .front .concert-title {
   position: relative;
 }
+
 .front .concert-title img {
   width: 18%;
   position: absolute;
   bottom: 0;
   right: 0;
 }
+
 .front .concert-title h1 a {
   font-size: 2.2rem;
   color: #ec5242;
   font-weight: 900;
   font-family: "Roboto", sans-serif;
 }
+
 .front .concert-title h3 {
   font-size: 1.43rem;
   color: #ec5242;
   font-weight: 100;
   font-family: "Roboto", sans-serif;
 }
+
 .front .concert-info {
   border: 1px solid black;
   font-size: 0.704rem;
@@ -114,6 +129,7 @@ main {
   line-height: 1rem;
   font-family: "Roboto", sans-serif;
 }
+
 .front h2 {
   font-size: 1.54rem;
   color: #272a31;
@@ -126,11 +142,13 @@ main {
   background: #272a31;
   height: fit-content;
 }
+
 @media (min-width: 768px) {
   .events-section {
     position: relative;
   }
 }
+
 .events-section .event-header {
   width: 100%;
   min-height: 15vh;
@@ -143,18 +161,21 @@ main {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
 }
+
 @media (min-width: 768px) {
   .events-section .event-header {
     flex-direction: column;
     width: auto;
   }
 }
+
 @media (min-width: 768px) {
   .events-section .event-articles {
     display: flex;
     padding: 0 10% 12% 10%;
   }
 }
+
 .events-section .event-articles article {
   background: #d3d3d3;
   width: 100%;
@@ -163,18 +184,21 @@ main {
   display: flex;
   align-items: center;
 }
+
 @media (min-width: 768px) {
   .events-section .event-articles article {
     flex-direction: column;
     width: auto;
   }
 }
+
 @media (min-width: 768px) {
   .events-section .event-articles article {
     margin: 1px;
     text-align: center;
   }
 }
+
 .events-section .event-articles article div {
   display: flex;
   justify-content: center;
@@ -183,26 +207,31 @@ main {
   text-align: center;
   margin: 0;
 }
+
 @media (min-width: 768px) {
   .events-section .event-articles article div {
     width: 100%;
     margin: 0.75rem;
   }
 }
+
 .events-section .event-articles article div img {
   width: 32px;
   height: auto;
 }
+
 .events-section .event-articles article h2 {
   width: 23%;
   height: fit-content;
   margin: 0;
 }
+
 @media (min-width: 768px) {
   .events-section .event-articles article h2 {
     width: 100%;
   }
 }
+
 .events-section .event-articles article h2 a {
   font-size: 1.056rem;
   color: #ec5242;
@@ -210,6 +239,7 @@ main {
   font-weight: 600;
   font-family: "Roboto", sans-serif;
 }
+
 .events-section .event-articles article p {
   width: 59%;
   padding: 10px;
@@ -218,15 +248,18 @@ main {
   line-height: 1rem;
   font-family: "Roboto", sans-serif;
 }
+
 @media (min-width: 768px) {
   .events-section .event-articles article p {
     width: 100%;
   }
 }
+
 .events-section .button-div {
   display: flex;
   padding: 2rem;
 }
+
 .events-section .button-div button {
   border: 1px solid;
   width: 100%;
@@ -234,6 +267,7 @@ main {
   margin: 0;
   background: #ec5242;
 }
+
 .events-section .button-div button a {
   font-size: 1.1rem;
   color: #d3d3d3;
@@ -241,17 +275,20 @@ main {
   line-height: 1rem;
   font-family: "Roboto", sans-serif;
 }
+
 @media (min-width: 768px) {
   .events-section .button-div {
     display: none;
   }
 }
+
 .events-section .see-program {
   position: absolute;
   bottom: 3rem;
   width: 100%;
   text-align: center;
 }
+
 .events-section .see-program a {
   font-size: 1.056rem;
   color: #d3d3d3;
@@ -264,6 +301,7 @@ main {
   height: fit-content;
   padding: 0 5% 0 5%;
 }
+
 .artists .artists-header {
   width: 100%;
   min-height: 15vh;
@@ -277,12 +315,14 @@ main {
   font-family: "Roboto", sans-serif;
   color: #272a31;
 }
+
 @media (min-width: 768px) {
   .artists .artists-header {
     flex-direction: column;
     width: auto;
   }
 }
+
 @media (min-width: 768px) {
   .artists .artists-article-wrapper {
     display: flex;
@@ -291,29 +331,35 @@ main {
     justify-content: center;
   }
 }
+
 .artists .artists-article-wrapper .artists-article {
   margin-bottom: 3rem;
 }
+
 @media (min-width: 768px) {
   .artists .artists-article-wrapper .artists-article {
     width: 50%;
   }
 }
+
 .artists .artists-article-wrapper .artists-article .image {
   height: 100%;
   position: relative;
 }
+
 .artists .artists-article-wrapper .artists-article .image .img-front {
   position: relative;
   z-index: 2;
   padding: 10% 0 0 10%;
 }
+
 .artists .artists-article-wrapper .artists-article .image .img-back {
   position: absolute;
   top: 0;
   left: 0;
   width: 65%;
 }
+
 .artists .artists-article-wrapper .artists-article .artist-info h2 a {
   font-size: 1.1rem;
   color: #272a31;
@@ -321,6 +367,7 @@ main {
   font-family: "Roboto", sans-serif;
   padding-bottom: 0.5rem;
 }
+
 .artists .artists-article-wrapper .artists-article .artist-info .about {
   font-size: 0.704rem;
   color: #ec5242;
@@ -329,15 +376,18 @@ main {
   font-style: italic;
   padding-bottom: 1.2rem;
 }
+
 .artists .artists-article-wrapper .artists-article .artist-info .story {
   font-size: 0.616rem;
   color: #272a31;
   line-height: 1rem;
   font-family: "Roboto", sans-serif;
 }
+
 .artists .button-more {
   display: flex;
 }
+
 .artists .button-more button {
   border: 1px solid #272a31;
   width: 100%;
@@ -345,11 +395,13 @@ main {
   margin: 0;
   background: #d3d3d3;
 }
+
 .artists .button-more button p {
   font-size: 1.056rem;
   color: #272a31;
   font-family: "Roboto", sans-serif;
 }
+
 .artists .button-more button p:after {
   content: ">";
 }
@@ -357,6 +409,7 @@ main {
 footer {
   width: 100%;
 }
+
 footer .partners {
   width: 100%;
   height: 13rem;
@@ -365,11 +418,13 @@ footer .partners {
   text-align: center;
   line-height: 2rem;
 }
+
 @media (min-width: 768px) {
   footer .partners {
     height: 10rem;
   }
 }
+
 footer .partners .partners-header {
   width: 100%;
   font-size: 1.1rem;
@@ -377,6 +432,7 @@ footer .partners .partners-header {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
 }
+
 footer .partners .partners-logo {
   width: 100%;
   padding: 1rem;
@@ -384,21 +440,25 @@ footer .partners .partners-logo {
   flex-flow: row wrap;
   justify-content: center;
 }
+
 footer .partners .partners-logo img {
   max-width: 5rem;
   margin: 3%;
 }
+
 @media (min-width: 768px) {
   footer .copyright {
     height: 10rem;
   }
 }
+
 footer .copyright .cc {
   font-size: 0.704rem;
   color: #272a31;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
 }
+
 footer .copyright .cc-statement {
   font-size: 0.616rem;
   color: #272a31;

@@ -5,6 +5,7 @@
 @import "_fonts.scss";
 
 // General Styling
+
 a {
   text-decoration: none;
   color: none;
@@ -17,14 +18,17 @@ a {
   width: 100%;
   height: 20vh;
   background: $color-light;
+
   .nav-dropdown {
     .iconify {
       margin: 20px 0 0 30px;
       font-size: 33px;
     }
+
     .drop-content {
       display: none;
       padding-left: 30px;
+
       a {
         background: $color-black;
         margin-right: 0.4rem;
@@ -37,15 +41,19 @@ a {
   .nav-dropdown:hover {
     cursor: pointer;
   }
+
   .nav-dropdown:hover .drop-content {
     display: flex;
   }
 }
 
 .nav-lg {
+
   ul {
     list-style: none;
+
     li {
+
       a {
         text-decoration: none;
       }
@@ -57,6 +65,7 @@ a {
   width: 100%;
   height: 25px;
   background: $color-black;
+
   .navbar1-ul {
     float: right;
     margin-right: 15%;
@@ -64,6 +73,7 @@ a {
     list-style: none;
     display: flex;
     align-items: center;
+
     li {
       @include min-font;
       color: $color-light;
@@ -76,6 +86,7 @@ a {
   width: 100%;
   height: 50px;
   padding: 0 15% 0 15%;
+
   ul {
     width: 65%;
   }
@@ -94,6 +105,7 @@ main {
   @media (min-width: 768px) {
     padding: 3rem 15% 70px 15%;
   }
+
   .concert-title {
     position: relative;
 
@@ -143,6 +155,7 @@ main {
       display: flex;
       padding: 0 10% 12% 10%;
     }
+
     article {
       background: $color-light;
       @include event-box;
@@ -162,11 +175,13 @@ main {
         height: fit-content;
         text-align: center;
         margin: 0;
+
         img {
           width: 32px;
           height: auto;
         }
       }
+ 
       h2 {
         width: 23%;
         @media (min-width: 768px) {
@@ -174,10 +189,12 @@ main {
         }
         height: fit-content;
         margin: 0;
+ 
         a {
           @include event-type-font;
         }
       }
+ 
       p {
         width: 59%;
         @media (min-width: 768px) {
@@ -192,8 +209,10 @@ main {
   .button-div {
     display: flex;
     padding: 2rem;
+ 
     button {
       @include join-button;
+ 
       a {
         @include join-button-font;
       }
@@ -208,6 +227,7 @@ main {
     bottom: 3rem;
     width: 100%;
     text-align: center;
+ 
     a {
       @include see-program-font;
     }
@@ -232,20 +252,24 @@ main {
       width: 100%;
       justify-content: center;
     }
+ 
     .artists-article {
       @media (min-width: 768px) {
         width: 50%;
       }
       margin-bottom: 3rem;
+ 
       .image {
         height: 100%;
         position: relative;
+ 
         .img-front {
           position: relative;
           z-index: 2;
 
           padding: 10% 0 0 10%;
         }
+ 
         .img-back {
           position: absolute;
           top: 0;
@@ -253,15 +277,19 @@ main {
           width: 65%;
         }
       }
+ 
       .artist-info {
+ 
         h2 a {
           @include artists-name;
           padding-bottom: 0.5rem;
         }
+ 
         .about {
           @include artist-about-font;
           padding-bottom: 1.2rem;
         }
+ 
         .story {
           @include min-font;
         }
@@ -271,11 +299,14 @@ main {
 
   .button-more {
     display: flex;
+ 
     button {
       @include more-button;
+ 
       p {
         @include more-button-font;
       }
+ 
       p:after {
         content: ">";
       }
@@ -287,6 +318,7 @@ main {
 
 footer {
   width: 100%;
+ 
   .partners {
     width: 100%;
     height: 13rem;
@@ -309,6 +341,7 @@ footer {
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
+ 
       img {
         max-width: 5rem;
         margin: 3%;
@@ -320,9 +353,11 @@ footer {
     @media (min-width: 768px) {
       height: 10rem;
     }
+
     .cc {
       @include cc-font;
     }
+
     .cc-statement {
       @include min-font;
     }

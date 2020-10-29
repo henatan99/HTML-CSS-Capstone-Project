@@ -3,6 +3,7 @@
 @import "_fonts.scss";
 
 // General Styling
+
 a {
   text-decoration: none;
   color: none;
@@ -56,6 +57,7 @@ a {
 }
 
 // Front page section styling
+
 .front {
   width: 100%;
   text-align: center;
@@ -64,6 +66,7 @@ a {
   @media (min-width: 768px) {
     padding: 3rem 15% 40px 15%;
   }
+
   .concert-title {
     h1 a {
       @include title-font;
@@ -93,10 +96,12 @@ a {
     @include logo-header-font;
     margin-bottom: 1rem;
   }
+
   p {
     @include concert-info-font;
     margin-bottom: 2rem;
   }
+
   .logo-img {
     @include logo-font;
   }
@@ -115,11 +120,13 @@ a {
   @media (min-width: 768px) {
     padding: 0 15% 0 15%;
   }
+
   text-align: center;
   .upcoming-title {
     @include upcoming-header-font;
     margin-bottom: 1rem;
   }
+
   .upcoming-info {
     margin-bottom: 1rem;
     @include concert-info-font;
@@ -130,10 +137,12 @@ a {
       display: flex;
       margin-bottom: 4rem;
     }
+
     .upcoming-article {
       @media (min-width: 768px) {
         margin: 0.5rem;
       }
+
       background: $color-red;
       background-image: url("/assets/images/thailand.jpg");
       width: 100%;
@@ -148,12 +157,15 @@ a {
         a {
           @include upcoming-date-font;
         }
+
         padding: 0.5rem;
       }
+
       h2 {
         a {
           @include upcoming-place-font;
         }
+
         padding: 0.5rem;
       }
     }
@@ -166,6 +178,7 @@ a {
   @media (min-width: 768px) {
     padding: 0 20% 0 20%;
   }
+
 }
 
 footer {
@@ -201,6 +214,7 @@ footer {
       height: 7rem;
       background: $color-black;
     }
+
     .cc a,
     .cc-statement {
       @include cc-font;

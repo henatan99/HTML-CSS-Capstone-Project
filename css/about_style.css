@@ -9,6 +9,7 @@ a {
   height: 20vh;
   background: #d3d3d3;
 }
+
 .navbar-mobile .iconify {
   margin: 20px 0 0 30px;
   font-size: 33px;
@@ -23,6 +24,7 @@ a {
   height: 25px;
   background: #272a31;
 }
+
 .navbar-1 .navbar1-ul {
   float: right;
   margin-right: 15%;
@@ -31,6 +33,7 @@ a {
   display: flex;
   align-items: center;
 }
+
 .navbar-1 .navbar1-ul li {
   font-size: 0.616rem;
   color: #272a31;
@@ -45,6 +48,7 @@ a {
   height: 50px;
   padding: 0 15% 0 15%;
 }
+
 .navbar-2 ul {
   width: 65%;
 }
@@ -55,23 +59,27 @@ a {
   background-image: url(/assets/background-img/main_bg.jpg);
   padding: 0 18px 40px 18px;
 }
+
 @media (min-width: 768px) {
   .front {
     padding: 3rem 15% 40px 15%;
   }
 }
+
 .front .concert-title h1 a {
   font-size: 2.2rem;
   color: #ec5242;
   font-weight: 900;
   font-family: "Roboto", sans-serif;
 }
+
 .front .concert-title h3 {
   font-size: 1.43rem;
   color: #ec5242;
   font-weight: 100;
   font-family: "Roboto", sans-serif;
 }
+
 .front .concert-info {
   border: 1px solid black;
   font-size: 0.704rem;
@@ -93,6 +101,7 @@ a {
   text-align: center;
   margin-bottom: 2rem;
 }
+
 .logo h2 {
   font-size: 1.1rem;
   color: #272a31;
@@ -100,6 +109,7 @@ a {
   font-family: "Roboto", sans-serif;
   margin-bottom: 1rem;
 }
+
 .logo p {
   font-size: 0.704rem;
   color: #272a31;
@@ -107,6 +117,7 @@ a {
   font-family: "Roboto", sans-serif;
   margin-bottom: 2rem;
 }
+
 .logo .logo-img {
   font-size: 1.1rem;
   color: #272a31;
@@ -126,11 +137,13 @@ a {
   padding: 0 10% 0 10%;
   text-align: center;
 }
+
 @media (min-width: 768px) {
   .upcoming {
     padding: 0 15% 0 15%;
   }
 }
+
 .upcoming .upcoming-title {
   font-size: 1.056rem;
   color: #272a31;
@@ -138,6 +151,7 @@ a {
   font-family: "Roboto", sans-serif;
   margin-bottom: 1rem;
 }
+
 .upcoming .upcoming-info {
   margin-bottom: 1rem;
   font-size: 0.704rem;
@@ -145,12 +159,14 @@ a {
   line-height: 1rem;
   font-family: "Roboto", sans-serif;
 }
+
 @media (min-width: 768px) {
   .upcoming .upcoming-articles-wrapper {
     display: flex;
     margin-bottom: 4rem;
   }
 }
+
 .upcoming .upcoming-articles-wrapper .upcoming-article {
   background: #ec5242;
   background-image: url("/assets/images/thailand.jpg");
@@ -163,23 +179,28 @@ a {
   align-items: center;
   justify-content: center;
 }
+
 @media (min-width: 768px) {
   .upcoming .upcoming-articles-wrapper .upcoming-article {
     margin: 0.5rem;
   }
 }
+
 .upcoming .upcoming-articles-wrapper .upcoming-article h1 {
   padding: 0.5rem;
 }
+
 .upcoming .upcoming-articles-wrapper .upcoming-article h1 a {
   font-size: 1.1rem;
   color: #d3d3d3;
   font-weight: 900;
   font-family: "Roboto", sans-serif;
 }
+
 .upcoming .upcoming-articles-wrapper .upcoming-article h2 {
   padding: 0.5rem;
 }
+
 .upcoming .upcoming-articles-wrapper .upcoming-article h2 a {
   font-size: 0.704rem;
   color: #d3d3d3;
@@ -191,6 +212,7 @@ a {
 .logo {
   padding: 0 10% 0 10%;
 }
+
 @media (min-width: 768px) {
   .contact,
   .logo {
@@ -201,6 +223,7 @@ a {
 footer {
   width: 100%;
 }
+
 footer .partners {
   width: 100%;
   height: 13rem;
@@ -209,6 +232,7 @@ footer .partners {
   text-align: center;
   line-height: 2rem;
 }
+
 footer .partners .partners-header {
   width: 100%;
   font-size: 1.1rem;
@@ -216,6 +240,7 @@ footer .partners .partners-header {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
 }
+
 footer .partners .partners-logo {
   width: 100%;
   padding: 1rem;
@@ -223,18 +248,22 @@ footer .partners .partners-logo {
   flex-flow: row wrap;
   justify-content: center;
 }
+
 footer .partners .partners-logo img {
   margin: 3%;
 }
+
 footer .copyright {
   padding: 1rem;
 }
+
 @media (min-width: 768px) {
   footer .copyright {
     height: 7rem;
     background: #272a31;
   }
 }
+
 footer .copyright .cc a,
 footer .copyright .cc-statement {
   font-size: 0.704rem;
@@ -242,6 +271,7 @@ footer .copyright .cc-statement {
   font-weight: 700;
   font-family: "Roboto", sans-serif;
 }
+
 @media (min-width: 768px) {
   footer .copyright .cc a,
   footer .copyright .cc-statement {
