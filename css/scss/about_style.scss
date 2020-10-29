@@ -47,11 +47,12 @@ a{
     width: 100%;     
     text-align: center;
     background-image: url(/assets/background-img/main_bg.jpg);
-    padding: 0 18px 70px 18px;
+    padding: 0 18px 40px 18px;
+    @media (min-width: 768px) {            
+        padding: 3rem 15% 40px 15%;
+    }     
     .concert-title{                 
-       
-    
-        h1{
+        h1 a{
             @include title-font;            
         }
 
@@ -64,10 +65,12 @@ a{
         @include box-border;
         @include concert-info-font;
     }
+    
+}
 
-    .contact{
-        margin: 2rem 0 0 0;        
-    }
+.contact{       
+        @include concert-info-font;
+        margin: 0 0 2rem 0;     
 }
 
 .logo {
@@ -75,11 +78,16 @@ a{
     text-align: center;
     margin-bottom: 2rem; 
     h2{
+        @include logo-header-font;
         margin-bottom: 1rem;
     }  
     p{
+        @include concert-info-font;
         margin-bottom: 2rem;
     } 
+    .logo-img {
+        @include logo-font;
+    }
 }
 
 .contact{
@@ -92,40 +100,59 @@ a{
 .upcoming {
     width: 100%;   
     padding: 0 10% 0 10%;  
+    @media (min-width: 768px) {        
+        padding: 0 15% 0 15%;
+    }
     text-align: center;
     .upcoming-title{
+        @include upcoming-header-font;
         margin-bottom: 1rem;
     }
     .upcoming-info {
         margin-bottom: 1rem;
         @include concert-info-font;
     }
-    .upcoming-article {
-        background: $color-red;
-    }
-    .upcoming-article{
-        background-image: url("/assets/images/thailand.jpg");
-        width: 100%;
-        height: 12rem;
-        object-fit: cover;
-        margin-bottom: 3%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        h1{            
-            @include upcoming-date-font;
-            padding: 0.5rem;
-        }    
-        h2{
-            @include upcoming-place-font;
-            padding: 0.5rem;
-        }    
+
+    .upcoming-articles-wrapper {
+        @media (min-width: 768px) {        
+            display: flex;
+            margin-bottom: 4rem;
+        }         
+        .upcoming-article{
+            @media (min-width: 768px) {        
+                margin: 0.5rem;
+            }
+            background: $color-red;
+            background-image: url("/assets/images/thailand.jpg");
+            width: 100%;
+            height: 12rem;
+            object-fit: cover;
+            margin-bottom: 3%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h1{ 
+                a {
+                @include upcoming-date-font;
+            }           
+                padding: 0.5rem;
+            }    
+            h2{
+                a {
+                    @include upcoming-place-font;
+                }
+                padding: 0.5rem;
+            }    
+        }  
     }    
 }
 
-.contact, .logo, .upcoming {
+.contact, .logo {
     padding: 0 10% 0 10%;
+    @media (min-width: 768px) {            
+        padding: 0 20% 0 20%;
+    }
 }
 
 footer{
@@ -155,12 +182,18 @@ footer{
         }    
     }
     
-    .copyright {
-        .cc {
-            @include cc-font;
+    .copyright {       
+        padding: 1rem;
+        @media (min-width: 768px) {     
+            height: 7rem;       
+            background: $color-black;
         }
-        .cc-statement {
-            @include min-font;
+        .cc a, .cc-statement{
+            
+            @include cc-font;
+            @media (min-width: 768px) {            
+                color: $color-light;
+            }
         }
     }
 

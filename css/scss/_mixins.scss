@@ -158,20 +158,46 @@ $lato-font: 'aerial';
 }
 
 
-// about page styling
-@mixin upcoming-date-font {
+// about page styling 
+
+ @mixin logo-header-font {
+    font-size: $h-5;
+    color: $color-black;
+    font-weight: $font-500;    
+    font-family: 'Roboto', sans-serif;
+ }
+
+ @mixin logo-font{
+    font-size: $h-5;
+    color: $color-black;
+    font-weight: $font-500;    
+    font-family: 'Roboto', sans-serif;
+ }
+
+ // upcoming section about page
+
+ @mixin upcoming-header-font {
+    font-size: $h-6;
+    color: $color-black;
+    font-weight: $font-500;    
+    font-family: 'Roboto', sans-serif;
+ }
+
+ @mixin upcoming-date-font {
     font-size: $h-5;
     color: $color-light;
-    font-weight: $font-500;    
+    font-weight: $font-900;    
     font-family: 'Roboto', sans-serif;
  }
 
  @mixin upcoming-place-font {
     font-size: $h-7;
     color: $color-light;
-    font-weight: $font-500;    
+    font-weight: $font-900;    
     font-family: 'Roboto', sans-serif;
  } 
+
+//  partners section
 
  @mixin partners-header-font {
     font-size: $h-5;
@@ -186,6 +212,8 @@ $lato-font: 'aerial';
     font-weight: $font-700;    
     font-family: 'Roboto', sans-serif;
  }
+
+
 
 // Ticket Page Stylings
 
