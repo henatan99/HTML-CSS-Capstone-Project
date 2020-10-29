@@ -1,213 +1,212 @@
-@import '_mixins.scss' ;
-@import '_colors.scss' ;
-@import '_fonts.scss' ;
+@import "_mixins.scss";
+@import "_colors.scss";
+@import "_fonts.scss";
 
-// General Styling 
-a{
-    text-decoration: none;
-    color: none;
+// General Styling
+a {
+  text-decoration: none;
+  color: none;
 }
 
-// Navbar styling 
+// Navbar styling
 
 .navbar-mobile {
-    position: relative;    
-    width: 100%;     
-    height: 20vh;
-    background: $color-light;
-    .iconify{        
-        margin: 20px 0 0 30px;
-        font-size: 33px;
-    }
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  background: $color-light;
+  .iconify {
+    margin: 20px 0 0 30px;
+    font-size: 33px;
+  }
 }
 
-.nav-lg {    
-    ul{
-        list-style: none;            
-    }   
-} 
+.nav-lg {
+  ul {
+    list-style: none;
+  }
+}
 
 .navbar-1 {
-    width: 100%;
+  width: 100%;
+  height: 25px;
+  background: $color-black;
+  .navbar1-ul {
+    float: right;
+    margin-right: 15%;
     height: 25px;
-    background: $color-black; 
-    .navbar1-ul {  
-        float: right;
-        margin-right: 15%;
-        height: 25px;         
-        list-style: none;
-        display: flex;
-        align-items: center;    
-        li {
-            @include min-font;
-            color: $color-light;
-            margin-right: 1rem;
-        }    
+    list-style: none;
+    display: flex;
+    align-items: center;
+    li {
+      @include min-font;
+      color: $color-light;
+      margin-right: 1rem;
     }
+  }
 }
 
 .navbar-2 {
-    width: 100%;
-    height: 50px;     
-    padding: 0 15% 0 15%;  
-    ul {
-        width: 65%;
-    }      
+  width: 100%;
+  height: 50px;
+  padding: 0 15% 0 15%;
+  ul {
+    width: 65%;
+  }
 }
 
-// Front page section styling 
+// Front page section styling
 .front {
-    width: 100%;     
-    text-align: center;
-    background-image: url(/assets/background-img/main_bg.jpg);
-    padding: 0 18px 40px 18px;
-    @media (min-width: 768px) {            
-        padding: 3rem 15% 40px 15%;
-    }     
-    .concert-title{                 
-        h1 a{
-            @include title-font;            
-        }
-
-        h3 {
-            @include invite-font;
-        }
-    }    
-    
-    .concert-info {
-        @include box-border;
-        @include concert-info-font;
+  width: 100%;
+  text-align: center;
+  background-image: url(/assets/background-img/main_bg.jpg);
+  padding: 0 18px 40px 18px;
+  @media (min-width: 768px) {
+    padding: 3rem 15% 40px 15%;
+  }
+  .concert-title {
+    h1 a {
+      @include title-font;
     }
-    
+
+    h3 {
+      @include invite-font;
+    }
+  }
+
+  .concert-info {
+    @include box-border;
+    @include concert-info-font;
+  }
 }
 
-.contact{       
-        @include concert-info-font;
-        margin: 0 0 2rem 0;     
+.contact {
+  @include concert-info-font;
+  margin: 0 0 2rem 0;
 }
 
 .logo {
-    width: 100%;     
-    text-align: center;
-    margin-bottom: 2rem; 
-    h2{
-        @include logo-header-font;
-        margin-bottom: 1rem;
-    }  
-    p{
-        @include concert-info-font;
-        margin-bottom: 2rem;
-    } 
-    .logo-img {
-        @include logo-font;
-    }
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  h2 {
+    @include logo-header-font;
+    margin-bottom: 1rem;
+  }
+  p {
+    @include concert-info-font;
+    margin-bottom: 2rem;
+  }
+  .logo-img {
+    @include logo-font;
+  }
 }
 
-.contact{
-    width: 100%;   
-    padding: 0 10% 0 10%;  
-    text-align: center;
-    margin-bottom: 2rem;
+.contact {
+  width: 100%;
+  padding: 0 10% 0 10%;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .upcoming {
-    width: 100%;   
-    padding: 0 10% 0 10%;  
-    @media (min-width: 768px) {        
-        padding: 0 15% 0 15%;
-    }
-    text-align: center;
-    .upcoming-title{
-        @include upcoming-header-font;
-        margin-bottom: 1rem;
-    }
-    .upcoming-info {
-        margin-bottom: 1rem;
-        @include concert-info-font;
-    }
+  width: 100%;
+  padding: 0 10% 0 10%;
+  @media (min-width: 768px) {
+    padding: 0 15% 0 15%;
+  }
+  text-align: center;
+  .upcoming-title {
+    @include upcoming-header-font;
+    margin-bottom: 1rem;
+  }
+  .upcoming-info {
+    margin-bottom: 1rem;
+    @include concert-info-font;
+  }
 
-    .upcoming-articles-wrapper {
-        @media (min-width: 768px) {        
-            display: flex;
-            margin-bottom: 4rem;
-        }         
-        .upcoming-article{
-            @media (min-width: 768px) {        
-                margin: 0.5rem;
-            }
-            background: $color-red;
-            background-image: url("/assets/images/thailand.jpg");
-            width: 100%;
-            height: 12rem;
-            object-fit: cover;
-            margin-bottom: 3%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            h1{ 
-                a {
-                @include upcoming-date-font;
-            }           
-                padding: 0.5rem;
-            }    
-            h2{
-                a {
-                    @include upcoming-place-font;
-                }
-                padding: 0.5rem;
-            }    
-        }  
-    }    
+  .upcoming-articles-wrapper {
+    @media (min-width: 768px) {
+      display: flex;
+      margin-bottom: 4rem;
+    }
+    .upcoming-article {
+      @media (min-width: 768px) {
+        margin: 0.5rem;
+      }
+      background: $color-red;
+      background-image: url("/assets/images/thailand.jpg");
+      width: 100%;
+      height: 12rem;
+      object-fit: cover;
+      margin-bottom: 3%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        a {
+          @include upcoming-date-font;
+        }
+        padding: 0.5rem;
+      }
+      h2 {
+        a {
+          @include upcoming-place-font;
+        }
+        padding: 0.5rem;
+      }
+    }
+  }
 }
 
-.contact, .logo {
-    padding: 0 10% 0 10%;
-    @media (min-width: 768px) {            
-        padding: 0 20% 0 20%;
-    }
+.contact,
+.logo {
+  padding: 0 10% 0 10%;
+  @media (min-width: 768px) {
+    padding: 0 20% 0 20%;
+  }
 }
 
-footer{
+footer {
+  width: 100%;
+  .partners {
     width: 100%;
-    .partners {
-        width: 100%;
-        height: 13rem;
-        padding: 1rem 2rem 1rem 2rem ;
-        background: $color-black;    
-        text-align: center;
-        line-height: 2rem;
-    
-        .partners-header {
-            width: 100%;
-            @include partners-header-font;             
-        }    
-    
-        .partners-logo {
-            width: 100%;  
-            padding: 1rem;
-            display: flex;   
-            flex-flow: row wrap;   
-            justify-content: center;    
-            img{
-                margin: 3%;
-            }    
-        }    
-    }
-    
-    .copyright {       
-        padding: 1rem;
-        @media (min-width: 768px) {     
-            height: 7rem;       
-            background: $color-black;
-        }
-        .cc a, .cc-statement{
-            
-            @include cc-font;
-            @media (min-width: 768px) {            
-                color: $color-light;
-            }
-        }
+    height: 13rem;
+    padding: 1rem 2rem 1rem 2rem;
+    background: $color-black;
+    text-align: center;
+    line-height: 2rem;
+
+    .partners-header {
+      width: 100%;
+      @include partners-header-font;
     }
 
+    .partners-logo {
+      width: 100%;
+      padding: 1rem;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      img {
+        margin: 3%;
+      }
+    }
+  }
+
+  .copyright {
+    padding: 1rem;
+    @media (min-width: 768px) {
+      height: 7rem;
+      background: $color-black;
+    }
+    .cc a,
+    .cc-statement {
+      @include cc-font;
+      @media (min-width: 768px) {
+        color: $color-light;
+      }
+    }
+  }
 }
