@@ -68,6 +68,11 @@ a{
     }      
 }
 
+//main-section styling 
+main {
+    background: url(/assets/images/body-background.jpg) repear 0 0;
+}
+
 // Front page section styling 
 .front {
     width: 100%;     
@@ -147,8 +152,7 @@ a{
                 margin: 0;
                 img{ 
                     width: 32px;;                    
-                    height: auto;  
-                    border: 1px solid;              
+                    height: auto;                                   
                 }
             }         
             h2 {            
@@ -218,17 +222,19 @@ a{
             width: 100%;
             justify-content: center;
         } 
-        .artists-article {
+        .artists-article {            
             @media (min-width: 768px) {            
                 width: 50%;
             }
             margin-bottom: 3rem;
-            .image {
+            .image {       
+                height: 100%;         
                 position: relative;
                 .img-front{
                     position: relative;                    
-                    z-index: 2;
-                    padding: 10% 0 0 10%;
+                    z-index: 2;             
+                    
+                    padding: 10% 0 0 10%;                    
                 }
                 .img-back {
                     position: absolute;
@@ -292,6 +298,7 @@ footer{
             flex-flow: row wrap;   
             justify-content: center;    
             img{
+                max-width: 5rem;
                 margin: 3%;
             }    
         }    

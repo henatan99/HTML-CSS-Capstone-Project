@@ -41,15 +41,24 @@ a{
         width: 65%;
     }      
 }
+//main section
+main {
+    padding: 5%;
+    @media (min-width:768px) {
+        padding: 5% 15% 5% 15%;
+    }
+}
 
 // Middle arrow
 
 .arrow {
     width: 100%;
     height: 2rem;
+    transform: rotate(90deg);
     span {        
-        padding: 0.3rem 0.75rem 0.3rem 0.75rem;
+        padding: 0.3rem 0.6rem 0.3rem 0.6rem;
         background: $color-red;
+        transform: rotate(-45deg);
     }     
 }
 
@@ -69,6 +78,18 @@ a{
 .category-1, .category-2{
     @include ticket-border-box-2;
     margin: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    h2{
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    .menu-category {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 // Submit button 

@@ -26,12 +26,20 @@ a {
   .navbar-2 ul {
     width: 65%; }
 
+main {
+  padding: 5%; }
+  @media (min-width: 768px) {
+    main {
+      padding: 5% 15% 5% 15%; } }
+
 .arrow {
   width: 100%;
-  height: 2rem; }
+  height: 2rem;
+  transform: rotate(90deg); }
   .arrow span {
-    padding: 0.3rem 0.75rem 0.3rem 0.75rem;
-    background: #ec5242; }
+    padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+    background: #ec5242;
+    transform: rotate(-45deg); }
 
 .ticket-section, .vip-service {
   padding: 2rem 0 2rem 0; }
@@ -55,7 +63,17 @@ a {
   border-radius: 1px;
   display: flex;
   align-items: center;
-  margin: 1rem 0 1rem 0; }
+  margin: 1rem 0 1rem 0;
+  display: flex;
+  flex-direction: column; }
+  .category-1 h2, .category-2 h2 {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem; }
+  .category-1 .menu-category, .category-2 .menu-category {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around; }
 
 .button-div {
   display: flex;

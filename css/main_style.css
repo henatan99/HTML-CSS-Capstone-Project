@@ -44,6 +44,9 @@ a {
   .navbar-2 ul {
     width: 65%; }
 
+main {
+  background: url(/assets/images/body-background.jpg) repear 0 0; }
+
 .front {
   width: 100%;
   background-image: url(/assets/background-img/main_bg.jpg);
@@ -134,8 +137,7 @@ a {
           margin: 0.75rem; } }
       .events-section .event-articles article div img {
         width: 32px;
-        height: auto;
-        border: 1px solid; }
+        height: auto; }
     .events-section .event-articles article h2 {
       width: 23%;
       height: fit-content;
@@ -220,6 +222,7 @@ a {
       .artists .artists-article-wrapper .artists-article {
         width: 50%; } }
     .artists .artists-article-wrapper .artists-article .image {
+      height: 100%;
       position: relative; }
       .artists .artists-article-wrapper .artists-article .image .img-front {
         position: relative;
@@ -288,6 +291,7 @@ footer {
       flex-flow: row wrap;
       justify-content: center; }
       footer .partners .partners-logo img {
+        max-width: 5rem;
         margin: 3%; }
   @media (min-width: 768px) {
     footer .copyright {
