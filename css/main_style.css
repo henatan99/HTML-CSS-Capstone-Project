@@ -8,9 +8,24 @@ a {
   width: 100%;
   height: 20vh;
   background: #d3d3d3; }
-  .navbar-mobile .iconify {
+  .navbar-mobile .nav-dropdown .iconify {
     margin: 20px 0 0 30px;
     font-size: 33px; }
+  .navbar-mobile .nav-dropdown .drop-content {
+    display: none;
+    padding-left: 30px; }
+    .navbar-mobile .nav-dropdown .drop-content a {
+      background: #272a31;
+      margin-right: 0.4rem;
+      padding: 0.4rem;
+      font-size: 1.1rem;
+      color: #d3d3d3;
+      font-weight: 500;
+      font-family: 'Roboto', sans-serif; }
+  .navbar-mobile .nav-dropdown:hover {
+    cursor: pointer; }
+  .navbar-mobile .nav-dropdown:hover .drop-content {
+    display: flex; }
 
 .nav-lg ul {
   list-style: none; }
@@ -204,6 +219,17 @@ a {
     @media (min-width: 768px) {
       .artists .artists-article-wrapper .artists-article {
         width: 50%; } }
+    .artists .artists-article-wrapper .artists-article .image {
+      position: relative; }
+      .artists .artists-article-wrapper .artists-article .image .img-front {
+        position: relative;
+        z-index: 2;
+        padding: 10% 0 0 10%; }
+      .artists .artists-article-wrapper .artists-article .image .img-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 65%; }
     .artists .artists-article-wrapper .artists-article .artist-info h2 a {
       font-size: 1.1rem;
       color: #272a31;

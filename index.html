@@ -17,9 +17,16 @@
 
     <header>
         <nav>
-            <ul class="navbar-mobile d-md-none">
-                <span class="iconify" data-icon="dashicons:menu-alt3" data-inline="false"></span>
-            </ul>
+            <div class="navbar-mobile d-md-none">                
+                <div class="nav-dropdown">                    
+                    <span class="iconify" data-icon="dashicons:menu-alt3" data-inline="false"></span>
+                    <div class="drop-content">
+                        <a href="about.html">About</a>
+                        <a href="tickets.html">Tickets</a>
+                        <a href="#">Sponsors</a>
+                    </div>                    
+                </div>
+            </div>             
             <div class="d-none d-md-block nav-lg">
                 <ul class="navbar-1"> 
                 </ul>
@@ -28,12 +35,12 @@
                         <p>Global Music <br> Tour</p>
                     </div>
                     <ul class="d-flex justify-content-between"> 
-                        <li><a href="$">About</a></li>
-                        <li><a href="$">Program</a></li>
-                        <li><a href="$">Join</a></li>
-                        <li><a href="$">Sponsor</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Program</a></li>
+                        <li><a href="#">Join</a></li>
+                        <li><a href="#">Sponsor</a></li>
                         <li><a href="$">News</a></li>
-                        <li><a href="$">CC Campain</a></li>                    
+                        <li><a href="#">Exhibition</a></li>                    
                     </ul>
                 </div>                
             </div>            
@@ -63,7 +70,7 @@
                         <img src="assets/iconography/svg-export (2)/svgexport-36.svg" alt="lecture">
                     </div>            
                     <h2><a href="#">Opening Show</a> </h2>
-                    <p>Lorem ipsum dolor sit amet elit consectetur adipisicing . Repudiandae natus odit, nam similique, 
+                    <p>Comedians and circus artists will warm your heard before the musicals. 
                     </p>
                 </article>
                 <article> 
@@ -71,7 +78,7 @@
                         <img src="assets/iconography/svg-export (2)/svgexport-36.svg" alt="lecture">
                     </div> 
                     <h2><a href="#">Ragea</a></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae natus odit, nam similique, 
+                    <p>Well known international and local ragea artists will be here to share love.
                     </p>
                 </article>
                 <article> 
@@ -79,7 +86,7 @@
                         <img src="assets/iconography/svg-export (2)/svgexport-36.svg" alt="lecture">
                     </div> 
                     <h2><a href="#">Pop</a></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae natus odit, nam similique, 
+                    <p>Superstar pop artists with billboard hit songs are ready to entertain you.
                     </p>
                 </article>
                 <article> 
@@ -87,7 +94,7 @@
                         <img src="assets/iconography/svg-export (2)/svgexport-36.svg" alt="lecture">
                     </div> 
                     <h2><a href="#">Cultural Dance</a></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae natus odit, nam similique, 
+                    <p> Beatiful cultural dance show is in the menu to lighten the concert.  
                     </p>
                 </article>
                 <article> 
@@ -95,7 +102,7 @@
                         <img src="assets/iconography/svg-export (2)/svgexport-36.svg" alt="lecture">
                     </div> 
                     <h2><a href="#">Exhibition</a></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae natus odit, nam similique, 
+                    <p> Peace Exhibition will be held at the African Union Hall 
                     </p>
                 </article>                  
             </div>                  
@@ -104,7 +111,7 @@
                     <a href="#">Join us for PEACE</a>  
                 </button>
             </div>     
-            <p class="see-program d-none d-md-block"><a href="#">See the whole program</a> </p>    
+            <p class="see-program d-none d-md-block"><a href="about.html">See the whole program</a> </p>    
         </section>
         
         <section class="artists container-fluid">
@@ -112,13 +119,14 @@
             <div class="artists-article-wrapper">
                 <article class="artists-article row"> 
                     <div class="image col-4">
-                        <a href="#"><img src="assets/images/alpha-blondy.jpeg" alt="alpha-blondy" class="w-100"></a>
+                        <a href="#"><img src="assets/images/alpha-blondy.jpeg" alt="alpha-blondy" class="img-front w-100"></a>
+                        <a href="#"><img src="assets/images/alpha-blondy.jpeg" alt="alpha-blondy" class="img-back col-12"></a>
                     </div>     
                     <div class="artist-info col-8 ml-n3">
-                        <h2><a href="#">Alpha Blondi</a> </h2>
-                        <p class="about">Lorem ipsum dolor sit amet elit consectetur adipisicing . Repudiandae natus odit, nam similique, 
+                        <h2><a href="#">Jason Derulo</a> </h2>
+                        <p class="about">American based Pop artist and Grammy winner 
                         </p>
-                        <p class="story">Lorem ipsum dolor sit amet elit consectetur adipisicing . Repudiandae natus odit, nam similique, 
+                        <p class="story">Jason Derulo is well known for his hot pop songs. He has sold more than 50 million albums worldwide
                         </p>
                     </div>                   
                 </article>  
@@ -127,22 +135,23 @@
                         <a href="#"><img src="assets/images/alpha-blondy.jpeg" alt="alpha-blondy" class="w-100"></a>
                     </div>     
                     <div class="artist-info col-8 ml-n3">
-                        <h2><a href="#">Alpha Blondi</a> </h2>
-                        <p class="about">Lorem ipsum dolor sit amet elit consectetur adipisicing . Repudiandae natus odit, nam similique, 
+                        <h2><a href="#">Mulatu Astatke</a> </h2>
+                        <p class="about">Ethiopian Jazz pioneer and international conductor  
                         </p>
-                        <p class="story">Lorem ipsum dolor sit amet elit consectetur adipisicing . Repudiandae natus odit, nam similique, 
+                        <p class="story">An Ethiopian Jazz phenomenon who build a huge reputation in the international arena 
                         </p>
                     </div>                   
                 </article> 
                 <article class="artists-article row"> 
                     <div class="image col-4">
-                        <img src="assets/images/alpha-blondy.jpeg" alt="alpha-blondy" class="w-100">
+                        <a href="#"><img src="assets/images/alpha-blondy.jpeg" alt="alpha-blondy" class="w-100"></a>
                     </div>     
                     <div class="artist-info col-8 ml-n3">
-                        <h2>Alpha Blondi</h2>
-                        <p class="about">Lorem ipsum dolor sit amet elit consectetur adipisicing . Repudiandae natus odit, nam similique, 
+                        <h2><a href="#">Aster Awoke</a> </h2>
+                        <p class="about">Ethiopian artist who recieved honrary Doctorate of Berkley University 
                         </p>
-                        <p class="story">Lorem ipsum dolor sit amet elit consectetur adipisicing . Repudiandae natus odit, nam similique, 
+                        <p class="story">Aster is known for her distinctive vocal ability. She has been adored by many Ethiopians 
+                            songs which reflects love and unity
                         </p>
                     </div>                   
                 </article>  
@@ -152,9 +161,10 @@
                     </div>     
                     <div class="artist-info col-8 ml-n3">
                         <h2><a href="#">Alpha Blondi</a> </h2>
-                        <p class="about">Lorem ipsum dolor sit amet elit consectetur adipisicing . Repudiandae natus odit, nam similique, 
+                        <p class="about">Senegalese ragea singer and song writer 
                         </p>
-                        <p class="story">Lorem ipsum dolor sit amet elit consectetur adipisicing . Repudiandae natus odit, nam similique, 
+                        <p class="story"> Alfa Blondi has gained a very high acclaim for his ragae music worldwide. 
+                            He has collected many international accolades. 
                         </p>
                     </div>                   
                 </article> 
