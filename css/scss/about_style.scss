@@ -14,8 +14,7 @@ a {
   position: relative;
   width: 100%;
   height: 20vh;
-  background: $color-light;
-  
+  background: $color-light;  
   .iconify {
     margin: 20px 0 0 30px;
     font-size: 33px;
@@ -31,18 +30,15 @@ a {
 .navbar-1 {
   width: 100%;
   height: 25px;
-  background: $color-black;
-  
+  background: $color-black;  
   .navbar1-ul {
     float: right;
     margin-right: 15%;
     height: 25px;
     list-style: none;
     display: flex;
-    align-items: center;
-    
-    li {
-      
+    align-items: center;    
+    li {      
       @include min-font;
       color: $color-light;
       margin-right: 1rem;
@@ -53,8 +49,7 @@ a {
 .navbar-2 {
   width: 100%;
   height: 50px;
-  padding: 0 15% 0 15%;
-  
+  padding: 0 15% 0 15%;  
   ul {
     width: 65%;
   }
@@ -65,33 +60,25 @@ a {
 .front {
   width: 100%;
   text-align: center;  
-  padding: 0 18px 40px 18px;
-  
+  padding: 0 18px 40px 18px;  
   @media (min-width: 768px) {
     padding: 3rem 15% 40px 15%;
   }
-
-  .concert-title {
-    
+  .concert-title {    
     h1 a {
       @include title-font;
     }
-
     h3 {
       @include invite-font;
     }
   }
-
-  .concert-info {
-    
-    @include box-border;
-    
+  .concert-info {    
+    @include box-border;    
     @include concert-info-font;
   }
 }
 
-.contact {
-  
+.contact {  
   @include concert-info-font;
   margin: 0 0 2rem 0;
 }
@@ -99,18 +86,15 @@ a {
 .logo {
   width: 100%;
   text-align: center;
-  margin-bottom: 2rem;
-  
+  margin-bottom: 2rem;  
   h2 {
     @include logo-header-font;
     margin-bottom: 1rem;
   }
-
   p {
     @include concert-info-font;
     margin-bottom: 2rem;
   }
-
   .logo-img {
     @include logo-font;
   }
@@ -125,39 +109,28 @@ a {
 
 .upcoming {
   width: 100%;
-  padding: 0 10% 0 10%;
-  
+  padding: 0 10% 0 10%;  
   @media (min-width: 768px) {
     padding: 0 15% 0 15%;
   }
-
-  text-align: center;
-  
-  .upcoming-title {
-    
+  text-align: center;  
+  .upcoming-title {    
     @include upcoming-header-font;
     margin-bottom: 1rem;
   }
-
   .upcoming-info {
-    margin-bottom: 1rem;
-   
+    margin-bottom: 1rem;   
     @include concert-info-font;
   }
-
-  .upcoming-articles-wrapper {
-    
+  .upcoming-articles-wrapper {    
     @media (min-width: 768px) {
       display: flex;
       margin-bottom: 4rem;
     }
-
-    .upcoming-article {
-      
+    .upcoming-article {      
       @media (min-width: 768px) {
         margin: 0.5rem;
       }
-
       background: $color-red;
       background-image: url("/assets/images/thailand.jpg");
       width: 100%;
@@ -167,25 +140,17 @@ a {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      
-      h1 {
-        
-        a {
-          
+      justify-content: center;      
+      h1 {        
+        a {          
           @include upcoming-date-font;
         }
-
         padding: 0.5rem;
       }
-
-      h2 {
-        
-        a {
-          
+      h2 {        
+        a {          
           @include upcoming-place-font;
         }
-
         padding: 0.5rem;
       }
     }
@@ -194,17 +159,14 @@ a {
 
 .contact,
 .logo {
-  padding: 0 10% 0 10%;
-  
+  padding: 0 10% 0 10%;  
   @media (min-width: 768px) {
     padding: 0 20% 0 20%;
   }
-
 }
 
 footer {
-  width: 100%;
-  
+  width: 100%;  
   .partners {
     width: 100%;
     height: 13rem;
@@ -212,39 +174,30 @@ footer {
     background: $color-black;
     text-align: center;
     line-height: 2rem;
-
     .partners-header {
-      width: 100%;
-      
+      width: 100%;      
       @include partners-header-font;
     }
-
     .partners-logo {
       width: 100%;
       padding: 1rem;
       display: flex;
       flex-flow: row wrap;
-      justify-content: center;
-      
+      justify-content: center;      
       img {
         margin: 3%;
       }
     }
   }
-
   .copyright {
-    padding: 1rem;
-    
+    padding: 1rem;    
     @media (min-width: 768px) {
       height: 7rem;
       background: $color-black;
     }
-
     .cc a,
-    .cc-statement {
-      
-      @include cc-font;
-      
+    .cc-statement {      
+      @include cc-font;      
       @media (min-width: 768px) {
         color: $color-light;
       }

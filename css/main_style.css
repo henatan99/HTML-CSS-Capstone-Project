@@ -1,7 +1,7 @@
 /*# sourceMappingURL=main_style.scss.map */
 
 a {
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 .navbar-mobile {
@@ -78,7 +78,7 @@ a {
 }
 
 .navbar-1 .navbar1-ul li {
-  font-size: 0.616rem;  
+  font-size: 0.616rem;
   line-height: 1rem;
   font-family: "Roboto", sans-serif;
   color: #d3d3d3;
@@ -100,12 +100,11 @@ main {
 }
 
 .front {
-  width: 100%;  
+  width: 100%;
   padding: 0 18px 70px 18px;
 }
 
 @media (min-width: 768px) {
-  
   .front {
     padding: 3rem 15% 70px 15%;
   }
@@ -146,11 +145,10 @@ main {
 
 .events-section {
   width: 100%;
-  background: #272a31;  
+  background: #272a31;
 }
 
 @media (min-width: 768px) {
-  
   .events-section {
     position: relative;
   }
@@ -170,7 +168,6 @@ main {
 }
 
 @media (min-width: 768px) {
-  
   .events-section .event-header {
     flex-direction: column;
     width: auto;
@@ -178,7 +175,6 @@ main {
 }
 
 @media (min-width: 768px) {
-  
   .events-section .event-articles {
     display: flex;
     padding: 0 10% 12% 10%;
@@ -195,7 +191,6 @@ main {
 }
 
 @media (min-width: 768px) {
-  
   .events-section .event-articles article {
     flex-direction: column;
     width: auto;
@@ -203,7 +198,6 @@ main {
 }
 
 @media (min-width: 768px) {
-  
   .events-section .event-articles article {
     margin: 1px;
     text-align: center;
@@ -220,7 +214,6 @@ main {
 }
 
 @media (min-width: 768px) {
-  
   .events-section .event-articles article div {
     width: 100%;
     margin: 0.75rem;
@@ -239,7 +232,6 @@ main {
 }
 
 @media (min-width: 768px) {
-  
   .events-section .event-articles article h2 {
     width: 100%;
   }
@@ -255,7 +247,6 @@ main {
 }
 
 @media (min-width: 768px) {
-  
   .events-section .event-articles article p {
     width: 100%;
   }
@@ -283,7 +274,6 @@ main {
 }
 
 @media (min-width: 768px) {
-  
   .events-section .button-div {
     display: none;
   }
@@ -304,7 +294,7 @@ main {
 
 .artists {
   width: 100%;
-  background: #d3d3d3;  
+  background: #d3d3d3;
   padding: 0 5% 0 5%;
 }
 
@@ -315,13 +305,12 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.32rem;  
+  font-size: 1.32rem;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;  
+  font-family: "Roboto", sans-serif;
 }
 
 @media (min-width: 768px) {
-  
   .artists .artists-header {
     flex-direction: column;
     width: auto;
@@ -329,7 +318,6 @@ main {
 }
 
 @media (min-width: 768px) {
-  
   .artists .artists-article-wrapper {
     display: flex;
     flex-flow: row wrap;
@@ -343,7 +331,6 @@ main {
 }
 
 @media (min-width: 768px) {
-  
   .artists .artists-article-wrapper .artists-article {
     width: 50%;
   }
@@ -427,7 +414,6 @@ footer .partners {
 }
 
 @media (min-width: 768px) {
-  
   footer .partners {
     height: 10rem;
   }
@@ -455,7 +441,6 @@ footer .partners .partners-logo img {
 }
 
 @media (min-width: 768px) {
-  
   footer .copyright {
     height: 10rem;
   }

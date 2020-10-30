@@ -1,5 +1,5 @@
 a {
-  text-decoration: none;    
+  text-decoration: none;
 }
 
 .navbar-mobile {
@@ -34,7 +34,7 @@ a {
 }
 
 .navbar-1 .navbar1-ul li {
-  font-size: 0.616rem;  
+  font-size: 0.616rem;
   line-height: 1rem;
   font-family: "Roboto", sans-serif;
   color: #d3d3d3;
@@ -53,13 +53,11 @@ a {
 
 .front {
   width: 100%;
-  text-align: center;
-  background-image: url(/assets/background-img/main_bg.jpg) repeat 0 0;
+  text-align: center;  
   padding: 0 18px 40px 18px;
 }
 
 @media (min-width: 768px) {
-  
   .front {
     padding: 3rem 15% 40px 15%;
   }
@@ -134,7 +132,6 @@ a {
 }
 
 @media (min-width: 768px) {
-  
   .upcoming {
     padding: 0 15% 0 15%;
   }
@@ -157,7 +154,6 @@ a {
 }
 
 @media (min-width: 768px) {
-  
   .upcoming .upcoming-articles-wrapper {
     display: flex;
     margin-bottom: 4rem;
@@ -214,13 +210,10 @@ footer .copyright .cc-statement {
 }
 
 .contact,
-
 .logo {
   padding: 0 10% 0 10%;
 }
-
 @media (min-width: 768px) {
-  
   .contact,
   .logo {
     padding: 0 20% 0 20%;
