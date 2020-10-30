@@ -1,6 +1,5 @@
 a {
-  text-decoration: none;
-  color: none;
+  text-decoration: none;  
 }
 
 .navbar-mobile {
@@ -9,6 +8,7 @@ a {
   height: 20vh;
   background: #d3d3d3;
 }
+
 .navbar-mobile .iconify {
   margin: 20px 0 0 30px;
   font-size: 33px;
@@ -29,6 +29,7 @@ a {
   height: 50px;
   padding: 0 15% 0 15%;
 }
+
 .navbar-2 ul {
   width: 65%;
 }
@@ -36,6 +37,7 @@ a {
 main {
   padding: 5%;
 }
+
 @media (min-width: 768px) {
   main {
     padding: 5% 15% 5% 15%;
@@ -47,6 +49,7 @@ main {
   height: 2rem;
   transform: rotate(90deg);
 }
+
 .arrow span {
   padding: 0.3rem 0.6rem 0.3rem 0.6rem;
   background: #ec5242;
@@ -79,16 +82,17 @@ main {
   border: 1px solid #272a31;
   border-radius: 1px;
   display: flex;
-  align-items: center;
-  margin: 1rem 0 1rem 0;
-  display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 1rem 0 1rem 0;    
 }
+
 .category-1 h2,
 .category-2 h2 {
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
 }
+
 .category-1 .menu-category,
 .category-2 .menu-category {
   width: 100%;
@@ -102,6 +106,7 @@ main {
   padding: 0;
   margin: 0 3rem 0 3rem;
 }
+
 .button-div button {
   border: 1px solid;
   width: 100%;
@@ -109,6 +114,7 @@ main {
   margin: 0;
   background: #ec5242;
 }
+
 .button-div button a {
   font-size: 1.1rem;
   color: #d3d3d3;

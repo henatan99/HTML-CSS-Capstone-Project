@@ -1,7 +1,7 @@
 /*# sourceMappingURL=main_style.scss.map */
+
 a {
-  text-decoration: none;
-  color: none;
+  text-decoration: none;  
 }
 
 .navbar-mobile {
@@ -19,6 +19,25 @@ a {
 .navbar-mobile .nav-dropdown .drop-content {
   display: none;
   padding-left: 30px;
+}
+
+.nav-lg ul li a {
+  text-decoration: none;
+}
+
+.front .concert-title h1 a {
+  font-size: 2.2rem;
+  color: #ec5242;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+}
+
+.events-section .event-articles article h2 a {
+  font-size: 1.056rem;
+  color: #ec5242;
+  line-height: 1rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
 }
 
 .navbar-mobile .nav-dropdown .drop-content a {
@@ -43,10 +62,6 @@ a {
   list-style: none;
 }
 
-.nav-lg ul li a {
-  text-decoration: none;
-}
-
 .navbar-1 {
   width: 100%;
   height: 25px;
@@ -63,8 +78,7 @@ a {
 }
 
 .navbar-1 .navbar1-ul li {
-  font-size: 0.616rem;
-  color: #272a31;
+  font-size: 0.616rem;  
   line-height: 1rem;
   font-family: "Roboto", sans-serif;
   color: #d3d3d3;
@@ -86,12 +100,12 @@ main {
 }
 
 .front {
-  width: 100%;
-  background-image: url(/assets/background-img/main_bg.jpg);
+  width: 100%;  
   padding: 0 18px 70px 18px;
 }
 
 @media (min-width: 768px) {
+  
   .front {
     padding: 3rem 15% 70px 15%;
   }
@@ -106,13 +120,6 @@ main {
   position: absolute;
   bottom: 0;
   right: 0;
-}
-
-.front .concert-title h1 a {
-  font-size: 2.2rem;
-  color: #ec5242;
-  font-weight: 900;
-  font-family: "Roboto", sans-serif;
 }
 
 .front .concert-title h3 {
@@ -139,11 +146,11 @@ main {
 
 .events-section {
   width: 100%;
-  background: #272a31;
-  height: fit-content;
+  background: #272a31;  
 }
 
 @media (min-width: 768px) {
+  
   .events-section {
     position: relative;
   }
@@ -163,6 +170,7 @@ main {
 }
 
 @media (min-width: 768px) {
+  
   .events-section .event-header {
     flex-direction: column;
     width: auto;
@@ -170,6 +178,7 @@ main {
 }
 
 @media (min-width: 768px) {
+  
   .events-section .event-articles {
     display: flex;
     padding: 0 10% 12% 10%;
@@ -186,6 +195,7 @@ main {
 }
 
 @media (min-width: 768px) {
+  
   .events-section .event-articles article {
     flex-direction: column;
     width: auto;
@@ -193,6 +203,7 @@ main {
 }
 
 @media (min-width: 768px) {
+  
   .events-section .event-articles article {
     margin: 1px;
     text-align: center;
@@ -209,6 +220,7 @@ main {
 }
 
 @media (min-width: 768px) {
+  
   .events-section .event-articles article div {
     width: 100%;
     margin: 0.75rem;
@@ -227,17 +239,10 @@ main {
 }
 
 @media (min-width: 768px) {
+  
   .events-section .event-articles article h2 {
     width: 100%;
   }
-}
-
-.events-section .event-articles article h2 a {
-  font-size: 1.056rem;
-  color: #ec5242;
-  line-height: 1rem;
-  font-weight: 600;
-  font-family: "Roboto", sans-serif;
 }
 
 .events-section .event-articles article p {
@@ -250,6 +255,7 @@ main {
 }
 
 @media (min-width: 768px) {
+  
   .events-section .event-articles article p {
     width: 100%;
   }
@@ -277,6 +283,7 @@ main {
 }
 
 @media (min-width: 768px) {
+  
   .events-section .button-div {
     display: none;
   }
@@ -297,8 +304,7 @@ main {
 
 .artists {
   width: 100%;
-  background: #d3d3d3;
-  height: fit-content;
+  background: #d3d3d3;  
   padding: 0 5% 0 5%;
 }
 
@@ -309,14 +315,13 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.32rem;
-  color: #d3d3d3;
+  font-size: 1.32rem;  
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  color: #272a31;
+  font-family: "Roboto", sans-serif;  
 }
 
 @media (min-width: 768px) {
+  
   .artists .artists-header {
     flex-direction: column;
     width: auto;
@@ -324,6 +329,7 @@ main {
 }
 
 @media (min-width: 768px) {
+  
   .artists .artists-article-wrapper {
     display: flex;
     flex-flow: row wrap;
@@ -337,6 +343,7 @@ main {
 }
 
 @media (min-width: 768px) {
+  
   .artists .artists-article-wrapper .artists-article {
     width: 50%;
   }
@@ -402,7 +409,7 @@ main {
   font-family: "Roboto", sans-serif;
 }
 
-.artists .button-more button p:after {
+.artists .button-more button p::after {
   content: ">";
 }
 
@@ -420,6 +427,7 @@ footer .partners {
 }
 
 @media (min-width: 768px) {
+  
   footer .partners {
     height: 10rem;
   }
@@ -447,6 +455,7 @@ footer .partners .partners-logo img {
 }
 
 @media (min-width: 768px) {
+  
   footer .copyright {
     height: 10rem;
   }

@@ -7,8 +7,7 @@
 // General Styling
 
 a {
-  text-decoration: none;
-  color: none;
+  text-decoration: none;  
 }
 
 // Navbar styling
@@ -20,6 +19,7 @@ a {
   background: $color-light;
 
   .nav-dropdown {
+    
     .iconify {
       margin: 20px 0 0 30px;
       font-size: 33px;
@@ -33,6 +33,7 @@ a {
         background: $color-black;
         margin-right: 0.4rem;
         padding: 0.4rem;
+        
         @include partners-header-font;
       }
     }
@@ -75,6 +76,7 @@ a {
     align-items: center;
 
     li {
+      
       @include min-font;
       color: $color-light;
       margin-right: 1rem;
@@ -93,15 +95,17 @@ a {
 }
 
 //main-section styling
+
 main {
   background: url(/assets/images/body-background.jpg) repear 0 0;
 }
 
 // Front page section styling
+
 .front {
-  width: 100%;
-  background-image: url(/assets/background-img/main_bg.jpg);
+  width: 100%;  
   padding: 0 18px 70px 18px;
+  
   @media (min-width: 768px) {
     padding: 3rem 15% 70px 15%;
   }
@@ -126,7 +130,9 @@ main {
   }
 
   .concert-info {
+   
     @include box-border;
+    
     @include concert-info-font;
   }
 
@@ -139,18 +145,20 @@ main {
 
 .events-section {
   width: 100%;
-  background: $color-black;
-  height: fit-content;
+  background: $color-black;  
   @media (min-width: 768px) {
     position: relative;
   }
 
   .event-header {
+    
     @include event-header-box;
+    
     @include events-header-font;
   }
 
   .event-articles {
+    
     @media (min-width: 768px) {
       display: flex;
       padding: 0 10% 12% 10%;
@@ -158,7 +166,9 @@ main {
 
     article {
       background: $color-light;
+      
       @include event-box;
+      
       @media (min-width: 768px) {
         margin: 1px;
         text-align: center;
@@ -168,6 +178,7 @@ main {
         display: flex;
         justify-content: center;
         width: 18%;
+        
         @media (min-width: 768px) {
           width: 100%;
           margin: 0.75rem;
@@ -184,6 +195,7 @@ main {
  
       h2 {
         width: 23%;
+        
         @media (min-width: 768px) {
           width: 100%;
         }
@@ -191,16 +203,19 @@ main {
         margin: 0;
  
         a {
+         
           @include event-type-font;
         }
       }
  
       p {
         width: 59%;
+        
         @media (min-width: 768px) {
           width: 100%;
         }
         padding: 10px;
+        
         @include event-info-font;
       }
     }
@@ -211,12 +226,14 @@ main {
     padding: 2rem;
  
     button {
+      
       @include join-button;
  
       a {
         @include join-button-font;
       }
     }
+    
     @media (min-width: 768px) {
       display: none;
     }
@@ -229,6 +246,7 @@ main {
     text-align: center;
  
     a {
+      
       @include see-program-font;
     }
   }
@@ -241,11 +259,14 @@ main {
   padding: 0 5% 0 5%;
 
   .artists-header {
+    
     @include artists-header-box;
+    
     @include artists-header-font;
   }
 
   .artists-article-wrapper {
+    
     @media (min-width: 768px) {
       display: flex;
       flex-flow: row wrap;
@@ -254,6 +275,7 @@ main {
     }
  
     .artists-article {
+      
       @media (min-width: 768px) {
         width: 50%;
       }
@@ -281,16 +303,19 @@ main {
       .artist-info {
  
         h2 a {
+         
           @include artists-name;
           padding-bottom: 0.5rem;
         }
  
         .about {
+          
           @include artist-about-font;
           padding-bottom: 1.2rem;
         }
  
         .story {
+         
           @include min-font;
         }
       }
@@ -301,6 +326,7 @@ main {
     display: flex;
  
     button {
+      
       @include more-button;
  
       p {
@@ -322,6 +348,7 @@ footer {
   .partners {
     width: 100%;
     height: 13rem;
+   
     @media (min-width: 768px) {
       height: 10rem;
     }
@@ -332,6 +359,7 @@ footer {
 
     .partners-header {
       width: 100%;
+     
       @include partners-header-font;
     }
 
@@ -350,15 +378,18 @@ footer {
   }
 
   .copyright {
+    
     @media (min-width: 768px) {
       height: 10rem;
     }
 
     .cc {
+      
       @include cc-font;
     }
 
     .cc-statement {
+      
       @include min-font;
     }
   }

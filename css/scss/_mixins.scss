@@ -1,5 +1,6 @@
 $coco-font: "sans-serif";
 $lato-font: "aerial";
+
 @import "_fonts.scss";
 @import "_colors.scss";
 
@@ -13,14 +14,17 @@ $lato-font: "aerial";
   min-height: 15vh;
   margin-bottom: 12px;
   display: flex;
+  
   @media (min-width: 768px) {
     flex-direction: column;
     width: auto;
   }
+
   align-items: center;
 }
 
 @mixin event-header-box {
+  
   @include event-box;
   justify-content: center;
 }
@@ -126,6 +130,7 @@ $lato-font: "aerial";
 }
 
 @mixin artists-header-box {
+  
   @include event-header-box;
 }
 
@@ -212,15 +217,20 @@ $lato-font: "aerial";
 // Ticket Page Stylings
 
 @mixin create-border-radius() {
+  
   @if variable-exists(base-radius) {
     border-radius: $base-radius;
-  } @else {
+  } 
+  
+  @else {
+    
     @error "Please define the variable '$base-radius'.";
   }
 }
 
 $element-height: 2rem;
 $base-radius: $element-height * 0.5;
+
 @mixin ticket-border-box-1 {
   height: $element-height;
   border: 1px solid $color-black;

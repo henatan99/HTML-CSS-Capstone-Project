@@ -5,8 +5,7 @@
 // General Styling
 
 a {
-  text-decoration: none;
-  color: none;
+  text-decoration: none;  
 }
 
 // Navbar styling
@@ -16,6 +15,7 @@ a {
   width: 100%;
   height: 20vh;
   background: $color-light;
+  
   .iconify {
     margin: 20px 0 0 30px;
     font-size: 33px;
@@ -32,6 +32,7 @@ a {
   width: 100%;
   height: 25px;
   background: $color-black;
+  
   .navbar1-ul {
     float: right;
     margin-right: 15%;
@@ -39,7 +40,9 @@ a {
     list-style: none;
     display: flex;
     align-items: center;
+    
     li {
+      
       @include min-font;
       color: $color-light;
       margin-right: 1rem;
@@ -51,6 +54,7 @@ a {
   width: 100%;
   height: 50px;
   padding: 0 15% 0 15%;
+  
   ul {
     width: 65%;
   }
@@ -60,14 +64,15 @@ a {
 
 .front {
   width: 100%;
-  text-align: center;
-  background-image: url(/assets/background-img/main_bg.jpg);
+  text-align: center;  
   padding: 0 18px 40px 18px;
+  
   @media (min-width: 768px) {
     padding: 3rem 15% 40px 15%;
   }
 
   .concert-title {
+    
     h1 a {
       @include title-font;
     }
@@ -78,12 +83,15 @@ a {
   }
 
   .concert-info {
+    
     @include box-border;
+    
     @include concert-info-font;
   }
 }
 
 .contact {
+  
   @include concert-info-font;
   margin: 0 0 2rem 0;
 }
@@ -92,6 +100,7 @@ a {
   width: 100%;
   text-align: center;
   margin-bottom: 2rem;
+  
   h2 {
     @include logo-header-font;
     margin-bottom: 1rem;
@@ -117,28 +126,34 @@ a {
 .upcoming {
   width: 100%;
   padding: 0 10% 0 10%;
+  
   @media (min-width: 768px) {
     padding: 0 15% 0 15%;
   }
 
   text-align: center;
+  
   .upcoming-title {
+    
     @include upcoming-header-font;
     margin-bottom: 1rem;
   }
 
   .upcoming-info {
     margin-bottom: 1rem;
+   
     @include concert-info-font;
   }
 
   .upcoming-articles-wrapper {
+    
     @media (min-width: 768px) {
       display: flex;
       margin-bottom: 4rem;
     }
 
     .upcoming-article {
+      
       @media (min-width: 768px) {
         margin: 0.5rem;
       }
@@ -153,8 +168,11 @@ a {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      
       h1 {
+        
         a {
+          
           @include upcoming-date-font;
         }
 
@@ -162,7 +180,9 @@ a {
       }
 
       h2 {
+        
         a {
+          
           @include upcoming-place-font;
         }
 
@@ -175,6 +195,7 @@ a {
 .contact,
 .logo {
   padding: 0 10% 0 10%;
+  
   @media (min-width: 768px) {
     padding: 0 20% 0 20%;
   }
@@ -183,6 +204,7 @@ a {
 
 footer {
   width: 100%;
+  
   .partners {
     width: 100%;
     height: 13rem;
@@ -193,6 +215,7 @@ footer {
 
     .partners-header {
       width: 100%;
+      
       @include partners-header-font;
     }
 
@@ -202,6 +225,7 @@ footer {
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
+      
       img {
         margin: 3%;
       }
@@ -210,6 +234,7 @@ footer {
 
   .copyright {
     padding: 1rem;
+    
     @media (min-width: 768px) {
       height: 7rem;
       background: $color-black;
@@ -217,7 +242,9 @@ footer {
 
     .cc a,
     .cc-statement {
+      
       @include cc-font;
+      
       @media (min-width: 768px) {
         color: $color-light;
       }
