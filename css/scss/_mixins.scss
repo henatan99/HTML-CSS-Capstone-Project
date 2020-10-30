@@ -217,7 +217,9 @@ $lato-font: "aerial";
 @mixin create-border-radius() {
   @if variable-exists(base-radius) {
     border-radius: $base-radius;
-  } @else {
+  } 
+  
+  @else {
     @error "Please define the variable '$base-radius'.";
   }
 }
