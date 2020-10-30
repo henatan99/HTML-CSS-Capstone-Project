@@ -25,10 +25,24 @@ a {
   text-decoration: none;
 }
 
+.events-section .see-program a {
+  font-size: 1.056rem;
+  color: #d3d3d3;
+  font-family: "Roboto", sans-serif;
+}
+
 .front .concert-title h1 a {
   font-size: 2.2rem;
   color: #ec5242;
   font-weight: 900;
+  font-family: "Roboto", sans-serif;
+}
+
+.events-section .button-div button a {
+  font-size: 1.1rem;
+  color: #d3d3d3;
+  font-weight: 500;
+  line-height: 1rem;
   font-family: "Roboto", sans-serif;
 }
 
@@ -93,10 +107,6 @@ a {
 
 .navbar-2 ul {
   width: 65%;
-}
-
-main {
-  background: url(/assets/images/body-background.jpg) repear 0 0;
 }
 
 .front {
@@ -208,7 +218,6 @@ main {
   display: flex;
   justify-content: center;
   width: 18%;
-  height: fit-content;
   text-align: center;
   margin: 0;
 }
@@ -220,6 +229,11 @@ main {
   }
 }
 
+footer .partners .partners-logo img {
+  max-width: 5rem;
+  margin: 3%;
+}
+
 .events-section .event-articles article div img {
   width: 32px;
   height: auto;
@@ -227,7 +241,6 @@ main {
 
 .events-section .event-articles article h2 {
   width: 23%;
-  height: fit-content;
   margin: 0;
 }
 
@@ -265,14 +278,6 @@ main {
   background: #ec5242;
 }
 
-.events-section .button-div button a {
-  font-size: 1.1rem;
-  color: #d3d3d3;
-  font-weight: 500;
-  line-height: 1rem;
-  font-family: "Roboto", sans-serif;
-}
-
 @media (min-width: 768px) {
   .events-section .button-div {
     display: none;
@@ -284,12 +289,6 @@ main {
   bottom: 3rem;
   width: 100%;
   text-align: center;
-}
-
-.events-section .see-program a {
-  font-size: 1.056rem;
-  color: #d3d3d3;
-  font-family: "Roboto", sans-serif;
 }
 
 .artists {
@@ -433,11 +432,6 @@ footer .partners .partners-logo {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-}
-
-footer .partners .partners-logo img {
-  max-width: 5rem;
-  margin: 3%;
 }
 
 @media (min-width: 768px) {

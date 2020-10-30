@@ -5,7 +5,7 @@
 // General Styling
 
 a {
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 // Navbar styling
@@ -15,7 +15,7 @@ a {
   width: 100%;
   height: 20vh;
   background: $color-light;
-  
+
   .iconify {
     margin: 20px 0 0 30px;
     font-size: 33px;
@@ -23,7 +23,6 @@ a {
 }
 
 .nav-lg {
- 
   ul {
     list-style: none;
   }
@@ -39,7 +38,7 @@ a {
   width: 100%;
   height: 50px;
   padding: 0 15% 0 15%;
-  
+
   ul {
     width: 65%;
   }
@@ -49,7 +48,7 @@ a {
 
 main {
   padding: 5%;
-  
+
   @media (min-width: 768px) {
     padding: 5% 15% 5% 15%;
   }
@@ -61,7 +60,7 @@ main {
   width: 100%;
   height: 2rem;
   transform: rotate(90deg);
-  
+
   span {
     padding: 0.3rem 0.6rem 0.3rem 0.6rem;
     background: $color-red;
@@ -78,26 +77,24 @@ main {
 
 .select-seat,
 .select-service {
- 
   @include ticket-border-box-1;
-  
+
   @include min-font;
   margin: 2rem;
 }
 
 .category-1,
 .category-2 {
-  
   @include ticket-border-box-2;
   margin: 1rem 0 1rem 0;
   display: flex;
   flex-direction: column;
-  
+
   h2 {
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
   }
-  
+
   .menu-category {
     width: 100%;
     list-style: none;
@@ -112,11 +109,10 @@ main {
   display: flex;
   padding: 0;
   margin: 0 3rem 0 3rem;
- 
+
   button {
-    
     @include join-button-small;
-   
+
     a {
       @include join-button-font;
     }

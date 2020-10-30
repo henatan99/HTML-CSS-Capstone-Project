@@ -14,7 +14,7 @@ $lato-font: "aerial";
   min-height: 15vh;
   margin-bottom: 12px;
   display: flex;
-  
+
   @media (min-width: 768px) {
     flex-direction: column;
     width: auto;
@@ -24,7 +24,6 @@ $lato-font: "aerial";
 }
 
 @mixin event-header-box {
-  
   @include event-box;
   justify-content: center;
 }
@@ -130,7 +129,6 @@ $lato-font: "aerial";
 }
 
 @mixin artists-header-box {
-  
   @include event-header-box;
 }
 
@@ -217,13 +215,9 @@ $lato-font: "aerial";
 // Ticket Page Stylings
 
 @mixin create-border-radius() {
-  
   @if variable-exists(base-radius) {
     border-radius: $base-radius;
-  } 
-  
-  @else {
-    
+  } @else {
     @error "Please define the variable '$base-radius'.";
   }
 }
