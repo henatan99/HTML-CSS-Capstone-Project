@@ -24,6 +24,7 @@ $lato-font: "aerial";
 }
 
 @mixin event-header-box {
+  
   @include event-box;
   justify-content: center;
 }
@@ -133,6 +134,7 @@ $lato-font: "aerial";
 }
 
 @mixin artists-header-font {
+  
   @include events-header-font;
   color: $color-black;
 }
@@ -217,7 +219,7 @@ $lato-font: "aerial";
 @mixin create-border-radius() {
   @if variable-exists(base-radius) {
     border-radius: $base-radius;
-  } 
+  }
   
   @else {
     @error "Please define the variable '$base-radius'.";

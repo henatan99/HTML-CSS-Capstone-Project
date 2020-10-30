@@ -42,6 +42,7 @@ a {
     align-items: center;
 
     li {
+      
       @include min-font;
       color: $color-light;
       margin-right: 1rem;
@@ -101,16 +102,19 @@ a {
   margin-bottom: 2rem;
 
   h2 {
+    
     @include logo-header-font;
     margin-bottom: 1rem;
   }
 
   p {
+    
     @include concert-info-font;
     margin-bottom: 2rem;
   }
 
   .logo-img {
+    
     @include logo-font;
   }
 }
@@ -125,6 +129,7 @@ a {
   text-align: center;
 
   .upcoming-title {
+    
     @include upcoming-header-font;
     margin-bottom: 1rem;
   }
@@ -142,6 +147,7 @@ a {
     }
 
     .upcoming-article {
+      
       @media (min-width: 768px) {
         margin: 0.5rem;
       }
@@ -158,6 +164,7 @@ a {
 
       h1 {
         a {
+          
           @include upcoming-date-font;
         }
         padding: 0.5rem;
@@ -165,6 +172,7 @@ a {
 
       h2 {
         a {
+          
           @include upcoming-place-font;
         }
         padding: 0.5rem;

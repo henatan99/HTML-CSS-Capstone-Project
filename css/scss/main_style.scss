@@ -12,12 +12,12 @@ a {
 
 // Navbar styling
 
-.front .concert-title h1 a {
-  @include title-font;
-}
-
 .events-section .see-program a {
   @include see-program-font;
+}
+
+.front .concert-title h1 a {
+  @include title-font;
 }
 
 .events-section .button-div button a {
@@ -79,6 +79,7 @@ a {
     align-items: center;
 
     li {
+      
       @include min-font;
       color: $color-light;
       margin-right: 1rem;
@@ -191,11 +192,11 @@ main {
 
         @media (min-width: 768px) {
           width: 100%;
-        }
-        height: fit-content;
+        }        
         margin: 0;
 
         a {
+          
           @include event-type-font;
         }
       }
@@ -279,16 +280,19 @@ footer .partners .partners-logo img {
 
       .artist-info {
         h2 a {
+          
           @include artists-name;
           padding-bottom: 0.5rem;
         }
 
         .about {
+          
           @include artist-about-font;
           padding-bottom: 1.2rem;
         }
 
         .story {
+          
           @include min-font;
         }
       }
@@ -299,9 +303,11 @@ footer .partners .partners-logo img {
     display: flex;
 
     button {
+      
       @include more-button;
 
       p {
+        
         @include more-button-font;
       }
 
