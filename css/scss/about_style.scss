@@ -42,7 +42,6 @@ a {
     align-items: center;
 
     li {
-      
       @include min-font;
       color: $color-light;
       margin-right: 1rem;
@@ -82,7 +81,7 @@ a {
   }
 
   .concert-info {
-    @include box-border;    
+    @include box-border;
     @include concert-info-font;
   }
 }
@@ -92,7 +91,7 @@ a {
   padding: 0 10% 0 10%;
   text-align: center;
   margin-bottom: 2rem;
- 
+
   @include concert-info-font;
   margin: 0 0 2rem 0;
 }
@@ -103,19 +102,16 @@ a {
   margin-bottom: 2rem;
 
   h2 {
-    
     @include logo-header-font;
     margin-bottom: 1rem;
   }
 
   p {
-    
     @include concert-info-font;
     margin-bottom: 2rem;
   }
 
   .logo-img {
-    
     @include logo-font;
   }
 }
@@ -130,26 +126,23 @@ a {
   text-align: center;
 
   .upcoming-title {
-    
     @include upcoming-header-font;
     margin-bottom: 1rem;
   }
 
   .upcoming-info {
     margin-bottom: 1rem;
-    
+
     @include concert-info-font;
   }
 
   .upcoming-articles-wrapper {
-    
     @media (min-width: 768px) {
       display: flex;
       margin-bottom: 4rem;
     }
 
     .upcoming-article {
-     
       @media (min-width: 768px) {
         margin: 0.5rem;
       }
@@ -165,18 +158,14 @@ a {
       justify-content: center;
 
       h1 {
-        
         a {
-          
           @include upcoming-date-font;
         }
         padding: 0.5rem;
       }
 
       h2 {
-        
         a {
-          
           @include upcoming-place-font;
         }
         padding: 0.5rem;
@@ -188,7 +177,7 @@ a {
 .contact,
 .logo {
   padding: 0 10% 0 10%;
-  
+
   @media (min-width: 768px) {
     padding: 0 20% 0 20%;
   }
@@ -207,7 +196,7 @@ footer {
 
     .partners-header {
       width: 100%;
-      
+
       @include partners-header-font;
     }
 
@@ -226,7 +215,7 @@ footer {
 
   .copyright {
     padding: 1rem;
-    
+
     @media (min-width: 768px) {
       height: 7rem;
       background: $color-black;
@@ -234,7 +223,6 @@ footer {
 
     .cc a,
     .cc-statement {
-      
       @include cc-font;
 
       @media (min-width: 768px) {

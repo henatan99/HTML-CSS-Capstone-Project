@@ -24,8 +24,7 @@ $lato-font: "aerial";
 }
 
 @mixin event-header-box {
-  
-  @include event-box;  
+  @include event-box;
   justify-content: center;
 }
 
@@ -134,7 +133,6 @@ $lato-font: "aerial";
 }
 
 @mixin artists-header-font {
-  
   @include events-header-font;
   color: $color-black;
 }
@@ -217,13 +215,9 @@ $lato-font: "aerial";
 // Ticket Page Stylings
 
 @mixin create-border-radius() {
-  
   @if variable-exists(base-radius) {
     border-radius: $base-radius;
-  } 
-  
-  @else {
-    
+  } @else {
     @error "Please define the variable '$base-radius'.";
   }
 }
@@ -234,7 +228,7 @@ $base-radius: $element-height * 0.5;
 @mixin ticket-border-box-1 {
   height: $element-height;
   border: 1px solid $color-black;
-  
+
   @include create-border-radius();
   display: flex;
   align-items: center;
