@@ -18,42 +18,35 @@ a {
   height: 20vh;
   background: $color-light;
   
-  .nav-dropdown {
-    
+  .nav-dropdown {      
     .iconify {
       margin: 20px 0 0 30px;
       font-size: 33px;
-    }
-    
+    }    
     .drop-content {
       display: none;
-      padding-left: 30px;
-      
+      padding-left: 30px;      
       a {
         background: $color-black;
         margin-right: 0.4rem;
         padding: 0.4rem;
+        
         @include partners-header-font;
       }
     }
-  }
-  
+  }  
   .nav-dropdown:hover {
     cursor: pointer;
-  }
-  
+  }  
   .nav-dropdown:hover .drop-content {
     display: flex;
   }
 }
 
-.nav-lg {
- 
+.nav-lg { 
   ul {
-    list-style: none;
-   
-    li {
-     
+    list-style: none;   
+    li {     
       a {
         text-decoration: none;
       }
@@ -64,29 +57,26 @@ a {
 .navbar-1 {
   width: 100%;
   height: 25px;
-  background: $color-black;
-  
+  background: $color-black;  
   .navbar1-ul {
     float: right;
     margin-right: 15%;
     height: 25px;
     list-style: none;
     display: flex;
-    align-items: center;
-    
+    align-items: center;    
     li {
+      
       @include min-font;
       color: $color-light;
       margin-right: 1rem;
     }
   }
 }
-
 .navbar-2 {
   width: 100%;
   height: 50px;
-  padding: 0 15% 0 15%;
-  
+  padding: 0 15% 0 15%;  
   ul {
     width: 65%;
   }
@@ -106,32 +96,30 @@ main {
  
   @media (min-width: 768px) {
     padding: 3rem 15% 70px 15%;
-  }
-  
+  }  
   .concert-title {
-    position: relative;
-    
+    position: relative;    
     img {
       width: 18%;
       position: absolute;
       bottom: 0;
       right: 0;
-    }
-   
+    }   
     h1 a {
+      
       @include title-font;
-    }
-   
+    }   
     h3 {
+      
       @include invite-font;
     }
-  }
-  
+  }  
   .concert-info {
+   
     @include box-border;
+   
     @include concert-info-font;
-  }
- 
+  } 
   h2 {
     @include date-font;
   }
@@ -147,7 +135,9 @@ main {
     position: relative;
   }
   .event-header {
+   
     @include event-header-box;
+    
     @include events-header-font;
   }
   
@@ -155,16 +145,14 @@ main {
     @media (min-width: 768px) {
       display: flex;
       padding: 0 10% 12% 10%;
-    }
-   
+    }   
     article {
       background: $color-light;
       @include event-box;
       @media (min-width: 768px) {
         margin: 1px;
         text-align: center;
-      }
-     
+      }     
       div {
         display: flex;
         justify-content: center;
@@ -175,14 +163,12 @@ main {
         }
         height: fit-content;
         text-align: center;
-        margin: 0;
-       
+        margin: 0;       
         img {
           width: 32px;
           height: auto;
         }
-      }
-      
+      }      
       h2 {
         width: 23%;
         
@@ -190,13 +176,11 @@ main {
           width: 100%;
         }
         height: fit-content;
-        margin: 0;
-       
+        margin: 0;       
         a {
           @include event-type-font;
         }
-      }
-      
+      }      
       p {
         width: 59%;
        
@@ -211,12 +195,12 @@ main {
   
   .button-div {
     display: flex;
-    padding: 2rem;
-    
+    padding: 2rem;    
     button {
-      @include join-button;
-     
+      
+      @include join-button;     
       a {
+        
         @include join-button-font;
       }
     }
@@ -230,9 +214,9 @@ main {
     position: absolute;
     bottom: 3rem;
     width: 100%;
-    text-align: center;
-    
+    text-align: center;    
     a {
+      
       @include see-program-font;
     }
   }
@@ -242,60 +226,56 @@ main {
   width: 100%;
   background: $color-light;
   height: fit-content;
-  padding: 0 5% 0 5%;
-  
+  padding: 0 5% 0 5%;  
   .artists-header {
+    
     @include artists-header-box;
+    
     @include artists-header-font;
   }
   
-  .artists-article-wrapper {
+  .artists-article-wrapper {   
    
     @media (min-width: 768px) {
       display: flex;
       flex-flow: row wrap;
       width: 100%;
       justify-content: center;
-    }
-    
+    }    
     .artists-article {
       
       @media (min-width: 768px) {
         width: 50%;
       }
-      margin-bottom: 3rem;
-      
+      margin-bottom: 3rem;      
       .image {
         height: 100%;
-        position: relative;
-        
+        position: relative;        
         .img-front {
           position: relative;
           z-index: 2;
           padding: 10% 0 0 10%;
-        }
-       
+        }       
         .img-back {
           position: absolute;
           top: 0;
           left: 0;
           width: 65%;
         }
-      }
-      
-      .artist-info {
-        
+      }      
+      .artist-info {        
         h2 a {
+         
           @include artists-name;
           padding-bottom: 0.5rem;
-        }
-        
+        }        
         .about {
+         
           @include artist-about-font;
           padding-bottom: 1.2rem;
-        }
-        
+        }        
         .story {
+          
           @include min-font;
         }
       }
@@ -303,15 +283,14 @@ main {
   }
   
   .button-more {
-    display: flex;
-   
+    display: flex;   
     button {
-      @include more-button;
-     
+      
+      @include more-button;     
       p {
+        
         @include more-button-font;
-      }
-     
+      }     
       p:after {
         content: ">";
       }
@@ -322,8 +301,7 @@ main {
 // Footer section
 
 footer {
-  width: 100%;
-  
+  width: 100%;  
   .partners {
     width: 100%;
     height: 13rem;
@@ -334,37 +312,32 @@ footer {
     padding: 1rem 2rem 1rem 2rem;
     background: $color-black;
     text-align: center;
-    line-height: 2rem;
-    
+    line-height: 2rem;    
     .partners-header {
       width: 100%;
+      
       @include partners-header-font;
-    }
-    
+    }    
     .partners-logo {
       width: 100%;
       padding: 1rem;
       display: flex;
       flex-flow: row wrap;
-      justify-content: center;
-      
+      justify-content: center;      
       img {
         max-width: 5rem;
         margin: 3%;
       }
     }
-  }
-  
+  }  
   .copyright {
     
     @media (min-width: 768px) {
       height: 10rem;
-    }
-  
+    }  
     .cc {
       @include cc-font;
-    }
-   
+    }   
     .cc-statement {
       @include min-font;
     }
