@@ -12,18 +12,15 @@ a {
 
 // Navbar styling
 
-.front .concert-title h1 a{
-   
-    @include title-font;  
+.front .concert-title h1 a {
+  @include title-font;
 }
 
 .events-section .see-program a {
-  
   @include see-program-font;
 }
 
 .events-section .button-div button a {
-  
   @include join-button;
 }
 
@@ -82,7 +79,6 @@ a {
     align-items: center;
 
     li {
-      
       @include min-font;
       color: $color-light;
       margin-right: 1rem;
@@ -186,7 +182,7 @@ main {
         margin: 0;
 
         img {
-          width: 32px;          
+          width: 32px;
         }
       }
 
@@ -245,13 +241,11 @@ footer .partners .partners-logo img {
   padding: 0 5% 0 5%;
 
   .artists-header {
-    
     @include artists-header-box;
     @include artists-header-font;
   }
 
   .artists-article-wrapper {
-    
     @media (min-width: 768px) {
       display: flex;
       flex-flow: row wrap;
@@ -260,7 +254,6 @@ footer .partners .partners-logo img {
     }
 
     .artists-article {
-      
       @media (min-width: 768px) {
         width: 50%;
       }
@@ -285,21 +278,17 @@ footer .partners .partners-logo img {
       }
 
       .artist-info {
-        
         h2 a {
-          
           @include artists-name;
           padding-bottom: 0.5rem;
         }
 
         .about {
-          
           @include artist-about-font;
           padding-bottom: 1.2rem;
         }
 
         .story {
-          
           @include min-font;
         }
       }
@@ -310,7 +299,6 @@ footer .partners .partners-logo img {
     display: flex;
 
     button {
-      
       @include more-button;
 
       p {
@@ -352,23 +340,20 @@ footer {
       padding: 1rem;
       display: flex;
       flex-flow: row wrap;
-      justify-content: center;      
+      justify-content: center;
     }
   }
 
   .copyright {
-    
     @media (min-width: 768px) {
       height: 10rem;
     }
 
     .cc {
-      
       @include cc-font;
     }
 
     .cc-statement {
-      
       @include min-font;
     }
   }
