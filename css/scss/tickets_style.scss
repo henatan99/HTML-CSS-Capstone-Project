@@ -78,7 +78,6 @@ main {
 .select-seat,
 .select-service {
   @include ticket-border-box-1;
-
   @include min-font;
   margin: 2rem;
 }
