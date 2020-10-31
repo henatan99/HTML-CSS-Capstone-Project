@@ -16,13 +16,20 @@
   <body>
     <header>
       <nav>
-        <ul class="navbar-mobile d-md-none">
-          <span
-            class="iconify"
-            data-icon="dashicons:menu-alt3"
-            data-inline="false"
-          ></span>
-        </ul>
+        <div class="navbar-mobile d-md-none">
+          <div class="nav-dropdown">
+            <span
+              class="iconify"
+              data-icon="dashicons:menu-alt3"
+              data-inline="false"
+            ></span>
+            <div class="drop-content">
+              <a href="about.html">About</a>
+              <a href="tickets.html">Tickets</a>
+              <a href="#">Sponsors</a>
+            </div>
+          </div>
+        </div>
         <div class="d-none d-md-block nav-lg">
           <div class="navbar-1">
             <ul class="navbar1-ul">
@@ -40,12 +47,12 @@
               </p>
             </div>
             <ul class="d-flex justify-content-between">
-              <li><a href="$">About</a></li>
-              <li><a href="$">Program</a></li>
-              <li><a href="$">Join</a></li>
-              <li><a href="$">Sponsor</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Program</a></li>
+              <li><a href="#">Join</a></li>
+              <li><a href="#">Sponsor</a></li>
               <li><a href="$">News</a></li>
-              <li><a href="$">CC Campaign</a></li>
+              <li><a href="#">Exhibition</a></li>
             </ul>
           </div>
         </div>
@@ -53,7 +60,7 @@
     </header>
 
     <main>
-      <section class="front">
+      <section class="front-about"> 
         <div class="concert-title position-relative">
           <h3 class="d-md-none">Don't miss the vibe! PEACE!</h3>
           <h1 class="mt-2 mb-3">
@@ -105,40 +112,25 @@
       </section>
     </main>
 
-    <footer>
-      <div class="partners d-md-none">
+    <footer class="footer-about">
+      <div class="partners-about d-md-none">
         <h2 class="partners-header">Partners</h2>
-        <div class="partners-logo">
-          <img
-            src="assets/iconography/svg-export (2)/svgexport-29.svg"
-            alt="adobe"
-          />
-          <img
-            src="assets/iconography/svg-export (2)/svgexport-29.svg"
-            alt="adobe"
-          />
-          <img
-            src="assets/iconography/svg-export (2)/svgexport-29.svg"
-            alt="adobe"
-          />
-          <img
-            src="assets/iconography/svg-export (2)/svgexport-29.svg"
-            alt="adobe"
-          />
-          <img
-            src="assets/iconography/svg-export (2)/svgexport-29.svg"
-            alt="adobe"
-          />
+        <div class="partners-logo-about">
+          <img src="assets/images/google.png" alt="adobe" />
+          <img src="assets/images/google.png" alt="adobe" />
+          <img src="assets/images/google.png" alt="adobe" />
+          <img src="assets/images/google.png" alt="adobe" />
+          <img src="assets/images/google.png" alt="adobe" />
         </div>
       </div>
-      <div class="copyright d-flex justify-content-center align-items-center">
-        <p class="cc pr-4">
+      <div class="copyright-about d-flex justify-content-center align-items-center">
+        <p class="cc-about pr-4">
           <a href="#"
             >GLOBAL TOUR FOR PEACE <br />
             ADDIS ABABA
           </a>
         </p>
-        <p class="cc-statement">Global tour for Peace Some rights resesrved</p>
+        <p class="cc-statement-about">Global tour for Peace Some rights resesrved</p>
       </div>
     </footer>
 

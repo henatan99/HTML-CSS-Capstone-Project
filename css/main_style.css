@@ -1,68 +1,29 @@
 /*# sourceMappingURL=main_style.scss.map */
-a {
-  text-decoration: none; }
-
-.navbar-mobile {
-  position: relative;
-  width: 100%;
-  height: 20vh;
-  background: #d3d3d3; }
-  .navbar-mobile .iconify {
-    margin: 20px 0 0 30px;
-    font-size: 33px; }
-
-.nav-lg ul {
-  list-style: none; }
-
-.navbar-1 {
-  width: 100%;
-  height: 25px;
-  background: #272a31; }
-  .navbar-1 .navbar1-ul {
-    float: right;
-    margin-right: 15%;
-    height: 25px;
-    list-style: none;
-    display: flex;
-    align-items: center; }
-    .navbar-1 .navbar1-ul li {
-      font-size: 0.616rem;
-      color: #272a31;
-      line-height: 1rem;
-      font-family: "Roboto", sans-serif;
-      color: #d3d3d3;
-      margin-right: 1rem; }
-
-.navbar-2 {
-  width: 100%;
-  height: 50px;
-  padding: 0 15% 0 15%; }
-  .navbar-2 ul {
-    width: 65%; }
-
-.front {
+.front-about {
   width: 100%;
   text-align: center;
   padding: 0 18px 40px 18px; }
   @media (min-width: 768px) {
-    .front {
+    .front-about {
       padding: 3rem 15% 40px 15%; } }
-  .front .concert-title h1 a {
-    font-size: 2.2rem;
-    color: #ec5242;
-    font-weight: 900;
-    font-family: "Roboto", sans-serif; }
-  .front .concert-title h3 {
-    font-size: 1.43rem;
-    color: #ec5242;
-    font-weight: 100;
-    font-family: "Roboto", sans-serif; }
-  .front .concert-info {
-    border: 1px solid black;
-    font-size: 0.704rem;
-    color: #272a31;
-    line-height: 1rem;
-    font-family: "Roboto", sans-serif; }
+
+.concert-title h1 a {
+  font-size: 2.2rem;
+  color: #ec5242;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif; }
+.concert-title h3 {
+  font-size: 1.43rem;
+  color: #ec5242;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif; }
+
+.concert-info {
+  border: 1px solid black;
+  font-size: 0.704rem;
+  color: #272a31;
+  line-height: 1rem;
+  font-family: "Roboto", sans-serif; }
 
 .contact {
   width: 100%;
@@ -121,7 +82,6 @@ a {
       margin-bottom: 4rem; } }
   .upcoming .upcoming-articles-wrapper .upcoming-article {
     background: #ec5242;
-    background-image: url("/assets/images/thailand.jpg");
     width: 100%;
     height: 12rem;
     object-fit: cover;
@@ -156,77 +116,54 @@ a {
     .logo {
       padding: 0 20% 0 20%; } }
 
-footer {
+.partners-about {
+  width: 100%;
+  height: 13rem;
+  padding: 1rem 2rem 1rem 2rem;
+  background: #272a31;
+  text-align: center;
+  line-height: 2rem; }
+
+.partners-header {
+  width: 100%;
+  font-size: 1.1rem;
+  color: #d3d3d3;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif; }
+
+.partners-logo-about {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  .partners-logo-about img {
+    max-width: 5rem; }
+
+.copyright-about {
+  padding: 1rem; }
+  @media (min-width: 768px) {
+    .copyright-about {
+      height: 7rem;
+      background: #272a31; } }
+
+.footer-about {
   width: 100%; }
-  footer .partners {
-    width: 100%;
-    height: 13rem;
-    padding: 1rem 2rem 1rem 2rem;
-    background: #272a31;
-    text-align: center;
-    line-height: 2rem; }
-    footer .partners .partners-header {
-      width: 100%;
-      font-size: 1.1rem;
-      color: #d3d3d3;
-      font-weight: 500;
-      font-family: "Roboto", sans-serif; }
-    footer .partners .partners-logo {
-      width: 100%;
-      padding: 1rem;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center; }
-      footer .partners .partners-logo img {
-        margin: 3%; }
-  footer .copyright {
-    padding: 1rem; }
+  .footer-about .cc-about a,
+  .footer-about .cc-statement-about {
+    font-size: 0.704rem;
+    color: #272a31;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif; }
     @media (min-width: 768px) {
-      footer .copyright {
-        height: 7rem;
-        background: #272a31; } }
-    footer .copyright .cc a,
-    footer .copyright .cc-statement {
-      font-size: 0.704rem;
-      color: #272a31;
-      font-weight: 700;
-      font-family: "Roboto", sans-serif; }
-      @media (min-width: 768px) {
-        footer .copyright .cc a,
-        footer .copyright .cc-statement {
-          color: #d3d3d3; } }
+      .footer-about .cc-about a,
+      .footer-about .cc-statement-about {
+        color: #d3d3d3; } }
 
-a {
-  text-decoration: none; }
-
-.navbar-mobile {
-  position: relative;
-  width: 100%;
-  height: 20vh;
-  background: #d3d3d3; }
-  .navbar-mobile .iconify {
-    margin: 20px 0 0 30px;
-    font-size: 33px; }
-
-.nav-lg ul {
-  list-style: none; }
-
-.navbar-1 {
-  width: 100%;
-  height: 25px;
-  background: #272a31; }
-
-.navbar-2 {
-  width: 100%;
-  height: 50px;
-  padding: 0 15% 0 15%; }
-  .navbar-2 ul {
-    width: 65%; }
-
-main {
+.main-tickets {
   padding: 5%; }
   @media (min-width: 768px) {
-    main {
+    .main-tickets {
       padding: 5% 15% 5% 15%; } }
 
 .arrow {
@@ -277,17 +214,17 @@ main {
     display: flex;
     justify-content: space-around; }
 
-.button-div {
+.button-div-ticket {
   display: flex;
   padding: 0;
   margin: 0 3rem 0 3rem; }
-  .button-div button {
+  .button-div-ticket .button-ticket {
     border: 1px solid;
     width: 100%;
     padding: 0.5rem 5% 0.5rem 5%;
     margin: 0;
     background: #ec5242; }
-    .button-div button a {
+    .button-div-ticket .button-ticket a {
       font-size: 1.1rem;
       color: #d3d3d3;
       font-weight: 500;
@@ -301,19 +238,6 @@ a {
   font-size: 1.056rem;
   color: #d3d3d3;
   font-family: "Roboto", sans-serif; }
-
-.front .concert-title h1 a {
-  font-size: 2.2rem;
-  color: #ec5242;
-  font-weight: 900;
-  font-family: "Roboto", sans-serif; }
-
-.events-section .button-div button a {
-  border: 1px solid;
-  width: 100%;
-  padding: 1.5rem 10% 1.5rem 10%;
-  margin: 0;
-  background: #ec5242; }
 
 .navbar-mobile {
   position: relative;
@@ -368,33 +292,12 @@ a {
   .navbar-2 ul {
     width: 65%; }
 
-main {
-  background: url(/assets/images/body-background.jpg) repeat 0 0; }
-
 .front {
   width: 100%;
   padding: 0 18px 70px 18px; }
   @media (min-width: 768px) {
     .front {
       padding: 3rem 15% 70px 15%; } }
-  .front .concert-title {
-    position: relative; }
-    .front .concert-title img {
-      width: 18%;
-      position: absolute;
-      bottom: 0;
-      right: 0; }
-    .front .concert-title h3 {
-      font-size: 1.43rem;
-      color: #ec5242;
-      font-weight: 100;
-      font-family: "Roboto", sans-serif; }
-  .front .concert-info {
-    border: 1px solid black;
-    font-size: 0.704rem;
-    color: #272a31;
-    line-height: 1rem;
-    font-family: "Roboto", sans-serif; }
   .front h2 {
     font-size: 1.54rem;
     color: #272a31;
@@ -422,73 +325,84 @@ main {
       .events-section .event-header {
         flex-direction: column;
         width: auto; } }
-  @media (min-width: 768px) {
-    .events-section .event-articles {
-      display: flex;
-      padding: 0 10% 12% 10%; } }
-  .events-section .event-articles article {
-    background: #d3d3d3;
-    width: 100%;
-    min-height: 15vh;
-    margin-bottom: 12px;
-    display: flex;
-    align-items: center; }
+  .events-section .event-articles {
+    padding-left: 5%;
+    padding-right: 5%; }
     @media (min-width: 768px) {
-      .events-section .event-articles article {
-        flex-direction: column;
-        width: auto; } }
-    @media (min-width: 768px) {
-      .events-section .event-articles article {
-        margin: 1px;
-        text-align: center; } }
-    .events-section .event-articles article div {
+      .events-section .event-articles {
+        display: flex;
+        padding: 0 10% 12% 10%; } }
+    .events-section .event-articles article {
+      background: #d3d3d3;
+      width: 100%;
+      min-height: 15vh;
+      margin-bottom: 12px;
       display: flex;
-      justify-content: center;
-      width: 18%;
-      height: fit-content;
-      text-align: center;
-      margin: 0; }
+      align-items: center; }
       @media (min-width: 768px) {
-        .events-section .event-articles article div {
-          width: 100%;
-          margin: 0.75rem; } }
-      .events-section .event-articles article div img {
-        width: 32px; }
-    .events-section .event-articles article h2 {
-      width: 23%;
-      margin: 0; }
+        .events-section .event-articles article {
+          flex-direction: column;
+          width: auto; } }
       @media (min-width: 768px) {
-        .events-section .event-articles article h2 {
-          width: 100%; } }
-      .events-section .event-articles article h2 a {
-        font-size: 1.056rem;
-        color: #ec5242;
+        .events-section .event-articles article {
+          width: 20%;
+          margin: 0.2%;
+          text-align: center; } }
+      .events-section .event-articles article div {
+        display: flex;
+        justify-content: center;
+        width: 18%;
+        text-align: center;
+        margin: 0; }
+        @media (min-width: 768px) {
+          .events-section .event-articles article div {
+            width: 100%;
+            margin: 0.75rem; } }
+        .events-section .event-articles article div img {
+          width: 32px; }
+      .events-section .event-articles article h2 {
+        width: 23%;
+        margin: 0; }
+        @media (min-width: 768px) {
+          .events-section .event-articles article h2 {
+            width: 100%; } }
+        .events-section .event-articles article h2 a {
+          font-size: 1.056rem;
+          color: #ec5242;
+          line-height: 1rem;
+          font-weight: 600;
+          font-family: "Roboto", sans-serif; }
+      .events-section .event-articles article p {
+        width: 59%;
+        padding: 10px;
+        font-size: 0.704rem;
+        color: #272a31;
         line-height: 1rem;
-        font-weight: 600;
         font-family: "Roboto", sans-serif; }
-    .events-section .event-articles article p {
-      width: 59%;
-      padding: 10px;
-      font-size: 0.704rem;
-      color: #272a31;
-      line-height: 1rem;
-      font-family: "Roboto", sans-serif; }
-      @media (min-width: 768px) {
-        .events-section .event-articles article p {
-          width: 100%; } }
+        @media (min-width: 768px) {
+          .events-section .event-articles article p {
+            width: 100%; } }
   .events-section .button-div {
     display: flex;
     padding: 2rem; }
     @media (min-width: 768px) {
       .events-section .button-div {
         display: none; } }
+    .events-section .button-div .join-button {
+      border: 1px solid;
+      width: 100%;
+      padding: 1.5rem 10% 1.5rem 10%;
+      margin: 0;
+      background: #ec5242;
+      font-family: sans-serif;
+      color: #d3d3d3; }
   .events-section .see-program {
     position: absolute;
     bottom: 3rem;
     width: 100%;
     text-align: center; }
 
-footer .partners .partners-logo img {
+.partners-logo img {
   max-width: 5rem;
   margin: 3%; }
 
@@ -568,9 +482,9 @@ footer .partners .partners-logo img {
       .artists .button-more button p::after {
         content: ">"; }
 
-footer {
+.footer-main {
   width: 100%; }
-  footer .partners {
+  .footer-main .partners {
     width: 100%;
     height: 13rem;
     padding: 1rem 2rem 1rem 2rem;
@@ -578,32 +492,22 @@ footer {
     text-align: center;
     line-height: 2rem; }
     @media (min-width: 768px) {
-      footer .partners {
+      .footer-main .partners {
         height: 10rem; } }
-    footer .partners .partners-header {
-      width: 100%;
-      font-size: 1.1rem;
-      color: #d3d3d3;
-      font-weight: 500;
-      font-family: "Roboto", sans-serif; }
-    footer .partners .partners-logo {
-      width: 100%;
-      padding: 1rem;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center; }
   @media (min-width: 768px) {
-    footer .copyright {
+    .footer-main .copyright {
       height: 10rem; } }
-  footer .copyright .cc {
-    font-size: 0.704rem;
-    color: #272a31;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif; }
-  footer .copyright .cc-statement {
-    font-size: 0.616rem;
-    color: #272a31;
-    line-height: 1rem;
-    font-family: "Roboto", sans-serif; }
+
+.cc {
+  font-size: 0.704rem;
+  color: #272a31;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif; }
+
+.cc-statement {
+  font-size: 0.616rem;
+  color: #272a31;
+  line-height: 1rem;
+  font-family: "Roboto", sans-serif; }
 
 /*# sourceMappingURL=main_style.css.map */

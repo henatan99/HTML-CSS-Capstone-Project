@@ -16,15 +16,27 @@
   <body>
     <header>
       <nav>
-        <ul class="navbar-mobile d-md-none">
-          <span
-            class="iconify"
-            data-icon="dashicons:menu-alt3"
-            data-inline="false"
-          ></span>
-        </ul>
+        <div class="navbar-mobile d-md-none">
+          <div class="nav-dropdown">
+            <span
+              class="iconify"
+              data-icon="dashicons:menu-alt3"
+              data-inline="false"
+            ></span>
+            <div class="drop-content">
+              <a href="#">About</a>
+              <a href="tickets.html">Tickets</a>
+              <a href="#">Sponsors</a>
+            </div>
+          </div>
+        </div>
         <div class="d-none d-md-block nav-lg">
-          <ul class="navbar-1"></ul>
+          <div class="navbar-1">
+            <ul class="navbar1-ul">
+              <li>My Page</li>
+              <li>logout</li>
+            </ul>
+          </div>
           <div
             class="navbar-2 d-flex justify-content-between align-items-center"
           >
@@ -35,19 +47,19 @@
               </p>
             </div>
             <ul class="d-flex justify-content-between">
-              <li><a href="$">About</a></li>
-              <li><a href="$">Program</a></li>
-              <li><a href="$">Join</a></li>
-              <li><a href="$">Sponsor</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Program</a></li>
+              <li><a href="#">Join</a></li>
+              <li><a href="#">Sponsor</a></li>
               <li><a href="$">News</a></li>
-              <li><a href="$">CC Campain</a></li>
+              <li><a href="#">Exhibition</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
 
-    <main class="text-center">
+    <main class="tickets-main text-center">
       <section class="ticket-section">
         <h1>Pick your Ticket</h1>
         <p class="select-seat">Please select your seat</p>
@@ -106,8 +118,8 @@
         </div>
       </section>
 
-      <div class="button-div">
-        <button>
+      <div class="button-div-ticket">
+        <button class="button-ticket">
           <a href="#">Submit Request</a>
         </button>
       </div>
