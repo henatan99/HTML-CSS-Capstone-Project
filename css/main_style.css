@@ -325,7 +325,9 @@ body {
       font-size: 1.43rem;
       color: #ec5242;
       font-weight: 100;
-      font-family: "Roboto", sans-serif; }
+      font-family: "Roboto", sans-serif;
+      position: relative;
+      z-index: 1; }
     @media (min-width: 768px) {
       .concert-invite-wrapper .concert-invite {
         display: block;
@@ -426,7 +428,8 @@ body {
             width: 100%;
             margin: 0.75rem; } }
         .events-section .event-articles article div img {
-          width: 32px; }
+          width: 32px;
+          height: 32px; }
       .events-section .event-articles article h2 {
         width: 23%;
         margin: 0; }

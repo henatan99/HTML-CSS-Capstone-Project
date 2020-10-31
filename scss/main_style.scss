@@ -134,6 +134,8 @@ body{
     h3 {
       
       @include invite-font;
+      position: relative;
+      z-index: 1;
     }  
     
     @media (min-width: 768px) {
@@ -243,7 +245,8 @@ body{
         }
 
         img {
-          width: 32px;          
+          width: 32px; 
+          height: 32px;         
         }
 
       }
