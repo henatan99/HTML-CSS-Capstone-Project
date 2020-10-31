@@ -11,7 +11,8 @@
 
   @media (min-width: 768px) {
     padding: 3rem 15% 40px 15%;
-  }  
+  }
+
 }
 
 .concert-title {
@@ -44,34 +45,53 @@
   margin-bottom: 2rem;
 
   h2 {
-    
+
     @include logo-header-font;
     margin-bottom: 1rem;
   }
 
   p {
-    
+
     @include concert-info-font;
     margin-bottom: 2rem;
   }
 
   .logo-img {
-    
+
     @include logo-font;
   }
+}
+
+.cc-about a {
+
+      @include cc-font;
+
+      @media (min-width: 768px) {
+        color: $color-light;
+      }
+} 
+
+.cc-statement-about {
+
+  @include cc-font;
+
+  @media (min-width: 768px) {
+    color: $color-light;
+  }
+
 }
 
 .upcoming {
   width: 100%;
   padding: 0 10% 0 10%;
+  text-align: center;
 
   @media (min-width: 768px) {
     padding: 0 15% 0 15%;
   }
-  text-align: center;
 
   .upcoming-title {
-    
+
     @include upcoming-header-font;
     margin-bottom: 1rem;
   }
@@ -83,13 +103,14 @@
   }
 
   .upcoming-articles-wrapper {
+
     @media (min-width: 768px) {
       display: flex;
       margin-bottom: 4rem;
     }
 
     .upcoming-article {
-      
+
       @media (min-width: 768px) {
         margin: 0.5rem;
       }
@@ -104,16 +125,18 @@
       justify-content: center;
 
       h1 {
+        padding: 0.5rem;
         a {
-          
+
           @include upcoming-date-font;
         }
-        padding: 0.5rem;
+
       }
 
       h2 {
+
         a {
-          
+
           @include upcoming-place-font;
         }
         padding: 0.5rem;
@@ -156,6 +179,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+
   img {
     max-width: 5rem;
   }
@@ -168,17 +192,9 @@
     height: 7rem;
     background: $color-black;
   }
+
 }
 
 .footer-about {
-  width: 100%;       
-
-    .cc-about a,
-    .cc-statement-about {
-      @include cc-font;
-
-      @media (min-width: 768px) {
-        color: $color-light;
-      }
-    }  
+  width: 100%;
 }

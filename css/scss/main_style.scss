@@ -15,6 +15,7 @@ a {
 // Navbar styling
 
 .events-section .see-program a {
+
   @include see-program-font;
 }
 
@@ -25,6 +26,7 @@ a {
   background: $color-light;
 
   .nav-dropdown {
+
     .iconify {
       margin: 20px 0 0 30px;
       font-size: 33px;
@@ -41,7 +43,9 @@ a {
 
         @include partners-header-font;
       }
+
     }
+
   }
 
   .nav-dropdown:hover {
@@ -51,9 +55,11 @@ a {
   .nav-dropdown:hover .drop-content {
     display: flex;
   }
+
 }
 
 .nav-lg {
+
   ul {
     list-style: none;
   }
@@ -73,12 +79,14 @@ a {
     align-items: center;
 
     li {
-      
+
       @include min-font;
       color: $color-light;
       margin-right: 1rem;
     }
+
   }
+
 }
 
 .navbar-2 {
@@ -89,6 +97,7 @@ a {
   ul {
     width: 65%;
   }
+
 }
 
 // Front page section styling
@@ -99,14 +108,20 @@ a {
 
   @media (min-width: 768px) {
     padding: 3rem 15% 70px 15%;
-  }   
+  }
 
   h2 {
     @include date-font;
   }
+
 }
 
 // Event section styling
+
+.partners-logo img {
+  max-width: 5rem;
+  margin: 3%;
+}
 
 .events-section {
   width: 100%;
@@ -117,13 +132,16 @@ a {
   }
 
   .event-header {
+
     @include event-header-box;
+
     @include events-header-font;
   }
 
   .event-articles {
     padding-left: 5%;
     padding-right: 5%;
+
     @media (min-width: 768px) {
       display: flex;
       padding: 0 10% 12% 10%;
@@ -144,57 +162,65 @@ a {
         display: flex;
         justify-content: center;
         width: 18%;
+        text-align: center;
+        margin: 0;
 
         @media (min-width: 768px) {
           width: 100%;
           margin: 0.75rem;
-        }        
-        text-align: center;
-        margin: 0;
+        }
 
         img {
           width: 32px;
         }
+
       }
 
       h2 {
         width: 23%;
+        margin: 0;
 
         @media (min-width: 768px) {
           width: 100%;
-        }        
-        margin: 0;
+        }
 
         a {
-          
+
           @include event-type-font;
         }
+
       }
 
       p {
         width: 59%;
+        padding: 10px;
 
         @media (min-width: 768px) {
           width: 100%;
         }
-        padding: 10px;
 
         @include event-info-font;
       }
+
     }
+
   }
 
   .button-div {
     display: flex;
-    padding: 2rem;    
+    padding: 2rem;
+
     @media (min-width: 768px) {
       display: none;
     }
+
     .join-button {
+
       @include join-button;
       font-family: sans-serif;
       color: $color-light;
     }
+
   }
 
   .see-program {
@@ -203,11 +229,7 @@ a {
     width: 100%;
     text-align: center;
   }
-}
 
-.partners-logo img {
-  max-width: 5rem;
-  margin: 3%;
 }
 
 .artists {
@@ -216,7 +238,9 @@ a {
   padding: 0 5% 0 5%;
 
   .artists-header {
+
     @include artists-header-box;
+
     @include artists-header-font;
   }
 
@@ -229,10 +253,11 @@ a {
     }
 
     .artists-article {
+      margin-bottom: 3rem;
+
       @media (min-width: 768px) {
         width: 50%;
       }
-      margin-bottom: 3rem;
 
       .image {
         height: 100%;
@@ -253,8 +278,9 @@ a {
       }
 
       .artist-info {
+        
         h2 a {
-          
+
           @include artists-name;
           padding-bottom: 0.5rem;
         }
@@ -277,17 +303,9 @@ a {
     display: flex;
 
     button {
-      
+
       @include more-button;
-
-      p {
-        
-        @include more-button-font;
-      }
-
-      p::after {
-        content: ">";
-      }
+      @include more-button-font;      
     }
   }
 }
@@ -298,23 +316,31 @@ a {
   width: 100%;
 
   .partners {
+
     @include partners-box;
 
     @media (min-width: 768px) {
       height: 10rem;
     }
+
   }
+
   .copyright {
+
     @media (min-width: 768px) {
       height: 10rem;
-    }    
+    }
+
   }
+
 }
 
 .cc {
+
   @include cc-font;
 }
 
 .cc-statement {
+
   @include min-font;
 }

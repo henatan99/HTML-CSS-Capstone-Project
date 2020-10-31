@@ -10,6 +10,7 @@
   @media (min-width: 768px) {
     padding: 5% 15% 5% 15%;
   }
+
 }
 
 // Middle arrow
@@ -35,15 +36,16 @@
 
 .select-seat,
 .select-service {
-  
+
   @include ticket-border-box-1;
+  
   @include min-font;
   margin: 2rem;
 }
 
 .category-1,
 .category-2 {
-  
+
   @include ticket-border-box-2;
   margin: 1rem 0 1rem 0;
   display: flex;
