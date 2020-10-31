@@ -1,0 +1,198 @@
+@import "_mixins.scss";
+@import "_colors.scss";
+@import "_fonts.scss";
+
+// Front page section styling
+
+
+.front-about {
+  width: 100%;
+  text-align: center;
+  padding: 0 18px 40px 18px;
+
+  @media (min-width: 768px) {
+    padding: 3rem 15% 40px 15%;
+  }
+
+}
+
+.concert-title {
+  h1 a {
+    @include title-font;    
+  }
+}
+
+.concert-info {
+  @include box-border;
+  @include concert-info-font;
+  background-color: lighten($color: $color-light, $amount: 20%)
+}
+
+.contact {
+  width: 100%;
+  padding: 0 10% 0 10%;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  @include concert-info-font;
+}
+
+.logo {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  h2 {
+
+    @include logo-header-font;
+    margin-bottom: 1rem;
+  }
+
+  p {
+
+    @include concert-info-font;
+    margin-bottom: 2rem;
+  }
+
+  .logo-img {
+
+    @include logo-font;
+  }
+}
+
+.cc-about a {
+
+      @include cc-font;
+
+      @media (min-width: 768px) {
+        color: $color-light;
+      }
+} 
+
+.cc-statement-about {
+
+  @include cc-font;
+
+  @media (min-width: 768px) {
+    color: $color-light;
+  }
+
+}
+
+.upcoming {
+  width: 100%;
+  padding: 0 10% 0 10%;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding: 0 15% 0 15%;
+  }
+
+  .upcoming-title {
+
+    @include upcoming-header-font;
+    margin-bottom: 1rem;
+  }
+
+  .upcoming-info {
+    margin-bottom: 1rem;
+
+    @include concert-info-font;
+  }
+
+  .upcoming-articles-wrapper {
+
+    @media (min-width: 768px) {
+      display: flex;
+      margin-bottom: 4rem;
+    }
+
+    .upcoming-article {
+
+      @media (min-width: 768px) {
+        margin: 0.5rem;
+      }
+      background: $color-red;      
+      width: 100%;
+      height: 12rem;
+      object-fit: cover;
+      margin-bottom: 3%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        padding: 0.5rem;
+        a {
+
+          @include upcoming-date-font;
+        }
+
+      }
+
+      h2 {
+
+        a {
+
+          @include upcoming-place-font;
+        }
+        padding: 0.5rem;
+      }
+    }
+  }
+}
+
+.contact,
+.logo {
+  padding: 0 10% 0 10%;
+
+  @media (min-width: 768px) {
+    padding: 0 20% 0 20%;
+  }
+}
+
+@mixin partners-box{
+  width: 100%;
+  height: 13rem;
+  padding: 1rem 2rem 1rem 2rem;
+  background: $color-black;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.partners-about {
+  @include partners-box;
+}
+
+.partners-header {
+  width: 100%;
+
+  @include partners-header-font;
+}
+
+.partners-logo-about {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  img {
+    max-width: 5rem;
+  }
+}
+
+.copyright-about {
+  padding: 1rem;
+
+  @media (min-width: 768px) {
+    height: 7rem;
+    background: $color-black;
+  }
+
+}
+
+.footer-about {
+  width: 100%;
+}

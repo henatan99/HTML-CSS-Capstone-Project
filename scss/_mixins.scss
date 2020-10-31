@@ -1,0 +1,250 @@
+$coco-font: "sans-serif";
+$lato-font: "aerial";
+
+@import "_fonts.scss";
+@import "_colors.scss";
+
+@mixin p_text {
+  font-family: $coco-font;
+  font-size: 12px;
+}
+
+@mixin event-box {
+  width: 100%;
+  min-height: 15vh;
+  margin-bottom: 12px;
+  display: flex;
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+    width: auto;
+  }
+
+  align-items: center;
+}
+
+@mixin event-header-box {
+
+  @include event-box;
+  justify-content: center;
+}
+
+@mixin title-font {
+  font-size: $h-1;
+  color: $color-red;
+  font-weight: $font-900;
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin invite-font {
+  font-size: $h-3;
+  color: $color-red;  
+  font-weight: $font-100;
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin concert-info-font {
+  font-size: $h-7;
+  color: $color-black;
+  line-height: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin date-font {
+  font-size: $h-2;
+  color: lighten($color-black, 15%);
+  
+  font-weight: $font-700;
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin events-header-font {
+  font-size: $h-4;
+  color: $color-light;
+  font-weight: $font-500;
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin event-type-font {
+  font-size: $h-6;
+  color: $color-red;
+  line-height: 1rem;
+  font-weight: $font-600;
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin event-info-font {
+  font-size: $h-7;
+  color: $color-light;
+  line-height: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin join-button-font {
+  font-size: $h-5;
+  color: $color-light;
+  font-weight: $font-500;
+  line-height: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin min-font {
+  font-size: $h-8;
+  color: $color-black;
+  line-height: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin artists-name {
+  font-size: $h-5;
+  color: $color-black;
+  font-weight: $font-500;
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin artist-about-font {
+  font-size: $h-7;
+  color: $color-red;
+  line-height: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+
+@mixin box-border {
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
+@mixin join-button {
+  border: 1px solid;
+  width: 100%;
+  padding: 1.5rem 10% 1.5rem 10%;
+  margin: 0;
+  background: $color-red;
+}
+
+@mixin join-button-small {
+  border: 1px solid;
+  width: 100%;
+  padding: 0.5rem 5% 0.5rem 5%;
+  margin: 0;
+  background: $color-red;
+}
+
+@mixin artists-header-box {
+  @include event-header-box;
+}
+
+@mixin artists-header-font {
+
+  @include events-header-font;
+  color: $color-black;
+}
+
+@mixin more-button {
+  border: 1px solid $color-black;
+  width: 100%;
+  padding: 0.5rem 0 0.5rem 0;
+  margin: 0;
+  background: $color-light;
+}
+
+@mixin more-button-font {
+  font-size: $h-6;
+  color: $color-black;
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin see-program-font {
+  font-size: $h-6;
+  color: $color-light;
+  font-family: "Roboto", sans-serif;
+}
+
+// about page styling
+
+@mixin logo-header-font {
+  font-size: $h-5;
+  color: $color-black;
+  font-weight: $font-500;
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin logo-font {
+  font-size: $h-5;
+  color: $color-black;
+  font-weight: $font-500;
+  font-family: "Roboto", sans-serif;
+}
+
+// upcoming section about page
+
+@mixin upcoming-header-font {
+  font-size: $h-6;
+  color: $color-black;
+  font-weight: $font-500;
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin upcoming-date-font {
+  font-size: $h-5;
+  color: $color-light;
+  font-weight: $font-900;
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin upcoming-place-font {
+  font-size: $h-7;
+  color: $color-light;
+  font-weight: $font-900;
+  font-family: "Roboto", sans-serif;
+}
+
+//  partners section
+
+@mixin partners-header-font {
+  font-size: $h-5;
+  color: $color-light;
+  font-weight: $font-500;
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin cc-font {
+  font-size: $h-7;
+  color: $color-black;
+  font-weight: $font-700;
+  font-family: "Roboto", sans-serif;
+}
+
+// Ticket Page Stylings
+
+@mixin create-border-radius() {
+  @if variable-exists(base-radius) {
+    border-radius: $base-radius;
+  }
+
+  @else {
+    @error "Please define the variable '$base-radius'.";
+  }
+}
+
+$element-height: 2rem;
+$base-radius: $element-height * 0.5;
+
+@mixin ticket-border-box-1 {
+  height: $element-height;
+  border: 1px solid $color-black;
+
+  @include create-border-radius();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin ticket-border-box-2 {
+  height: 4rem;
+  border: 1px solid $color-black;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+}

@@ -12,18 +12,15 @@
   color: #ec5242;
   font-weight: 900;
   font-family: "Roboto", sans-serif; }
-.concert-title h3 {
-  font-size: 1.43rem;
-  color: #ec5242;
-  font-weight: 100;
-  font-family: "Roboto", sans-serif; }
 
 .concert-info {
-  border: 1px solid black;
+  border: 3px solid white;
+  border-radius: 5px;
   font-size: 0.704rem;
   color: #272a31;
   line-height: 1rem;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  background-color: white; }
 
 .contact {
   width: 100%;
@@ -290,8 +287,9 @@ a {
       color: #272a31;
       line-height: 1rem;
       font-family: "Roboto", sans-serif;
+      font-weight: 700;
       color: #d3d3d3;
-      margin-right: 1rem; }
+      margin-left: 1rem; }
 
 .navbar-2 {
   width: 100%;
@@ -300,15 +298,72 @@ a {
   .navbar-2 ul {
     width: 65%; }
 
+body {
+  width: 100%;
+  background-color: #d1c9c9;
+  background-image: url("../assets/images/custom-background-big.svg");
+  background-clip: content-box;
+  background-position: -400px -400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden; }
+
+.concert-invite-wrapper {
+  position: relative;
+  display: none; }
+  @media (min-width: 768px) {
+    .concert-invite-wrapper {
+      display: block; } }
+  .concert-invite-wrapper .concert-invite {
+    width: 100%;
+    background-color: inherit;
+    padding: 5px 18px 0 18px;
+    position: relative;
+    overflow: hidden;
+    background-color: #e0e0e0; }
+    .concert-invite-wrapper .concert-invite h3 {
+      font-size: 1.43rem;
+      color: #ec5242;
+      font-weight: 100;
+      font-family: "Roboto", sans-serif; }
+    @media (min-width: 768px) {
+      .concert-invite-wrapper .concert-invite {
+        display: block;
+        padding: 5rem 15% 0 15%; } }
+@keyframes slideshow1 {
+  0% {
+    left: 0; }
+  100% {
+    left: -100%; } }
+@keyframes slideshow2 {
+  0% {
+    left: 100%; }
+  100% {
+    left: 0; } }
+  .concert-invite-wrapper .slider-background1, .concert-invite-wrapper .slider-background2 {
+    background: url("../assets/images/slide-background.svg") repeat-x;
+    background-size: cover;
+    width: 100%;
+    height: 10rem;
+    position: absolute; }
+  .concert-invite-wrapper .slider-background1 {
+    top: 0;
+    left: 0;
+    animation: slideshow1 10s infinite; }
+  .concert-invite-wrapper .slider-background2 {
+    top: 0;
+    left: 100%;
+    animation: slideshow2 10s infinite; }
+
 .front {
   width: 100%;
   padding: 0 18px 70px 18px; }
   @media (min-width: 768px) {
     .front {
-      padding: 3rem 15% 70px 15%; } }
-  .front h2 {
+      padding: 0 15% 70px 15%; } }
+  .front .concert-date {
     font-size: 1.54rem;
-    color: #272a31;
+    color: #494f5c;
     font-weight: 700;
     font-family: "Roboto", sans-serif; }
 
@@ -345,7 +400,7 @@ a {
         display: flex;
         padding: 0 10% 12% 10%; } }
     .events-section .event-articles article {
-      background: #d3d3d3;
+      background-color: #3e424d;
       width: 100%;
       min-height: 15vh;
       margin-bottom: 12px;
@@ -388,7 +443,7 @@ a {
         width: 59%;
         padding: 10px;
         font-size: 0.704rem;
-        color: #272a31;
+        color: #d3d3d3;
         line-height: 1rem;
         font-family: "Roboto", sans-serif; }
         @media (min-width: 768px) {

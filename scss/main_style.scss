@@ -1,0 +1,418 @@
+/*# sourceMappingURL=main_style.scss.map */
+
+@import "_mixins.scss";
+@import "_colors.scss";
+@import "_fonts.scss";
+@import "_about_style.scss";
+@import "_tickets_style.scss";
+
+// General Styling
+
+a {
+  text-decoration: none;
+}
+
+// Navbar styling
+
+.events-section .see-program a {
+
+  @include see-program-font;
+}
+
+.navbar-mobile {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  background: $color-light;
+
+  .nav-dropdown {
+
+    .iconify {
+      margin: 20px 0 0 30px;
+      font-size: 33px;
+    }
+
+    .drop-content {
+      display: none;
+      padding-left: 30px;
+
+      a {
+        background: $color-black;
+        margin-right: 0.4rem;
+        padding: 0.4rem;
+
+        @include partners-header-font;
+      }
+
+    }
+
+  }
+
+  .nav-dropdown:hover {
+    cursor: pointer;
+  }
+
+  .nav-dropdown:hover .drop-content {
+    display: flex;
+  }
+
+}
+
+.nav-lg {
+
+  ul {
+    list-style: none;
+  }
+}
+
+.navbar-1 {
+  width: 100%;
+  height: 25px;
+  background: $color-black;
+
+  .navbar1-ul {
+    float: right;
+    margin-right: 15%;
+    height: 25px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    li {
+
+      @include min-font;
+      font-weight: $font-700;
+      color: $color-light;
+      margin-left: 1rem;
+    }
+
+  }
+
+}
+
+.navbar-2 {
+  width: 100%;
+  height: 50px;
+  padding: 0 15% 0 15%;
+
+  ul {
+    width: 65%;
+  }
+  
+}
+
+//main 
+
+body{
+  width: 100%;   
+  background-color: rgb(209, 201, 201);    
+  background-image: url("../assets/images/custom-background-big.svg");    
+  background-clip: content-box;
+  background-position: -400px -400px;
+  background-repeat: no-repeat;  
+  background-size: cover;  
+  overflow-x: hidden;
+}
+
+// Front page section styling
+.concert-invite-wrapper {
+  position: relative;
+  display: none;
+  @media (min-width: 768px) {
+    display: block;         
+    
+  }
+
+  .concert-invite{
+    width: 100%;   
+    background-color: inherit;
+    padding: 5px 18px 0 18px; 
+    position: relative;      
+    overflow: hidden;
+    background-color: lighten($color: $color-light, $amount: 5%); 
+    
+    h3 {
+      
+      @include invite-font;
+    }  
+    
+    @media (min-width: 768px) {
+      display: block;
+      padding: 5rem 15% 0 15%;        
+      
+    }
+  }
+  
+  @keyframes slideshow1 {
+    0%    { left: 0; }
+    100%  { left: -100%; }
+  }
+
+  @keyframes slideshow2 {
+    0%    { left: 100%; }
+    100%  { left: 0; }
+  }
+
+  .slider-background1, .slider-background2{
+    background: url("../assets/images/slide-background.svg") repeat-x;     
+    background-size: cover;             
+    width: 100%;
+    height: 10rem;   
+    position: absolute;    
+  }
+
+  .slider-background1 {
+    top: 0;
+    left: 0;
+    animation: slideshow1 10s infinite;
+  }
+
+  .slider-background2 {
+    top: 0;
+    left: 100%;
+    animation: slideshow2 10s infinite;
+  }
+}
+
+.front {
+  width: 100%;
+  padding: 0 18px 70px 18px;  
+
+  @media (min-width: 768px) {
+    padding: 0 15% 70px 15%;
+  } 
+
+  .concert-date {
+    @include date-font;    
+  }
+
+}
+
+// Event section styling
+
+.partners-logo img {
+  max-width: 5rem;
+  margin: 3%;
+}
+
+.events-section {
+  width: 100%;
+  background: $color-black;
+
+  @media (min-width: 768px) {
+    position: relative;
+  }
+
+  .event-header {
+
+    @include event-header-box;
+
+    @include events-header-font;
+  }
+
+  .event-articles {
+    padding-left: 5%;
+    padding-right: 5%;
+
+    @media (min-width: 768px) {
+      display: flex;
+      padding: 0 10% 12% 10%;
+    }
+
+    article {      
+      background-color: lighten($color: $color-black, $amount: 10%);
+
+      @include event-box;
+
+      @media (min-width: 768px) {
+        width: 20%;
+        margin: 0.2%;
+        text-align: center;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+        width: 18%;
+        text-align: center;
+        margin: 0;       
+
+        @media (min-width: 768px) {
+          width: 100%;
+          margin: 0.75rem;
+        }
+
+        img {
+          width: 32px;          
+        }
+
+      }
+
+      h2 {
+        width: 23%;
+        margin: 0;
+
+        @media (min-width: 768px) {
+          width: 100%;
+        }
+
+        a {
+
+          @include event-type-font;
+        }
+
+      }
+
+      p {
+        width: 59%;
+        padding: 10px;
+
+        @media (min-width: 768px) {
+          width: 100%;
+        }
+
+        @include event-info-font;
+      }
+
+    }
+
+  }
+
+  .button-div {
+    display: flex;
+    padding: 2rem;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    .join-button {
+
+      @include join-button;
+      font-family: sans-serif;
+      color: $color-light;
+    }
+
+  }
+
+  .see-program {
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+.artists {
+  width: 100%;
+  background: $color-light;
+  padding: 0 5% 0 5%;
+
+  .artists-header {
+
+    @include artists-header-box;
+
+    @include artists-header-font;
+  }
+
+  .artists-article-wrapper {
+    @media (min-width: 768px) {
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .artists-article {
+      margin-bottom: 3rem;
+
+      @media (min-width: 768px) {
+        width: 50%;
+      }
+
+      .image {
+        height: 100%;
+        position: relative;
+
+        .img-front {
+          position: relative;
+          z-index: 2;
+          padding: 10% 0 0 10%;
+        }
+
+        .img-back {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 65%;
+        }
+      }
+
+      .artist-info {
+        
+        h2 a {
+
+          @include artists-name;
+          padding-bottom: 0.5rem;
+        }
+
+        .about {
+          
+          @include artist-about-font;
+          padding-bottom: 1.2rem;
+        }
+
+        .story {
+          
+          @include min-font;
+        }
+      }
+    }
+  }
+
+  .button-more {
+    display: flex;
+
+    button {
+
+      @include more-button;
+      @include more-button-font;      
+    }
+  }
+}
+
+// Footer section
+
+.footer-main {
+  width: 100%;
+
+  .partners {
+
+    @include partners-box;
+
+    @media (min-width: 768px) {
+      height: 10rem;
+    }
+
+  }
+
+  .copyright {
+
+    @media (min-width: 768px) {
+      height: 10rem;
+    }
+
+  }
+
+}
+
+.cc {
+
+  @include cc-font;
+}
+
+.cc-statement {
+
+  @include min-font;
+}
