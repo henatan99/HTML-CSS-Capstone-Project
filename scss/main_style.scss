@@ -5,6 +5,7 @@
 @import "_fonts.scss";
 @import "_about_style.scss";
 @import "_tickets_style.scss";
+@import "_slider-background.scss";
 
 // General Styling
 
@@ -24,6 +25,7 @@ a {
   width: 100%;
   height: 20vh;
   background: $color-light;
+
 
   .nav-dropdown {
 
@@ -108,7 +110,7 @@ body{
   background-color: rgb(209, 201, 201);    
   background-image: url("../assets/images/custom-background-big.svg");    
   background-clip: content-box;
-  background-position: -400px -400px;
+  background-position: -30px -30px;
   background-repeat: no-repeat;  
   background-size: cover;  
   overflow-x: hidden;
@@ -116,11 +118,12 @@ body{
 
 // Front page section styling
 .concert-invite-wrapper {
-  position: relative;
+  position: relative; 
+  object-fit: contain; 
+  overflow: hidden;
   display: none;
   @media (min-width: 768px) {
-    display: block;         
-    
+    display: block;     
   }
 
   .concert-invite{
@@ -143,37 +146,8 @@ body{
       padding: 5rem 15% 0 15%;        
       
     }
-  }
-  
-  @keyframes slideshow1 {
-    0%    { left: 0; }
-    100%  { left: -100%; }
-  }
-
-  @keyframes slideshow2 {
-    0%    { left: 100%; }
-    100%  { left: 0; }
-  }
-
-  .slider-background1, .slider-background2{
-    background: url("../assets/images/slide-background.svg") repeat-x;     
-    background-size: cover;             
-    width: 100%;
-    height: 10rem;   
-    position: absolute;    
-  }
-
-  .slider-background1 {
-    top: 0;
-    left: 0;
-    animation: slideshow1 10s infinite;
-  }
-
-  .slider-background2 {
-    top: 0;
-    left: 100%;
-    animation: slideshow2 10s infinite;
-  }
+  }  
+ 
 }
 
 .front {
@@ -183,6 +157,17 @@ body{
   @media (min-width: 768px) {
     padding: 0 15% 70px 15%;
   } 
+
+  .concert-invite-mobile {
+    @media (min-width:768px) {
+      display: none;
+    }
+
+    h3 {
+      
+      @include invite-font;
+    }  
+  }
 
   .concert-date {
     @include date-font;    

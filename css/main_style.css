@@ -9,7 +9,7 @@
 
 .concert-title h1 a {
   font-size: 2.2rem;
-  color: #ec5242;
+  color: #f51a01;
   font-weight: 900;
   font-family: "Roboto", sans-serif; }
 
@@ -236,6 +236,32 @@
       line-height: 1rem;
       font-family: "Roboto", sans-serif; }
 
+@keyframes slideshow1 {
+  0% {
+    left: 0; }
+  100% {
+    left: -100%; } }
+@keyframes slideshow2 {
+  0% {
+    left: 100%; }
+  100% {
+    left: 0; } }
+.slider-background1, .slider-background2 {
+  background: url("../assets/images/slide-background.svg") repeat-x;
+  background-size: cover;
+  width: 100%;
+  height: 10rem;
+  position: absolute;
+  top: 0; }
+
+.slider-background1 {
+  left: 0;
+  animation: slideshow1 10s infinite; }
+
+.slider-background2 {
+  left: 100%;
+  animation: slideshow2 10s infinite; }
+
 a {
   text-decoration: none; }
 
@@ -303,13 +329,15 @@ body {
   background-color: #d1c9c9;
   background-image: url("../assets/images/custom-background-big.svg");
   background-clip: content-box;
-  background-position: -400px -400px;
+  background-position: -30px -30px;
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden; }
 
 .concert-invite-wrapper {
   position: relative;
+  object-fit: contain;
+  overflow: hidden;
   display: none; }
   @media (min-width: 768px) {
     .concert-invite-wrapper {
@@ -332,30 +360,6 @@ body {
       .concert-invite-wrapper .concert-invite {
         display: block;
         padding: 5rem 15% 0 15%; } }
-@keyframes slideshow1 {
-  0% {
-    left: 0; }
-  100% {
-    left: -100%; } }
-@keyframes slideshow2 {
-  0% {
-    left: 100%; }
-  100% {
-    left: 0; } }
-  .concert-invite-wrapper .slider-background1, .concert-invite-wrapper .slider-background2 {
-    background: url("../assets/images/slide-background.svg") repeat-x;
-    background-size: cover;
-    width: 100%;
-    height: 10rem;
-    position: absolute; }
-  .concert-invite-wrapper .slider-background1 {
-    top: 0;
-    left: 0;
-    animation: slideshow1 10s infinite; }
-  .concert-invite-wrapper .slider-background2 {
-    top: 0;
-    left: 100%;
-    animation: slideshow2 10s infinite; }
 
 .front {
   width: 100%;
@@ -363,6 +367,14 @@ body {
   @media (min-width: 768px) {
     .front {
       padding: 0 15% 70px 15%; } }
+  @media (min-width: 768px) {
+    .front .concert-invite-mobile {
+      display: none; } }
+  .front .concert-invite-mobile h3 {
+    font-size: 1.43rem;
+    color: #ec5242;
+    font-weight: 100;
+    font-family: "Roboto", sans-serif; }
   .front .concert-date {
     font-size: 1.54rem;
     color: #494f5c;

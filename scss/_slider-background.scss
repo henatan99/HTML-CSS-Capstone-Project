@@ -1,0 +1,29 @@
+@keyframes slideshow1 {
+    0%    { left: 0; }
+    100%  { left: -100%; }
+  }
+
+  @keyframes slideshow2 {
+    0%    { left: 100%; }
+    100%  { left: 0; }
+  }
+
+  .slider-background1, .slider-background2{
+    background: url("../assets/images/slide-background.svg") repeat-x;     
+    background-size: cover;             
+    width: 100%;   
+    height: 10rem;   
+    position: absolute;   
+    top: 0;     
+
+  }
+
+  .slider-background1 {
+    left: 0;
+    animation: slideshow1 10s infinite;
+  }
+
+  .slider-background2 {
+    left: 100%;
+    animation: slideshow2 10s infinite;
+  }
