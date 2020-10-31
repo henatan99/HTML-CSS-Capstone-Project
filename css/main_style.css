@@ -57,6 +57,24 @@
     font-weight: 500;
     font-family: "Roboto", sans-serif; }
 
+.cc-about a {
+  font-size: 0.704rem;
+  color: #272a31;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif; }
+  @media (min-width: 768px) {
+    .cc-about a {
+      color: #d3d3d3; } }
+
+.cc-statement-about {
+  font-size: 0.704rem;
+  color: #272a31;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif; }
+  @media (min-width: 768px) {
+    .cc-statement-about {
+      color: #d3d3d3; } }
+
 .upcoming {
   width: 100%;
   padding: 0 10% 0 10%;
@@ -149,16 +167,6 @@
 
 .footer-about {
   width: 100%; }
-  .footer-about .cc-about a,
-  .footer-about .cc-statement-about {
-    font-size: 0.704rem;
-    color: #272a31;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif; }
-    @media (min-width: 768px) {
-      .footer-about .cc-about a,
-      .footer-about .cc-statement-about {
-        color: #d3d3d3; } }
 
 .main-tickets {
   padding: 5%; }
@@ -304,6 +312,10 @@ a {
     font-weight: 700;
     font-family: "Roboto", sans-serif; }
 
+.partners-logo img {
+  max-width: 5rem;
+  margin: 3%; }
+
 .events-section {
   width: 100%;
   background: #272a31; }
@@ -402,10 +414,6 @@ a {
     width: 100%;
     text-align: center; }
 
-.partners-logo img {
-  max-width: 5rem;
-  margin: 3%; }
-
 .artists {
   width: 100%;
   background: #d3d3d3;
@@ -474,13 +482,10 @@ a {
       width: 100%;
       padding: 0.5rem 0 0.5rem 0;
       margin: 0;
-      background: #d3d3d3; }
-      .artists .button-more button p {
-        font-size: 1.056rem;
-        color: #272a31;
-        font-family: "Roboto", sans-serif; }
-      .artists .button-more button p::after {
-        content: ">"; }
+      background: #d3d3d3;
+      font-size: 1.056rem;
+      color: #272a31;
+      font-family: "Roboto", sans-serif; }
 
 .footer-main {
   width: 100%; }
