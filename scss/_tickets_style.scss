@@ -29,7 +29,15 @@
 
 .ticket-section,
 .vip-service {
-  padding: 2rem 0 2rem 0;
+  position: relative;
+  @include tickets-p-font;
+  padding: 2rem 0 2rem 0;  
+  
+}
+
+h1 {
+  @include tickets-font;
+  font-size: $h-3;
 }
 
 .section-elements-wrapper {
@@ -38,14 +46,16 @@
 
 .ticket-section {
   background: lighten($color: $color-light, $amount: 10%);
+  th {
+    @include tickets-font;
+  }
 }
 
 .select-seat,
 .select-service {
 
-  @include ticket-border-box-1;
+  @include ticket-border-box-1;  
   
-  @include min-font;
   margin: 2rem;
 }
 
@@ -61,6 +71,7 @@
     width: 100%;
     padding: 0.25rem 0 0.25rem 0;
     background: $color-light;
+    @include tickets-category-font;
   }
 
   .menu-category {
@@ -72,6 +83,9 @@
     
     .form-check {
       padding: 0.5rem 0 0 0;
+      .form-check-label {
+        @include tickets-font;
+      }
     }
 
   }

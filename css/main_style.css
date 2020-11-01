@@ -8,7 +8,7 @@
     font-size: 1.43rem;
     color: #ec5242;
     font-weight: 100;
-    font-family: "Roboto", sans-serif;
+    font-family: "Lato", sans-serif;
     position: relative;
     z-index: 1; }
 
@@ -24,7 +24,8 @@
   font-size: 2.2rem;
   color: #f51a01;
   font-weight: 900;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Cocogoose Pro Light", sans-serif;
+  line-height: 2.5rem; }
 
 .concert-info {
   border: 3px solid white;
@@ -32,7 +33,7 @@
   font-size: 0.704rem;
   color: #272a31;
   line-height: 1.2rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Cocogoose Pro Light", sans-serif;
   background-color: white; }
 
 .logo-sections-wrapper {
@@ -48,7 +49,7 @@
   font-size: 0.704rem;
   color: #272a31;
   line-height: 1.2rem;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Cocogoose Pro Light", sans-serif; }
 
 .logo {
   width: 100%;
@@ -64,7 +65,7 @@
     font-size: 0.704rem;
     color: #272a31;
     line-height: 1.2rem;
-    font-family: "Roboto", sans-serif;
+    font-family: "Cocogoose Pro Light", sans-serif;
     margin-bottom: 10%; }
   .logo .logo-img {
     font-size: 1.1rem;
@@ -112,7 +113,7 @@
     font-size: 0.704rem;
     color: #272a31;
     line-height: 1.2rem;
-    font-family: "Roboto", sans-serif; }
+    font-family: "Cocogoose Pro Light", sans-serif; }
   @media (min-width: 768px) {
     .upcoming .upcoming-articles-wrapper {
       display: flex;
@@ -210,26 +211,43 @@
 
 .ticket-section,
 .vip-service {
+  position: relative;
+  font-size: 0.704rem;
+  color: #272a31;
+  font-weight: 600;
+  line-height: 1rem;
+  font-family: "Cocogoose Pro Light", sans-serif;
   padding: 2rem 0 2rem 0; }
+
+h1 {
+  font-size: 1.056rem;
+  color: #272a31;
+  font-weight: 600;
+  line-height: 1rem;
+  font-family: "Cocogoose Pro Light", sans-serif;
+  font-size: 1.43rem; }
 
 .section-elements-wrapper {
   padding: 0 15% 0 15%; }
 
 .ticket-section {
   background: #ededed; }
+  .ticket-section th {
+    font-size: 1.056rem;
+    color: #272a31;
+    font-weight: 600;
+    line-height: 1rem;
+    font-family: "Cocogoose Pro Light", sans-serif; }
 
 .select-seat,
 .select-service {
   height: 2rem;
   border: 1px solid #272a31;
+  border-color: #d3d3d3;
   border-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.616rem;
-  color: #272a31;
-  line-height: 1rem;
-  font-family: "Roboto", sans-serif;
   margin: 2rem; }
 
 .category-1,
@@ -237,6 +255,7 @@
   height: 4rem;
   border: 1px solid #272a31;
   border-radius: 1px;
+  border-color: #d3d3d3;
   display: flex;
   align-items: center;
   margin: 1rem 0 1rem 0;
@@ -246,7 +265,12 @@
   .category-2 h2 {
     width: 100%;
     padding: 0.25rem 0 0.25rem 0;
-    background: #d3d3d3; }
+    background: #d3d3d3;
+    font-size: 1.056rem;
+    color: #272a31;
+    font-weight: 600;
+    line-height: 1rem;
+    font-family: "Lato", sans-serif; }
   .category-1 .menu-category,
   .category-2 .menu-category {
     width: 100%;
@@ -257,6 +281,13 @@
     .category-1 .menu-category .form-check,
     .category-2 .menu-category .form-check {
       padding: 0.5rem 0 0 0; }
+      .category-1 .menu-category .form-check .form-check-label,
+      .category-2 .menu-category .form-check .form-check-label {
+        font-size: 1.056rem;
+        color: #272a31;
+        font-weight: 600;
+        line-height: 1rem;
+        font-family: "Cocogoose Pro Light", sans-serif; }
 
 .button-div-ticket {
   display: flex;
@@ -275,7 +306,7 @@
         color: #d3d3d3;
         font-weight: 500;
         line-height: 1rem;
-        font-family: "Roboto", sans-serif; }
+        font-family: "Cocogoose Pro Light", sans-serif; }
 
 @keyframes slideshow1 {
   0% {
@@ -288,16 +319,24 @@
   100% {
     left: 0; } }
 .slider-background1, .slider-background2 {
-  background: url("../assets/images/slide-background.svg") repeat-x;
+  background: url("../assets/images/slider-425.svg") repeat-x;
   background-size: cover;
-  width: 800px;
+  width: 100%;
   height: 10rem;
   position: absolute;
   top: 1rem; }
   @media (min-width: 768px) {
     .slider-background1, .slider-background2 {
-      width: 100%;
-      top: 0; } }
+      background: url("../assets/images/slider-background-small.svg") repeat-x;
+      top: 0rem; } }
+
+.slider-background1 {
+  left: 0;
+  animation: slideshow1 10s infinite; }
+
+.slider-background2 {
+  left: 100%;
+  animation: slideshow2 10s infinite; }
 
 a {
   text-decoration: none; }
@@ -308,24 +347,29 @@ a {
   font-family: "Roboto", sans-serif; }
 
 .navbar-mobile {
-  position: relative;
+  position: fixed;
+  top: 0;
   width: 100%;
   height: 20vh;
-  background: #d3d3d3; }
-  .navbar-mobile .nav-dropdown .iconify {
-    margin: 20px 0 0 30px;
-    font-size: 33px; }
-  .navbar-mobile .nav-dropdown .drop-content {
-    display: none;
-    padding-left: 30px; }
-    .navbar-mobile .nav-dropdown .drop-content a {
-      background: #272a31;
-      margin-right: 0.4rem;
-      padding: 0.4rem;
-      font-size: 1.1rem;
-      color: #d3d3d3;
-      font-weight: 500;
-      font-family: "Roboto", sans-serif; }
+  background: #d3d3d3;
+  z-index: 10; }
+  .navbar-mobile .nav-dropdown {
+    position: relative;
+    z-index: 5; }
+    .navbar-mobile .nav-dropdown .iconify {
+      margin: 20px 0 0 30px;
+      font-size: 33px; }
+    .navbar-mobile .nav-dropdown .drop-content {
+      display: none;
+      padding-left: 30px; }
+      .navbar-mobile .nav-dropdown .drop-content a {
+        background: #272a31;
+        margin-right: 0.4rem;
+        padding: 0.4rem;
+        font-size: 1.1rem;
+        color: #d3d3d3;
+        font-weight: 500;
+        font-family: "Roboto", sans-serif; }
   .navbar-mobile .nav-dropdown:hover {
     cursor: pointer; }
   .navbar-mobile .nav-dropdown:hover .drop-content {
@@ -349,7 +393,7 @@ a {
       font-size: 0.616rem;
       color: #272a31;
       line-height: 1rem;
-      font-family: "Roboto", sans-serif;
+      font-family: "Cocogoose Pro Light", sans-serif;
       font-weight: 700;
       color: #d3d3d3;
       margin-left: 1rem; }
@@ -364,12 +408,24 @@ a {
 
 .main-home, .main-about {
   width: 100%;
-  background-image: url("../assets/images/custom-background-big.svg");
+  background-image: url("../assets/images/custom-background-big.png");
   background-clip: content-box;
-  background-position: -30px -30px;
+  background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  margin-top: 6.9rem; }
+  @media (min-width: 768px) {
+    .main-home, .main-about {
+      margin-top: 0; } }
+
+.tickets-main {
+  width: 100%;
+  overflow-x: hidden;
+  margin-top: 6.9rem; }
+  @media (min-width: 768px) {
+    .tickets-main {
+      margin-top: 0; } }
 
 .concert-invite-wrapper {
   position: relative;
@@ -390,7 +446,7 @@ a {
     font-size: 1.43rem;
     color: #ec5242;
     font-weight: 100;
-    font-family: "Roboto", sans-serif;
+    font-family: "Lato", sans-serif;
     position: relative;
     z-index: 1; }
   @media (min-width: 768px) {
@@ -411,12 +467,12 @@ a {
     font-size: 1.43rem;
     color: #ec5242;
     font-weight: 100;
-    font-family: "Roboto", sans-serif; }
+    font-family: "Lato", sans-serif; }
   .front .concert-date {
     font-size: 1.54rem;
     color: #494f5c;
     font-weight: 700;
-    font-family: "Roboto", sans-serif; }
+    font-family: "Cocogoose Pro Light", sans-serif; }
 
 .partners-logo img {
   max-width: 5rem;
@@ -438,7 +494,7 @@ a {
     font-size: 1.32rem;
     color: #d3d3d3;
     font-weight: 500;
-    font-family: "Roboto", sans-serif; }
+    font-family: "Cocogoose Pro Light", sans-serif; }
     @media (min-width: 768px) {
       .events-section .event-header {
         flex-direction: column;
@@ -490,14 +546,14 @@ a {
           color: #ec5242;
           line-height: 1rem;
           font-weight: 600;
-          font-family: "Roboto", sans-serif; }
+          font-family: "Cocogoose Pro Light", sans-serif; }
       .events-section .event-articles article p {
         width: 59%;
         padding: 10px;
         font-size: 0.704rem;
         color: #d3d3d3;
         line-height: 1rem;
-        font-family: "Roboto", sans-serif; }
+        font-family: "Cocogoose Pro Light", sans-serif; }
         @media (min-width: 768px) {
           .events-section .event-articles article p {
             width: 100%; } }
@@ -535,7 +591,7 @@ a {
     font-size: 1.32rem;
     color: #d3d3d3;
     font-weight: 500;
-    font-family: "Roboto", sans-serif;
+    font-family: "Cocogoose Pro Light", sans-serif;
     color: #272a31; }
     @media (min-width: 768px) {
       .artists .artists-header {
@@ -568,20 +624,20 @@ a {
       font-size: 1.1rem;
       color: #272a31;
       font-weight: 500;
-      font-family: "Roboto", sans-serif;
+      font-family: "Cocogoose Pro Light", sans-serif;
       padding-bottom: 0.5rem; }
     .artists .artists-article-wrapper .artists-article .artist-info .about {
       font-size: 0.704rem;
       color: #ec5242;
       line-height: 1rem;
-      font-family: "Roboto", sans-serif;
+      font-family: "Cocogoose Pro Light", sans-serif;
       font-style: italic;
       padding-bottom: 1.2rem; }
     .artists .artists-article-wrapper .artists-article .artist-info .story {
       font-size: 0.616rem;
       color: #272a31;
       line-height: 1rem;
-      font-family: "Roboto", sans-serif; }
+      font-family: "Cocogoose Pro Light", sans-serif; }
   .artists .button-more {
     display: flex; }
     .artists .button-more button {
@@ -621,6 +677,6 @@ a {
   font-size: 0.616rem;
   color: #272a31;
   line-height: 1rem;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Cocogoose Pro Light", sans-serif; }
 
 /*# sourceMappingURL=main_style.css.map */

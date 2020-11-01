@@ -1,4 +1,4 @@
-$roboto: "Roboto", sans-serif;
+
 $font-size: 2.2rem;
 $h-1: $font-size;
 $h-2: $font-size * 0.7;
@@ -18,5 +18,16 @@ $font-200: 200;
 $font-100: 100;
 
 @media (min-width: 768px) {
-  $font-size: 2.5rem;
+$font-size: 3rem;
+$h-1: $font-size;
+$h-2: $font-size * 0.7;
+$h-3: $font-size * 0.65;
+$h-4: $font-size * 0.6;
+$h-5: $font-size * 0.5;
+$h-6: $font-size * 0.48;
+$h-7: $font-size * 0.32;
+$h-8: $font-size * 0.28;
 }
+
+$font-lato: 'Lato', sans-serif;
+$font-coco: 'Cocogoose Pro Light', sans-serif; 

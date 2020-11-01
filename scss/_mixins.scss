@@ -1,5 +1,3 @@
-$coco-font: "sans-serif";
-$lato-font: "aerial";
 
 @import "_fonts.scss";
 @import "_colors.scss";
@@ -33,36 +31,41 @@ $lato-font: "aerial";
   font-size: $h-1;
   color: $color-redish;
   font-weight: $font-900;
-  font-family: "Roboto", sans-serif;
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-coco;
+  line-height: 2.5rem;
 }
 
 @mixin invite-font {
   font-size: $h-3;
   color: $color-red;  
   font-weight: $font-100;
-  font-family: "Roboto", sans-serif;
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-lato;
 }
 
 @mixin concert-info-font {
   font-size: $h-7;
   color: $color-black;
   line-height: 1.2rem;
-  font-family: "Roboto", sans-serif;
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-coco;
 }
 
 @mixin date-font {
   font-size: $h-2;
   color: lighten($color-black, 15%);
-  
   font-weight: $font-700;
-  font-family: "Roboto", sans-serif;
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-coco;
 }
 
 @mixin events-header-font {
   font-size: $h-4;
   color: $color-light;
   font-weight: $font-500;
-  font-family: "Roboto", sans-serif;
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-coco;
 }
 
 @mixin event-type-font {
@@ -70,14 +73,16 @@ $lato-font: "aerial";
   color: $color-red;
   line-height: 1rem;
   font-weight: $font-600;
-  font-family: "Roboto", sans-serif;
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-coco;
 }
 
 @mixin event-info-font {
   font-size: $h-7;
   color: $color-light;
   line-height: 1rem;
-  font-family: "Roboto", sans-serif;
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-coco;
 }
 
 @mixin join-button-font {
@@ -85,29 +90,60 @@ $lato-font: "aerial";
   color: $color-light;
   font-weight: $font-500;
   line-height: 1rem;
-  font-family: "Roboto", sans-serif;
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-coco;
 }
 
 @mixin min-font {
-  font-size: $h-8;
+  font-size: $h-8; 
   color: $color-black;
   line-height: 1rem;
-  font-family: "Roboto", sans-serif;
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-coco;
 }
 
 @mixin artists-name {
   font-size: $h-5;
   color: $color-black;
   font-weight: $font-500;
-  font-family: "Roboto", sans-serif;
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-coco;
 }
 
 @mixin artist-about-font {
   font-size: $h-7;
   color: $color-red;
   line-height: 1rem;
-  font-family: "Roboto", sans-serif;
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-coco;
   font-style: italic;
+}
+
+@mixin tickets-font {
+  font-size: $h-6;
+  color: $color-black;
+  font-weight: 600;
+  line-height: 1rem;
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-coco;  
+}
+
+@mixin tickets-category-font {
+  font-size: $h-6;
+  color: $color-black;
+  font-weight: 600;
+  line-height: 1rem;
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-lato;  
+}
+
+@mixin tickets-p-font {
+  font-size: $h-7;
+  color: $color-black;
+  font-weight: 600;
+  line-height: 1rem;
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-coco;  
 }
 
 @mixin box-border {
@@ -234,6 +270,7 @@ $base-radius: $element-height * 0.5;
 @mixin ticket-border-box-1 {
   height: $element-height;
   border: 1px solid $color-black;
+  border-color: $color-light;
 
   @include create-border-radius();
   display: flex;
@@ -245,6 +282,7 @@ $base-radius: $element-height * 0.5;
   height: 4rem;
   border: 1px solid $color-black;
   border-radius: 1px;
+  border-color: $color-light;
   display: flex;
   align-items: center;
 }
