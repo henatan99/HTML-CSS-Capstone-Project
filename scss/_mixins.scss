@@ -46,7 +46,7 @@ $lato-font: "aerial";
 @mixin concert-info-font {
   font-size: $h-7;
   color: $color-black;
-  line-height: 1rem;
+  line-height: 1.2rem;
   font-family: "Roboto", sans-serif;
 }
 
@@ -247,4 +247,14 @@ $base-radius: $element-height * 0.5;
   border-radius: 1px;
   display: flex;
   align-items: center;
+}
+
+// upcoming
+
+$base-opacity: 0.2;
+$base-color: $color-red;
+
+@mixin opaque-background {
+  background-color: rgba($color: $base-color, $alpha: $base-opacity);
+
 }

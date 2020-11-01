@@ -4,13 +4,11 @@
 
 //main section
 
-.main-tickets {
-  padding: 5%;
-
-  @media (min-width: 768px) {
-    padding: 5% 15% 5% 15%;
-  }
-
+.tickets-main {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  text-align: center;
 }
 
 // Middle arrow
@@ -34,6 +32,14 @@
   padding: 2rem 0 2rem 0;
 }
 
+.section-elements-wrapper {
+  padding: 0 15% 0 15%;
+}
+
+.ticket-section {
+  background: lighten($color: $color-light, $amount: 10%);
+}
+
 .select-seat,
 .select-service {
 
@@ -49,11 +55,12 @@
   @include ticket-border-box-2;
   margin: 1rem 0 1rem 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
 
   h2 {
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+    width: 100%;
+    padding: 0.25rem 0 0.25rem 0;
+    background: $color-light;
   }
 
   .menu-category {
@@ -61,6 +68,12 @@
     list-style: none;
     display: flex;
     justify-content: space-around;
+    align-items: center;   
+    
+    .form-check {
+      padding: 0.5rem 0 0 0;
+    }
+
   }
 }
 
@@ -68,14 +81,17 @@
 
 .button-div-ticket {
   display: flex;
-  padding: 0;
-  margin: 0 3rem 0 3rem;
+  justify-content: center;
+  width: 100%;
+  .button-wrapper {
+    width: 20rem;
+    .button-ticket {
+      @include join-button-small;
 
-  .button-ticket {
-    @include join-button-small;
-
-    a {
-      @include join-button-font;
+      a {
+        @include join-button-font;
+      }
     }
   }
+  
 }

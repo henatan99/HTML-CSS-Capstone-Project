@@ -1,4 +1,17 @@
 /*# sourceMappingURL=main_style.scss.map */
+.concert-invite-about {
+  width: 100%;
+  padding: 5px 18px 0 18px;
+  position: relative;
+  overflow: hidden; }
+  .concert-invite-about h3 {
+    font-size: 1.43rem;
+    color: #ec5242;
+    font-weight: 100;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    z-index: 1; }
+
 .front-about {
   width: 100%;
   text-align: center;
@@ -18,9 +31,14 @@
   border-radius: 5px;
   font-size: 0.704rem;
   color: #272a31;
-  line-height: 1rem;
+  line-height: 1.2rem;
   font-family: "Roboto", sans-serif;
   background-color: white; }
+
+.logo-sections-wrapper {
+  width: 100%;
+  background: #e0e0e0;
+  padding: 5% 0 5% 0; }
 
 .contact {
   width: 100%;
@@ -29,7 +47,7 @@
   margin-bottom: 2rem;
   font-size: 0.704rem;
   color: #272a31;
-  line-height: 1rem;
+  line-height: 1.2rem;
   font-family: "Roboto", sans-serif; }
 
 .logo {
@@ -41,18 +59,21 @@
     color: #272a31;
     font-weight: 500;
     font-family: "Roboto", sans-serif;
-    margin-bottom: 1rem; }
+    padding: 5% 0 5% 0; }
   .logo p {
     font-size: 0.704rem;
     color: #272a31;
-    line-height: 1rem;
+    line-height: 1.2rem;
     font-family: "Roboto", sans-serif;
-    margin-bottom: 2rem; }
+    margin-bottom: 10%; }
   .logo .logo-img {
     font-size: 1.1rem;
     color: #272a31;
     font-weight: 500;
-    font-family: "Roboto", sans-serif; }
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+    padding: 7% 0 7% 0;
+    margin-bottom: 10%; }
 
 .cc-about a {
   font-size: 0.704rem;
@@ -74,8 +95,9 @@
 
 .upcoming {
   width: 100%;
-  padding: 0 10% 0 10%;
-  text-align: center; }
+  padding: 0 10% 3rem 10%;
+  text-align: center;
+  background: white; }
   @media (min-width: 768px) {
     .upcoming {
       padding: 0 15% 0 15%; } }
@@ -84,19 +106,18 @@
     color: #272a31;
     font-weight: 500;
     font-family: "Roboto", sans-serif;
-    margin-bottom: 1rem; }
+    padding: 5% 0 5% 0; }
   .upcoming .upcoming-info {
     margin-bottom: 1rem;
     font-size: 0.704rem;
     color: #272a31;
-    line-height: 1rem;
+    line-height: 1.2rem;
     font-family: "Roboto", sans-serif; }
   @media (min-width: 768px) {
     .upcoming .upcoming-articles-wrapper {
       display: flex;
-      margin-bottom: 4rem; } }
+      padding-bottom: 10%; } }
   .upcoming .upcoming-articles-wrapper .upcoming-article {
-    background: #ec5242;
     width: 100%;
     height: 12rem;
     object-fit: cover;
@@ -122,6 +143,12 @@
         color: #d3d3d3;
         font-weight: 900;
         font-family: "Roboto", sans-serif; }
+  .upcoming .upcoming-articles-wrapper .upcoming-1 {
+    background-color: rgba(236, 82, 66, 0.2);
+    background-image: url("../assets/images/thailand.jpg"); }
+  .upcoming .upcoming-articles-wrapper .upcoming-2 {
+    background-color: rgba(236, 82, 66, 0.2);
+    background-image: url("../assets/images/london.jpg"); }
 
 .contact,
 .logo {
@@ -137,10 +164,11 @@
   padding: 1rem 2rem 1rem 2rem;
   background: #272a31;
   text-align: center;
-  line-height: 2rem; }
+  line-height: 5%; }
 
 .partners-header {
   width: 100%;
+  padding: 1.5rem;
   font-size: 1.1rem;
   color: #d3d3d3;
   font-weight: 500;
@@ -153,7 +181,7 @@
   flex-flow: row wrap;
   justify-content: center; }
   .partners-logo-about img {
-    max-width: 5rem; }
+    max-width: 4.5rem; }
 
 .copyright-about {
   padding: 1rem; }
@@ -165,11 +193,11 @@
 .footer-about {
   width: 100%; }
 
-.main-tickets {
-  padding: 5%; }
-  @media (min-width: 768px) {
-    .main-tickets {
-      padding: 5% 15% 5% 15%; } }
+.tickets-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
 
 .arrow {
   width: 100%;
@@ -183,6 +211,12 @@
 .ticket-section,
 .vip-service {
   padding: 2rem 0 2rem 0; }
+
+.section-elements-wrapper {
+  padding: 0 15% 0 15%; }
+
+.ticket-section {
+  background: #ededed; }
 
 .select-seat,
 .select-service {
@@ -210,31 +244,38 @@
   flex-direction: column; }
   .category-1 h2,
   .category-2 h2 {
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem; }
+    width: 100%;
+    padding: 0.25rem 0 0.25rem 0;
+    background: #d3d3d3; }
   .category-1 .menu-category,
   .category-2 .menu-category {
     width: 100%;
     list-style: none;
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    align-items: center; }
+    .category-1 .menu-category .form-check,
+    .category-2 .menu-category .form-check {
+      padding: 0.5rem 0 0 0; }
 
 .button-div-ticket {
   display: flex;
-  padding: 0;
-  margin: 0 3rem 0 3rem; }
-  .button-div-ticket .button-ticket {
-    border: 1px solid;
-    width: 100%;
-    padding: 0.5rem 5% 0.5rem 5%;
-    margin: 0;
-    background: #ec5242; }
-    .button-div-ticket .button-ticket a {
-      font-size: 1.1rem;
-      color: #d3d3d3;
-      font-weight: 500;
-      line-height: 1rem;
-      font-family: "Roboto", sans-serif; }
+  justify-content: center;
+  width: 100%; }
+  .button-div-ticket .button-wrapper {
+    width: 20rem; }
+    .button-div-ticket .button-wrapper .button-ticket {
+      border: 1px solid;
+      width: 100%;
+      padding: 0.5rem 5% 0.5rem 5%;
+      margin: 0;
+      background: #ec5242; }
+      .button-div-ticket .button-wrapper .button-ticket a {
+        font-size: 1.1rem;
+        color: #d3d3d3;
+        font-weight: 500;
+        line-height: 1rem;
+        font-family: "Roboto", sans-serif; }
 
 @keyframes slideshow1 {
   0% {
@@ -249,18 +290,14 @@
 .slider-background1, .slider-background2 {
   background: url("../assets/images/slide-background.svg") repeat-x;
   background-size: cover;
-  width: 100%;
+  width: 800px;
   height: 10rem;
   position: absolute;
-  top: 0; }
-
-.slider-background1 {
-  left: 0;
-  animation: slideshow1 10s infinite; }
-
-.slider-background2 {
-  left: 100%;
-  animation: slideshow2 10s infinite; }
+  top: 1rem; }
+  @media (min-width: 768px) {
+    .slider-background1, .slider-background2 {
+      width: 100%;
+      top: 0; } }
 
 a {
   text-decoration: none; }
@@ -320,13 +357,13 @@ a {
 .navbar-2 {
   width: 100%;
   height: 50px;
-  padding: 0 15% 0 15%; }
+  padding: 0 15% 0 15%;
+  background: white; }
   .navbar-2 ul {
     width: 65%; }
 
-body {
+.main-home, .main-about {
   width: 100%;
-  background-color: #d1c9c9;
   background-image: url("../assets/images/custom-background-big.svg");
   background-clip: content-box;
   background-position: -30px -30px;
@@ -342,24 +379,24 @@ body {
   @media (min-width: 768px) {
     .concert-invite-wrapper {
       display: block; } }
-  .concert-invite-wrapper .concert-invite {
-    width: 100%;
-    background-color: inherit;
-    padding: 5px 18px 0 18px;
+
+.concert-invite {
+  width: 100%;
+  padding: 5px 18px 0 18px;
+  position: relative;
+  overflow: hidden;
+  background-color: #e0e0e0; }
+  .concert-invite h3 {
+    font-size: 1.43rem;
+    color: #ec5242;
+    font-weight: 100;
+    font-family: "Roboto", sans-serif;
     position: relative;
-    overflow: hidden;
-    background-color: #e0e0e0; }
-    .concert-invite-wrapper .concert-invite h3 {
-      font-size: 1.43rem;
-      color: #ec5242;
-      font-weight: 100;
-      font-family: "Roboto", sans-serif;
-      position: relative;
-      z-index: 1; }
-    @media (min-width: 768px) {
-      .concert-invite-wrapper .concert-invite {
-        display: block;
-        padding: 5rem 15% 0 15%; } }
+    z-index: 1; }
+  @media (min-width: 768px) {
+    .concert-invite {
+      display: block;
+      padding: 5rem 15% 0 15%; } }
 
 .front {
   width: 100%;
@@ -555,7 +592,8 @@ body {
       background: #d3d3d3;
       font-size: 1.056rem;
       color: #272a31;
-      font-family: "Roboto", sans-serif; }
+      font-family: "Roboto", sans-serif;
+      margin-bottom: 2rem; }
 
 .footer-main {
   width: 100%; }
@@ -565,7 +603,7 @@ body {
     padding: 1rem 2rem 1rem 2rem;
     background: #272a31;
     text-align: center;
-    line-height: 2rem; }
+    line-height: 5%; }
     @media (min-width: 768px) {
       .footer-main .partners {
         height: 10rem; } }

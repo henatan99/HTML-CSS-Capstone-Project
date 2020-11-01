@@ -11,19 +11,24 @@
   .slider-background1, .slider-background2{
     background: url("../assets/images/slide-background.svg") repeat-x;     
     background-size: cover;             
-    width: 100%;   
+    width: 800px;       
     height: 10rem;   
     position: absolute;   
-    top: 0;     
+    top: 1rem; 
+    @media (min-width:768px) {
+      width: 100%;
+      top: 0;
+    }    
+
 
   }
 
-  .slider-background1 {
-    left: 0;
-    animation: slideshow1 10s infinite;
-  }
+  // .slider-background1 {
+  //   left: 0;
+  //   animation: slideshow1 10s infinite;
+  // }
 
-  .slider-background2 {
-    left: 100%;
-    animation: slideshow2 10s infinite;
-  }
+  // .slider-background2 {
+  //   left: 100%;
+  //   animation: slideshow2 10s infinite;
+  // }

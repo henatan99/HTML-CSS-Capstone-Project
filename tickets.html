@@ -62,30 +62,33 @@
 
     <main class="tickets-main text-center">
       <section class="ticket-section">
-        <h1>Pick your Ticket</h1>
-        <p class="select-seat">Please select your seat</p>
-        <table class="table table-bordered">
-          <tr>
-            <th>Ticket</th>
-            <th>Day1</th>
-            <th>Day2</th>
-          </tr>
-          <tr>
-            <th>Normal</th>
-            <th><a href="#">&#163; 60 </a></th>
-            <th><a href="#">&#163; 80 </a></th>
-          </tr>
-          <tr>
-            <th>Students</th>
-            <th><a href="#">&#163; 40 </a></th>
-            <th><a href="#">&#163; 60 </a></th>
-          </tr>
-          <tr>
-            <th>VIP</th>
-            <th><a href="#">&#163; 150 </a></th>
-            <th><a href="#">&#163; 200 </a></th>
-          </tr>
-        </table>
+        <div class="section-elements-wrapper">
+          <h1>Pick your Ticket</h1>
+          <p class="select-seat">Please select your seat</p>
+          <table class="table table-bordered">
+            <tr>
+              <th>Ticket</th>
+              <th>Day1</th>
+              <th>Day2</th>
+            </tr>
+            <tr>
+              <th>Normal</th>
+              <th><a href="#">&#163; 60 </a></th>
+              <th><a href="#">&#163; 80 </a></th>
+            </tr>
+            <tr>
+              <th>Students</th>
+              <th><a href="#">&#163; 40 </a></th>
+              <th><a href="#">&#163; 60 </a></th>
+            </tr>
+            <tr>
+              <th>VIP</th>
+              <th><a href="#">&#163; 150 </a></th>
+              <th><a href="#">&#163; 200 </a></th>
+            </tr>
+          </table>
+        </div>
+        
       </section>
 
       <div class="arrow">
@@ -97,32 +100,55 @@
       </div>
 
       <section class="vip-service">
-        <h1>Select VIP Services</h1>
-        <p class="select-service">
-          Please select the VIP services of your choice below
-        </p>
-        <div class="category-1">
-          <h2>Category-1</h2>
-          <ul class="menu-category">
-            <li>Menu 1</li>
-            <li>Menu 2</li>
-            <li>Menu 3</li>
-          </ul>
+        <div class="section-elements-wrapper">
+          <h1>Select VIP Services</h1>
+          <p class="select-service">
+            Please select the VIP services of your choice below
+          </p>
+          <div class="category-1">
+            <h2>Category-1</h2>
+            <div class="menu-category">
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                <label class="form-check-label" for="materialUnchecked">Menu 1</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                <label class="form-check-label" for="materialUnchecked">Menu 2</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                <label class="form-check-label" for="materialUnchecked">Menu 3</label>
+              </div>
+            </div>            
+          </div>
+          <div class="category-2">
+            <h2>Category-2</h2>
+            <div class="menu-category">
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                <label class="form-check-label" for="materialUnchecked">Menu 1</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                <label class="form-check-label" for="materialUnchecked">Menu 2</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                <label class="form-check-label" for="materialUnchecked">Menu 3</label>
+              </div>
+            </div>            
+          </div>
         </div>
-        <div class="category-1">
-          <h2>Category-1</h2>
-          <ul class="menu-category">
-            <li>Menu 1</li>
-            <li>Menu 2</li>
-            <li>Menu 3</li>
-          </ul>
-        </div>
-      </section>
+        
+      </section>      
 
       <div class="button-div-ticket">
-        <button class="button-ticket" role="button">
-          Submit Request
-        </button>
+        <div class="button-wrapper">
+          <button class="button-ticket" role="button">
+            Submit Request
+          </button>
+        </div>
       </div>
     </main>
 
