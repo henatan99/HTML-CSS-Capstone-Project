@@ -6,17 +6,17 @@
 @import "_about_style.scss";
 @import "_tickets_style.scss";
 @import "_slider-background.scss";
+@import "_typography.scss";
 
 // General Styling
 
 a {
   text-decoration: none;
-} 
+}
 
 // Navbar styling
 
 .events-section .see-program a {
-
   @include see-program-font;
 }
 
@@ -27,7 +27,7 @@ a {
   height: 20vh;
   background: $color-light;
   z-index: 10;
-  
+
   .nav-dropdown {
     position: relative;
     z-index: 5;
@@ -47,9 +47,7 @@ a {
 
         @include partners-header-font;
       }
-
     }
-
   }
 
   .nav-dropdown:hover {
@@ -59,11 +57,9 @@ a {
   .nav-dropdown:hover .drop-content {
     display: flex;
   }
-
 }
 
 .nav-lg {
-
   ul {
     list-style: none;
   }
@@ -83,15 +79,12 @@ a {
     align-items: center;
 
     li {
-
       @include min-font;
       font-weight: $font-700;
       color: $color-light;
       margin-left: 1rem;
     }
-
   }
-
 }
 
 .navbar-2 {
@@ -104,90 +97,89 @@ a {
   ul {
     width: 65%;
   }
-  
 }
 
-//main 
+//main
 
-.main-home, .main-about{
-  width: 100%;         
-  background-image: url("../assets/images/custom-background-big.png");    
+.main-home,
+.main-about {
+  width: 100%;
+  background-image: url("../assets/images/custom-background-big.png");
   background-clip: content-box;
   background-position: 0 0;
-  background-repeat: no-repeat;  
-  background-size: cover;  
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow-x: hidden;
   margin-top: 6.9rem;
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     margin-top: 0;
   }
 }
 
-.tickets-main {  
+.tickets-main {
   width: 100%;
   overflow-x: hidden;
   margin-top: 6.9rem;
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     margin-top: 0;
   }
 }
 
 // Front page section styling
 .concert-invite-wrapper {
-  position: relative; 
-  object-fit: contain; 
+  position: relative;
+  object-fit: contain;
   overflow: hidden;
   display: none;
   @media (min-width: 768px) {
-    display: block;     
-  }   
- 
+    display: block;
+  }
 }
 
-.concert-invite{
-  width: 100%;  
-  padding: 5px 18px 0 18px; 
-  position: relative;      
+.concert-invite {
+  width: 100%;
+  padding: 5px 18px 0 18px;
+  position: relative;
   overflow: hidden;
-  background-color: lighten($color: $color-light, $amount: 5%); 
-  
+  background-color: lighten($color: $color-light, $amount: 5%);
+
   h3 {
-    
     @include invite-font;
     position: relative;
-    z-index: 1;
-  }  
-  
+    z-index: 10;
+  }
+
   @media (min-width: 768px) {
     display: block;
-    padding: 5rem 15% 0 15%;        
-    
+    padding: 5rem 15% 0 15%;
   }
-}  
+}
 
 .front {
   width: 100%;
-  padding: 0 18px 70px 18px;  
+  padding: 0 18px 70px 18px;
 
   @media (min-width: 768px) {
     padding: 0 15% 70px 15%;
-  } 
+  }
 
   .concert-invite-mobile {
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       display: none;
     }
 
     h3 {
-      
       @include invite-font;
-    }  
+    }
   }
 
   .concert-date {
-    @include date-font;    
+    @include date-font;
   }
 
+  .concert-place {
+    @include place-font;
+  }
 }
 
 // Event section styling
@@ -206,7 +198,6 @@ a {
   }
 
   .event-header {
-
     @include event-header-box;
 
     @include events-header-font;
@@ -221,7 +212,7 @@ a {
       padding: 0 10% 12% 10%;
     }
 
-    article {      
+    article {
       background-color: lighten($color: $color-black, $amount: 10%);
 
       @include event-box;
@@ -237,7 +228,7 @@ a {
         justify-content: center;
         width: 18%;
         text-align: center;
-        margin: 0;       
+        margin: 0;
 
         @media (min-width: 768px) {
           width: 100%;
@@ -245,10 +236,9 @@ a {
         }
 
         img {
-          width: 32px; 
-          height: 32px;         
+          width: 32px;
+          height: 32px;
         }
-
       }
 
       h2 {
@@ -260,10 +250,8 @@ a {
         }
 
         a {
-
           @include event-type-font;
         }
-
       }
 
       p {
@@ -276,13 +264,12 @@ a {
 
         @include event-info-font;
       }
-
     }
-
   }
 
   .button-div {
     display: flex;
+    justify-content: center;
     padding: 2rem;
 
     @media (min-width: 768px) {
@@ -290,12 +277,11 @@ a {
     }
 
     .join-button {
-
       @include join-button;
       font-family: sans-serif;
       color: $color-light;
+      max-width: 20rem;
     }
-
   }
 
   .see-program {
@@ -304,7 +290,6 @@ a {
     width: 100%;
     text-align: center;
   }
-
 }
 
 .artists {
@@ -313,7 +298,6 @@ a {
   padding: 0 5% 0 5%;
 
   .artists-header {
-
     @include artists-header-box;
 
     @include artists-header-font;
@@ -353,21 +337,17 @@ a {
       }
 
       .artist-info {
-        
         h2 a {
-
           @include artists-name;
           padding-bottom: 0.5rem;
         }
 
         .about {
-          
           @include artist-about-font;
-          padding-bottom: 1.2rem;
+          padding: 0.5rem 0 1.2rem 0;
         }
 
         .story {
-          
           @include min-font;
         }
       }
@@ -378,10 +358,9 @@ a {
     display: flex;
 
     button {
-
       @include more-button;
-      @include more-button-font;   
-      margin-bottom: 2rem;   
+      @include more-button-font;
+      margin-bottom: 2rem;
     }
   }
 }
@@ -392,31 +371,24 @@ a {
   width: 100%;
 
   .partners {
-
     @include partners-box;
 
     @media (min-width: 768px) {
       height: 10rem;
     }
-
   }
 
   .copyright {
-
     @media (min-width: 768px) {
       height: 10rem;
     }
-
   }
-
 }
 
 .cc {
-
   @include cc-font;
 }
 
 .cc-statement {
-
   @include min-font;
 }

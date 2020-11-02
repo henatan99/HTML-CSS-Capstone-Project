@@ -1,13 +1,14 @@
 @import "_mixins.scss";
 @import "_colors.scss";
 @import "_fonts.scss";
+@import "_typography.scss";
 
 //main section
 
-.tickets-main {  
+.tickets-main {
   display: flex;
   flex-direction: column;
-  justify-content: center;  
+  justify-content: center;
   text-align: center;
 }
 
@@ -31,13 +32,11 @@
 .vip-service {
   position: relative;
   @include tickets-p-font;
-  padding: 2rem 0 2rem 0;  
-  
+  padding: 2rem 0 2rem 0;
 }
 
 h1 {
   @include tickets-font;
-  font-size: $h-3;
 }
 
 .section-elements-wrapper {
@@ -53,42 +52,38 @@ h1 {
 
 .select-seat,
 .select-service {
+  @include ticket-border-box-1;
 
-  @include ticket-border-box-1;  
-  
   margin: 2rem;
 }
 
 .category-1,
 .category-2 {
-
   @include ticket-border-box-2;
   margin: 1rem 0 1rem 0;
   display: flex;
-  flex-direction: column;  
-
-  h2 {
-    width: 100%;
-    padding: 0.25rem 0 0.25rem 0;
-    background: $color-light;
-    @include tickets-category-font;
-  }
-
+  flex-direction: column;
   .menu-category {
     width: 100%;
     list-style: none;
     display: flex;
     justify-content: space-around;
-    align-items: center;   
-    
+    align-items: center;
+
     .form-check {
       padding: 0.5rem 0 0 0;
       .form-check-label {
         @include tickets-font;
       }
     }
-
   }
+}
+
+.category {
+  width: 100%;
+  padding: 0.25rem 0 0.25rem 0;
+  background: $color-light;
+  @include tickets-category-font;
 }
 
 // Submit button
@@ -97,6 +92,7 @@ h1 {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 8%;
   .button-wrapper {
     width: 20rem;
     .button-ticket {
@@ -107,5 +103,4 @@ h1 {
       }
     }
   }
-  
 }

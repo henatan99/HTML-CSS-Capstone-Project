@@ -1,21 +1,21 @@
 @import "_mixins.scss";
 @import "_colors.scss";
 @import "_fonts.scss";
+@import "_typography.scss";
 
 // Front page section styling
 
 .concert-invite-about {
-  width: 100%;  
-  padding: 5px 18px 0 18px; 
-  position: relative;      
-  overflow: hidden;  
-  
+  width: 100%;
+  padding: 5px 18px 0 18px;
+  position: relative;
+  overflow: hidden;
+
   h3 {
-    
     @include invite-font;
     position: relative;
     z-index: 1;
-  }  
+  }
 }
 
 .front-about {
@@ -26,19 +26,18 @@
   @media (min-width: 768px) {
     padding: 3rem 15% 40px 15%;
   }
-
 }
 
 .concert-title {
   h1 a {
-    @include title-font;    
+    @include title-font;
   }
 }
 
 .concert-info {
   @include box-border;
   @include concert-info-font;
-  background-color: lighten($color: $color-light, $amount: 20%)
+  background-color: lighten($color: $color-light, $amount: 20%);
 }
 
 .logo-sections-wrapper {
@@ -51,7 +50,7 @@
   width: 100%;
   padding: 0 10% 0 10%;
   text-align: center;
-  margin-bottom: 2rem;  
+  margin-bottom: 2rem;
 
   @include concert-info-font;
 }
@@ -62,19 +61,16 @@
   margin-bottom: 2rem;
 
   h2 {
-
     @include logo-header-font;
     padding: 5% 0 5% 0;
   }
 
   p {
-
     @include concert-info-font;
     margin-bottom: 10%;
   }
 
   .logo-img {
-
     @include logo-font;
     background-color: lighten($color: $color-light, $amount: 20%);
     padding: 7% 0 7% 0;
@@ -83,22 +79,19 @@
 }
 
 .cc-about a {
-
-      @include cc-font;
-
-      @media (min-width: 768px) {
-        color: $color-light;
-      }
-} 
-
-.cc-statement-about {
-
   @include cc-font;
 
   @media (min-width: 768px) {
     color: $color-light;
   }
+}
 
+.cc-statement-about {
+  @include cc-font;
+
+  @media (min-width: 768px) {
+    color: $color-light;
+  }
 }
 
 .upcoming {
@@ -112,7 +105,6 @@
   }
 
   .upcoming-title {
-
     @include upcoming-header-font;
     padding: 5% 0 5% 0;
   }
@@ -124,14 +116,12 @@
   }
 
   .upcoming-articles-wrapper {
-
     @media (min-width: 768px) {
       display: flex;
       padding-bottom: 10%;
     }
 
     .upcoming-article {
-
       @media (min-width: 768px) {
         margin: 0.5rem;
       }
@@ -147,16 +137,12 @@
       h1 {
         padding: 0.5rem;
         a {
-
           @include upcoming-date-font;
         }
-
       }
 
       h2 {
-
         a {
-
           @include upcoming-place-font;
         }
         padding: 0.5rem;
@@ -164,17 +150,15 @@
     }
     .upcoming-1 {
       @include opaque-background;
-      background-image: url("../assets/images/thailand.jpg");  
+      background-image: url("../assets/images/thailand.jpg");
     }
-    
+
     .upcoming-2 {
       @include opaque-background;
-      background-image: url("../assets/images/london.jpg");  
+      background-image: url("../assets/images/london.jpg");
     }
   }
 }
-
-
 
 .contact,
 .logo {
@@ -185,7 +169,7 @@
   }
 }
 
-@mixin partners-box{
+@mixin partners-box {
   width: 100%;
   height: 13rem;
   padding: 1rem 2rem 1rem 2rem;
@@ -224,7 +208,6 @@
     height: 7rem;
     background: $color-black;
   }
-
 }
 
 .footer-about {

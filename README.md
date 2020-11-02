@@ -3,7 +3,7 @@
 
 # HTML-CSS-Capstone-Project
 ## About the Project 
-This is HTML/CSS Capstone project to design a website by personalizing an existing conference website of 'CREATIVE COMMONS GLOBAL SUMMIT 2015' with given client's requirements. 
+This is HTML/CSS Capstone project to design a website by personalizing an archived conference website deisng of 'CREATIVE COMMONS GLOBAL SUMMIT 2015' with given client's requirements. 
 
 The website has The home page, the about page and the tickets page. Responsive design is applied for small screen and large screen with min-width of 768px, a single breakpoint.
 
@@ -32,7 +32,7 @@ The home page has navbar, front section, main events section, artists section an
 
   - The front section is almost similar to the front section in the home page with little more detailed description about the concert.  
 
-  - The upcoming section is a guid to the upcoming concerts. It has upcoming-header, upcoming-info and articles which has descriptive background images and the upcoming conert date and place. The articles have 100% width in small screens and they are flex-displayed with 50% width each in larger screens. 
+  - The upcoming section is a guide to the upcoming concerts. It has upcoming-header, upcoming-info and articles which has descriptive background images and the upcoming conert date and place. The articles have 100% width in small screens and they are flex-displayed with 50% width each in larger screens. 
 
   - The footer is the same as that of the home page with little different in spacing. It has responsive featire in which the partners section is diplayed-none in larger screens.   
 
@@ -48,6 +48,12 @@ The home page has navbar, front section, main events section, artists section an
    - color partial scss file defines three color variables based on the client requirement 
    - Font partial scss files defines 9 font sizes defined as ratios of a single variable font-size. Seven font weight variables are also defined. 
   The mixins partial scss element defines @mixin abstractions for custom fonts, custom boxes, custom buttons, and custom borders. Math and logic functions are employed to define some of the @mixin abstractions. 
+
+  ### Cool features 
+  This website design incorporates a responsive typography by mathematcally define all the font-sizes in terms of few variables which can be easily manipulated, which simplifies maintainance and deisgn flexibilty greatly. 
+  The design also has a dedicated partial scss file for slider background which gives the pages a descriptive and visually attractive element. 
+  Background images for the slider background and the front section are custom-created using online vector design tool. 
+  Icons used in the events sections of the home page are also purely developed vector images using online vector design tool. 
   
 ## Built With
 

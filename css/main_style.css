@@ -5,12 +5,21 @@
   position: relative;
   overflow: hidden; }
   .concert-invite-about h3 {
-    font-size: 1.43rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
     color: #ec5242;
-    font-weight: 100;
-    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-family: "Lato Medium", sans-serif;
     position: relative;
     z-index: 1; }
+    @media (min-width: 425px) {
+      .concert-invite-about h3 {
+        font-size: 1.56rem;
+        line-height: 1.8rem; } }
+    @media (min-width: 425px) {
+      .concert-invite-about h3 {
+        font-size: 1.95rem;
+        line-height: 2.25rem; } }
 
 .front-about {
   width: 100%;
@@ -21,20 +30,38 @@
       padding: 3rem 15% 40px 15%; } }
 
 .concert-title h1 a {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   color: #f51a01;
   font-weight: 900;
-  font-family: "Cocogoose Pro Light", sans-serif;
-  line-height: 2.5rem; }
+  font-style: normal;
+  font-family: "Cocogoose", sans-serif;
+  line-height: 2rem; }
+  @media (min-width: 425px) {
+    .concert-title h1 a {
+      font-size: 2.4rem;
+      line-height: 2.4rem; } }
+  @media (min-width: 1024px) {
+    .concert-title h1 a {
+      font-size: 2rem;
+      line-height: 3rem; } }
 
 .concert-info {
   border: 3px solid white;
   border-radius: 5px;
-  font-size: 0.704rem;
-  color: #272a31;
-  line-height: 1.2rem;
-  font-family: "Cocogoose Pro Light", sans-serif;
+  font-size: 0.64rem;
+  color: #545b6a;
+  line-height: 1.5rem;
+  font-weight: 800;
+  font-family: "Lato Medium", sans-serif;
   background-color: white; }
+  @media (min-width: 425px) {
+    .concert-info {
+      font-size: 0.768rem;
+      line-height: 1.8rem; } }
+  @media (min-width: 1024px) {
+    .concert-info {
+      font-size: 0.96rem;
+      line-height: 2.25rem; } }
 
 .logo-sections-wrapper {
   width: 100%;
@@ -46,50 +73,92 @@
   padding: 0 10% 0 10%;
   text-align: center;
   margin-bottom: 2rem;
-  font-size: 0.704rem;
-  color: #272a31;
-  line-height: 1.2rem;
-  font-family: "Cocogoose Pro Light", sans-serif; }
+  font-size: 0.64rem;
+  color: #545b6a;
+  line-height: 1.5rem;
+  font-weight: 800;
+  font-family: "Lato Medium", sans-serif; }
+  @media (min-width: 425px) {
+    .contact {
+      font-size: 0.768rem;
+      line-height: 1.8rem; } }
+  @media (min-width: 1024px) {
+    .contact {
+      font-size: 0.96rem;
+      line-height: 2.25rem; } }
 
 .logo {
   width: 100%;
   text-align: center;
   margin-bottom: 2rem; }
   .logo h2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #272a31;
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-family: "Lato Medium", sans-serif;
     padding: 5% 0 5% 0; }
+    @media (min-width: 425px) {
+      .logo h2 {
+        font-size: 1.2rem; } }
+    @media (min-width: 1024px) {
+      .logo h2 {
+        font-size: 1.5rem; } }
   .logo p {
-    font-size: 0.704rem;
-    color: #272a31;
-    line-height: 1.2rem;
-    font-family: "Cocogoose Pro Light", sans-serif;
+    font-size: 0.64rem;
+    color: #545b6a;
+    line-height: 1.5rem;
+    font-weight: 800;
+    font-family: "Lato Medium", sans-serif;
     margin-bottom: 10%; }
+    @media (min-width: 425px) {
+      .logo p {
+        font-size: 0.768rem;
+        line-height: 1.8rem; } }
+    @media (min-width: 1024px) {
+      .logo p {
+        font-size: 0.96rem;
+        line-height: 2.25rem; } }
   .logo .logo-img {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #272a31;
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-family: sans-serif;
     background-color: white;
     padding: 7% 0 7% 0;
     margin-bottom: 10%; }
+    @media (min-width: 425px) {
+      .logo .logo-img {
+        font-size: 1.44rem; } }
+    @media (min-width: 1024px) {
+      .logo .logo-img {
+        font-size: 1.8rem; } }
 
 .cc-about a {
-  font-size: 0.704rem;
+  font-size: 0.64rem;
   color: #272a31;
   font-weight: 700;
   font-family: "Roboto", sans-serif; }
+  @media (min-width: 425px) {
+    .cc-about a {
+      font-size: 0.768rem; } }
+  @media (min-width: 1024px) {
+    .cc-about a {
+      font-size: 0.96rem; } }
   @media (min-width: 768px) {
     .cc-about a {
       color: #d3d3d3; } }
 
 .cc-statement-about {
-  font-size: 0.704rem;
+  font-size: 0.64rem;
   color: #272a31;
   font-weight: 700;
   font-family: "Roboto", sans-serif; }
+  @media (min-width: 425px) {
+    .cc-statement-about {
+      font-size: 0.768rem; } }
+  @media (min-width: 1024px) {
+    .cc-statement-about {
+      font-size: 0.96rem; } }
   @media (min-width: 768px) {
     .cc-statement-about {
       color: #d3d3d3; } }
@@ -103,17 +172,32 @@
     .upcoming {
       padding: 0 15% 0 15%; } }
   .upcoming .upcoming-title {
-    font-size: 1.056rem;
+    font-size: 0.96rem;
     color: #272a31;
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-family: "Lato Medium", sans-serif;
     padding: 5% 0 5% 0; }
+    @media (min-width: 425px) {
+      .upcoming .upcoming-title {
+        font-size: 1.152rem; } }
+    @media (min-width: 1024px) {
+      .upcoming .upcoming-title {
+        font-size: 1.44rem; } }
   .upcoming .upcoming-info {
     margin-bottom: 1rem;
-    font-size: 0.704rem;
-    color: #272a31;
-    line-height: 1.2rem;
-    font-family: "Cocogoose Pro Light", sans-serif; }
+    font-size: 0.64rem;
+    color: #545b6a;
+    line-height: 1.5rem;
+    font-weight: 800;
+    font-family: "Lato Medium", sans-serif; }
+    @media (min-width: 425px) {
+      .upcoming .upcoming-info {
+        font-size: 0.768rem;
+        line-height: 1.8rem; } }
+    @media (min-width: 1024px) {
+      .upcoming .upcoming-info {
+        font-size: 0.96rem;
+        line-height: 2.25rem; } }
   @media (min-width: 768px) {
     .upcoming .upcoming-articles-wrapper {
       display: flex;
@@ -133,17 +217,29 @@
     .upcoming .upcoming-articles-wrapper .upcoming-article h1 {
       padding: 0.5rem; }
       .upcoming .upcoming-articles-wrapper .upcoming-article h1 a {
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: #d3d3d3;
         font-weight: 900;
-        font-family: "Roboto", sans-serif; }
+        font-family: "Lato Medium", sans-serif; }
+        @media (min-width: 425px) {
+          .upcoming .upcoming-articles-wrapper .upcoming-article h1 a {
+            font-size: 1.2rem; } }
+        @media (min-width: 1024px) {
+          .upcoming .upcoming-articles-wrapper .upcoming-article h1 a {
+            font-size: 1.5rem; } }
     .upcoming .upcoming-articles-wrapper .upcoming-article h2 {
       padding: 0.5rem; }
       .upcoming .upcoming-articles-wrapper .upcoming-article h2 a {
-        font-size: 0.704rem;
+        font-size: 0.64rem;
         color: #d3d3d3;
         font-weight: 900;
-        font-family: "Roboto", sans-serif; }
+        font-family: "Lato Medium", sans-serif; }
+        @media (min-width: 425px) {
+          .upcoming .upcoming-articles-wrapper .upcoming-article h2 a {
+            font-size: 0.768rem; } }
+        @media (min-width: 1024px) {
+          .upcoming .upcoming-articles-wrapper .upcoming-article h2 a {
+            font-size: 0.96rem; } }
   .upcoming .upcoming-articles-wrapper .upcoming-1 {
     background-color: rgba(236, 82, 66, 0.2);
     background-image: url("../assets/images/thailand.jpg"); }
@@ -170,10 +266,16 @@
 .partners-header {
   width: 100%;
   padding: 1.5rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #d3d3d3;
   font-weight: 500;
   font-family: "Roboto", sans-serif; }
+  @media (min-width: 425px) {
+    .partners-header {
+      font-size: 1.2rem; } }
+  @media (min-width: 1024px) {
+    .partners-header {
+      font-size: 1.5rem; } }
 
 .partners-logo-about {
   width: 100%;
@@ -212,20 +314,37 @@
 .ticket-section,
 .vip-service {
   position: relative;
-  font-size: 0.704rem;
+  font-size: 0.64rem;
   color: #272a31;
   font-weight: 600;
   line-height: 1rem;
-  font-family: "Cocogoose Pro Light", sans-serif;
+  font-family: "Lato Medium", sans-serif;
   padding: 2rem 0 2rem 0; }
+  @media (min-width: 425px) {
+    .ticket-section,
+    .vip-service {
+      font-size: 0.768rem;
+      line-height: 1.2rem; } }
+  @media (min-width: 1024px) {
+    .ticket-section,
+    .vip-service {
+      font-size: 0.96rem;
+      line-height: 1.5rem; } }
 
 h1 {
-  font-size: 1.056rem;
+  font-size: 0.64rem;
   color: #272a31;
   font-weight: 600;
   line-height: 1rem;
-  font-family: "Cocogoose Pro Light", sans-serif;
-  font-size: 1.43rem; }
+  font-family: "Cocogoose Pro", sans-serif; }
+  @media (min-width: 425px) {
+    h1 {
+      font-size: 0.768rem;
+      line-height: 1.2rem; } }
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 0.96rem;
+      line-height: 1.5rem; } }
 
 .section-elements-wrapper {
   padding: 0 15% 0 15%; }
@@ -233,15 +352,24 @@ h1 {
 .ticket-section {
   background: #ededed; }
   .ticket-section th {
-    font-size: 1.056rem;
+    font-size: 0.64rem;
     color: #272a31;
     font-weight: 600;
     line-height: 1rem;
-    font-family: "Cocogoose Pro Light", sans-serif; }
+    font-family: "Cocogoose Pro", sans-serif; }
+    @media (min-width: 425px) {
+      .ticket-section th {
+        font-size: 0.768rem;
+        line-height: 1.2rem; } }
+    @media (min-width: 1024px) {
+      .ticket-section th {
+        font-size: 0.96rem;
+        line-height: 1.5rem; } }
 
 .select-seat,
 .select-service {
-  height: 2rem;
+  min-height: 2rem;
+  padding: 0.5rem;
   border: 1px solid #272a31;
   border-color: #d3d3d3;
   border-radius: 1rem;
@@ -261,16 +389,6 @@ h1 {
   margin: 1rem 0 1rem 0;
   display: flex;
   flex-direction: column; }
-  .category-1 h2,
-  .category-2 h2 {
-    width: 100%;
-    padding: 0.25rem 0 0.25rem 0;
-    background: #d3d3d3;
-    font-size: 1.056rem;
-    color: #272a31;
-    font-weight: 600;
-    line-height: 1rem;
-    font-family: "Lato", sans-serif; }
   .category-1 .menu-category,
   .category-2 .menu-category {
     width: 100%;
@@ -283,16 +401,45 @@ h1 {
       padding: 0.5rem 0 0 0; }
       .category-1 .menu-category .form-check .form-check-label,
       .category-2 .menu-category .form-check .form-check-label {
-        font-size: 1.056rem;
+        font-size: 0.64rem;
         color: #272a31;
         font-weight: 600;
         line-height: 1rem;
-        font-family: "Cocogoose Pro Light", sans-serif; }
+        font-family: "Cocogoose Pro", sans-serif; }
+        @media (min-width: 425px) {
+          .category-1 .menu-category .form-check .form-check-label,
+          .category-2 .menu-category .form-check .form-check-label {
+            font-size: 0.768rem;
+            line-height: 1.2rem; } }
+        @media (min-width: 1024px) {
+          .category-1 .menu-category .form-check .form-check-label,
+          .category-2 .menu-category .form-check .form-check-label {
+            font-size: 0.96rem;
+            line-height: 1.5rem; } }
+
+.category {
+  width: 100%;
+  padding: 0.25rem 0 0.25rem 0;
+  background: #d3d3d3;
+  font-size: 0.96rem;
+  color: #272a31;
+  font-weight: 600;
+  line-height: 1rem;
+  font-family: "Lato Medium", sans-serif; }
+  @media (min-width: 425px) {
+    .category {
+      font-size: 1.152rem;
+      line-height: 1.2rem; } }
+  @media (min-width: 1024px) {
+    .category {
+      font-size: 1.44rem;
+      line-height: 1.5rem; } }
 
 .button-div-ticket {
   display: flex;
   justify-content: center;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 8%; }
   .button-div-ticket .button-wrapper {
     width: 20rem; }
     .button-div-ticket .button-wrapper .button-ticket {
@@ -302,11 +449,19 @@ h1 {
       margin: 0;
       background: #ec5242; }
       .button-div-ticket .button-wrapper .button-ticket a {
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: #d3d3d3;
-        font-weight: 500;
+        font-weight: 700;
         line-height: 1rem;
-        font-family: "Cocogoose Pro Light", sans-serif; }
+        font-family: "Lato Medium", sans-serif; }
+        @media (min-width: 425px) {
+          .button-div-ticket .button-wrapper .button-ticket a {
+            font-size: 1.2rem;
+            line-height: 1.2rem; } }
+        @media (min-width: 1024px) {
+          .button-div-ticket .button-wrapper .button-ticket a {
+            font-size: 1.5rem;
+            line-height: 1.5rem; } }
 
 @keyframes slideshow1 {
   0% {
@@ -318,15 +473,17 @@ h1 {
     left: 100%; }
   100% {
     left: 0; } }
-.slider-background1, .slider-background2 {
+.slider-background1,
+.slider-background2 {
   background: url("../assets/images/slider-425.svg") repeat-x;
   background-size: cover;
   width: 100%;
-  height: 10rem;
+  height: 6rem;
   position: absolute;
   top: 1rem; }
   @media (min-width: 768px) {
-    .slider-background1, .slider-background2 {
+    .slider-background1,
+    .slider-background2 {
       background: url("../assets/images/slider-background-small.svg") repeat-x;
       top: 0rem; } }
 
@@ -342,9 +499,15 @@ a {
   text-decoration: none; }
 
 .events-section .see-program a {
-  font-size: 1.056rem;
+  font-size: 0.96rem;
   color: #d3d3d3;
   font-family: "Roboto", sans-serif; }
+  @media (min-width: 425px) {
+    .events-section .see-program a {
+      font-size: 1.152rem; } }
+  @media (min-width: 1024px) {
+    .events-section .see-program a {
+      font-size: 1.44rem; } }
 
 .navbar-mobile {
   position: fixed;
@@ -366,10 +529,16 @@ a {
         background: #272a31;
         margin-right: 0.4rem;
         padding: 0.4rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: #d3d3d3;
         font-weight: 500;
         font-family: "Roboto", sans-serif; }
+        @media (min-width: 425px) {
+          .navbar-mobile .nav-dropdown .drop-content a {
+            font-size: 1.2rem; } }
+        @media (min-width: 1024px) {
+          .navbar-mobile .nav-dropdown .drop-content a {
+            font-size: 1.5rem; } }
   .navbar-mobile .nav-dropdown:hover {
     cursor: pointer; }
   .navbar-mobile .nav-dropdown:hover .drop-content {
@@ -390,13 +559,22 @@ a {
     display: flex;
     align-items: center; }
     .navbar-1 .navbar1-ul li {
-      font-size: 0.616rem;
-      color: #272a31;
-      line-height: 1rem;
-      font-family: "Cocogoose Pro Light", sans-serif;
+      font-size: 0.56rem;
+      color: #545b6a;
+      line-height: 1.2rem;
+      font-weight: 800;
+      font-family: "Lato Medium", sans-serif;
       font-weight: 700;
       color: #d3d3d3;
       margin-left: 1rem; }
+      @media (min-width: 425px) {
+        .navbar-1 .navbar1-ul li {
+          font-size: 0.672rem;
+          line-height: 1.8rem; } }
+      @media (min-width: 1024px) {
+        .navbar-1 .navbar1-ul li {
+          font-size: 0.84rem;
+          line-height: 2.25rem; } }
 
 .navbar-2 {
   width: 100%;
@@ -406,7 +584,8 @@ a {
   .navbar-2 ul {
     width: 65%; }
 
-.main-home, .main-about {
+.main-home,
+.main-about {
   width: 100%;
   background-image: url("../assets/images/custom-background-big.png");
   background-clip: content-box;
@@ -416,7 +595,8 @@ a {
   overflow-x: hidden;
   margin-top: 6.9rem; }
   @media (min-width: 768px) {
-    .main-home, .main-about {
+    .main-home,
+    .main-about {
       margin-top: 0; } }
 
 .tickets-main {
@@ -443,12 +623,21 @@ a {
   overflow: hidden;
   background-color: #e0e0e0; }
   .concert-invite h3 {
-    font-size: 1.43rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
     color: #ec5242;
-    font-weight: 100;
-    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-family: "Lato Medium", sans-serif;
     position: relative;
-    z-index: 1; }
+    z-index: 10; }
+    @media (min-width: 425px) {
+      .concert-invite h3 {
+        font-size: 1.56rem;
+        line-height: 1.8rem; } }
+    @media (min-width: 425px) {
+      .concert-invite h3 {
+        font-size: 1.95rem;
+        line-height: 2.25rem; } }
   @media (min-width: 768px) {
     .concert-invite {
       display: block;
@@ -464,15 +653,44 @@ a {
     .front .concert-invite-mobile {
       display: none; } }
   .front .concert-invite-mobile h3 {
-    font-size: 1.43rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
     color: #ec5242;
-    font-weight: 100;
-    font-family: "Lato", sans-serif; }
+    font-weight: 500;
+    font-family: "Lato Medium", sans-serif; }
+    @media (min-width: 425px) {
+      .front .concert-invite-mobile h3 {
+        font-size: 1.56rem;
+        line-height: 1.8rem; } }
+    @media (min-width: 425px) {
+      .front .concert-invite-mobile h3 {
+        font-size: 1.95rem;
+        line-height: 2.25rem; } }
   .front .concert-date {
-    font-size: 1.54rem;
+    font-size: 1.4rem;
     color: #494f5c;
+    font-weight: 900;
+    font-family: sans-serif; }
+    @media (min-width: 425px) {
+      .front .concert-date {
+        font-size: 1.68rem; } }
+    @media (min-width: 1024px) {
+      .front .concert-date {
+        font-size: 2.1rem; } }
+  .front .concert-place {
+    font-size: 0.96rem;
+    color: #545b6a;
+    line-height: 1.2rem;
     font-weight: 700;
-    font-family: "Cocogoose Pro Light", sans-serif; }
+    font-family: "Lato Medium", sans-serif; }
+    @media (min-width: 425px) {
+      .front .concert-place {
+        font-size: 1.152rem;
+        line-height: 1.8rem; } }
+    @media (min-width: 1024px) {
+      .front .concert-place {
+        font-size: 1.44rem;
+        line-height: 2.25rem; } }
 
 .partners-logo img {
   max-width: 5rem;
@@ -491,14 +709,20 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.32rem;
+    font-size: 1.2rem;
     color: #d3d3d3;
     font-weight: 500;
-    font-family: "Cocogoose Pro Light", sans-serif; }
+    font-family: "Lato Medium", sans-serif; }
     @media (min-width: 768px) {
       .events-section .event-header {
         flex-direction: column;
         width: auto; } }
+    @media (min-width: 425px) {
+      .events-section .event-header {
+        font-size: 1.44rem; } }
+    @media (min-width: 1024px) {
+      .events-section .event-header {
+        font-size: 1.8rem; } }
   .events-section .event-articles {
     padding-left: 5%;
     padding-right: 5%; }
@@ -542,23 +766,41 @@ a {
           .events-section .event-articles article h2 {
             width: 100%; } }
         .events-section .event-articles article h2 a {
-          font-size: 1.056rem;
+          font-size: 0.96rem;
           color: #ec5242;
           line-height: 1rem;
-          font-weight: 600;
-          font-family: "Cocogoose Pro Light", sans-serif; }
+          font-weight: 800;
+          font-family: "Lato Medium", sans-serif; }
+          @media (min-width: 425px) {
+            .events-section .event-articles article h2 a {
+              font-size: 1.152rem;
+              line-height: 1.2rem; } }
+          @media (min-width: 1024px) {
+            .events-section .event-articles article h2 a {
+              font-size: 1.44rem;
+              line-height: 1.5rem; } }
       .events-section .event-articles article p {
         width: 59%;
         padding: 10px;
-        font-size: 0.704rem;
+        font-size: 0.64rem;
         color: #d3d3d3;
         line-height: 1rem;
-        font-family: "Cocogoose Pro Light", sans-serif; }
+        font-family: "Lato Medium", sans-serif;
+        font-weight: 800; }
         @media (min-width: 768px) {
           .events-section .event-articles article p {
             width: 100%; } }
+        @media (min-width: 425px) {
+          .events-section .event-articles article p {
+            font-size: 0.768rem;
+            line-height: 1.2rem; } }
+        @media (min-width: 1024px) {
+          .events-section .event-articles article p {
+            font-size: 0.96rem;
+            line-height: 1.5rem; } }
   .events-section .button-div {
     display: flex;
+    justify-content: center;
     padding: 2rem; }
     @media (min-width: 768px) {
       .events-section .button-div {
@@ -569,8 +811,10 @@ a {
       padding: 1.5rem 10% 1.5rem 10%;
       margin: 0;
       background: #ec5242;
+      max-width: 5rem;
       font-family: sans-serif;
-      color: #d3d3d3; }
+      color: #d3d3d3;
+      max-width: 20rem; }
   .events-section .see-program {
     position: absolute;
     bottom: 3rem;
@@ -588,15 +832,21 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.32rem;
+    font-size: 1.2rem;
     color: #d3d3d3;
     font-weight: 500;
-    font-family: "Cocogoose Pro Light", sans-serif;
+    font-family: "Lato Medium", sans-serif;
     color: #272a31; }
     @media (min-width: 768px) {
       .artists .artists-header {
         flex-direction: column;
         width: auto; } }
+    @media (min-width: 425px) {
+      .artists .artists-header {
+        font-size: 1.44rem; } }
+    @media (min-width: 1024px) {
+      .artists .artists-header {
+        font-size: 1.8rem; } }
   @media (min-width: 768px) {
     .artists .artists-article-wrapper {
       display: flex;
@@ -621,35 +871,66 @@ a {
         left: 0;
         width: 65%; }
     .artists .artists-article-wrapper .artists-article .artist-info h2 a {
-      font-size: 1.1rem;
+      font-size: 0.96rem;
       color: #272a31;
-      font-weight: 500;
-      font-family: "Cocogoose Pro Light", sans-serif;
+      font-weight: 700;
+      font-family: "Lato Medium", sans-serif;
       padding-bottom: 0.5rem; }
+      @media (min-width: 425px) {
+        .artists .artists-article-wrapper .artists-article .artist-info h2 a {
+          font-size: 1.152rem; } }
+      @media (min-width: 1024px) {
+        .artists .artists-article-wrapper .artists-article .artist-info h2 a {
+          font-size: 1.44rem; } }
     .artists .artists-article-wrapper .artists-article .artist-info .about {
-      font-size: 0.704rem;
+      font-size: 0.64rem;
       color: #ec5242;
       line-height: 1rem;
-      font-family: "Cocogoose Pro Light", sans-serif;
+      font-family: "Lato Medium", sans-serif;
       font-style: italic;
-      padding-bottom: 1.2rem; }
+      padding: 0.5rem 0 1.2rem 0; }
+      @media (min-width: 425px) {
+        .artists .artists-article-wrapper .artists-article .artist-info .about {
+          font-size: 0.768rem;
+          line-height: 1.2rem; } }
+      @media (min-width: 1024px) {
+        .artists .artists-article-wrapper .artists-article .artist-info .about {
+          font-size: 0.96rem;
+          line-height: 1.5rem; } }
     .artists .artists-article-wrapper .artists-article .artist-info .story {
-      font-size: 0.616rem;
-      color: #272a31;
-      line-height: 1rem;
-      font-family: "Cocogoose Pro Light", sans-serif; }
+      font-size: 0.56rem;
+      color: #545b6a;
+      line-height: 1.2rem;
+      font-weight: 800;
+      font-family: "Lato Medium", sans-serif; }
+      @media (min-width: 425px) {
+        .artists .artists-article-wrapper .artists-article .artist-info .story {
+          font-size: 0.672rem;
+          line-height: 1.8rem; } }
+      @media (min-width: 1024px) {
+        .artists .artists-article-wrapper .artists-article .artist-info .story {
+          font-size: 0.84rem;
+          line-height: 2.25rem; } }
   .artists .button-more {
     display: flex; }
     .artists .button-more button {
-      border: 1px solid #272a31;
+      border: 1px solid;
+      border-color: #6b7386;
+      border-radius: 3px;
       width: 100%;
       padding: 0.5rem 0 0.5rem 0;
       margin: 0;
       background: #d3d3d3;
-      font-size: 1.056rem;
+      font-size: 0.96rem;
       color: #272a31;
-      font-family: "Roboto", sans-serif;
+      font-family: "Lato Medium", sans-serif, sans-serif;
       margin-bottom: 2rem; }
+      @media (min-width: 425px) {
+        .artists .button-more button {
+          font-size: 1.152rem; } }
+      @media (min-width: 1024px) {
+        .artists .button-more button {
+          font-size: 1.44rem; } }
 
 .footer-main {
   width: 100%; }
@@ -668,15 +949,30 @@ a {
       height: 10rem; } }
 
 .cc {
-  font-size: 0.704rem;
+  font-size: 0.64rem;
   color: #272a31;
   font-weight: 700;
   font-family: "Roboto", sans-serif; }
+  @media (min-width: 425px) {
+    .cc {
+      font-size: 0.768rem; } }
+  @media (min-width: 1024px) {
+    .cc {
+      font-size: 0.96rem; } }
 
 .cc-statement {
-  font-size: 0.616rem;
-  color: #272a31;
-  line-height: 1rem;
-  font-family: "Cocogoose Pro Light", sans-serif; }
+  font-size: 0.56rem;
+  color: #545b6a;
+  line-height: 1.2rem;
+  font-weight: 800;
+  font-family: "Lato Medium", sans-serif; }
+  @media (min-width: 425px) {
+    .cc-statement {
+      font-size: 0.672rem;
+      line-height: 1.8rem; } }
+  @media (min-width: 1024px) {
+    .cc-statement {
+      font-size: 0.84rem;
+      line-height: 2.25rem; } }
 
 /*# sourceMappingURL=main_style.css.map */
