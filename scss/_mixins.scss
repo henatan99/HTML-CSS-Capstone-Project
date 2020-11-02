@@ -1,95 +1,96 @@
 @import "_colors.scss";
 
 @mixin event-box {
-    width: 100%;
-    min-height: 15vh;
-    margin-bottom: 12px;
-    display: flex;
+  width: 100%;
+  min-height: 15vh;
+  margin-bottom: 12px;
+  display: flex;
 
-    @media (min-width: 768px) {
-        flex-direction: column;
-        width: auto;
-    }
+  @media (min-width: 768px) {
+    flex-direction: column;
+    width: auto;
+  }
 
-    align-items: center;
+  align-items: center;
 }
 
 @mixin event-header-box {
-    @include event-box;
+  @include event-box;
 
-    justify-content: center;
+  justify-content: center;
 }
 
 @mixin box-border {
-    border: 3px solid white;
-    border-radius: 5px;
+  border: 3px solid white;
+  border-radius: 5px;
 }
 
 @mixin join-button {
-    border: 1px solid;
-    width: 100%;
-    padding: 1.5rem 10% 1.5rem 10%;
-    margin: 0;
-    background: $color-red;
-    max-width: 5rem;
+  border: 1px solid;
+  width: 100%;
+  padding: 1.5rem 10% 1.5rem 10%;
+  margin: 0;
+  background: $color-red;
+  max-width: 5rem;
 }
 
 @mixin join-button-small {
-    border: 1px solid;
-    width: 100%;
-    padding: 0.5rem 5% 0.5rem 5%;
-    margin: 0;
-    background: $color-red;
+  border: 1px solid;
+  width: 100%;
+  padding: 0.5rem 5% 0.5rem 5%;
+  margin: 0;
+  background: $color-red;
 }
 
 @mixin artists-header-box {
-    @include event-header-box;
+  @include event-header-box;
 }
 
 @mixin more-button {
-    border: 1px solid;
-    border-color: lighten($color: $color-black, $amount: 30%);
-    border-radius: 3px;
-    width: 100%;
-    padding: 0.5rem 0 0.5rem 0;
-    margin: 0;
-    background: $color-light;
+  border: 1px solid;
+  border-color: lighten($color: $color-black, $amount: 30%);
+  border-radius: 3px;
+  width: 100%;
+  padding: 0.5rem 0 0.5rem 0;
+  margin: 0;
+  background: $color-light;
 }
 
 // Ticket Page Stylings
 
 @mixin create-border-radius {
-    @if variable-exists(base-radius) {
-        border-radius: $base-radius;
-    }
-    @else {
-        @error "Please define the variable '$base-radius'.";
-    }
+  @if variable-exists(base-radius) {
+    border-radius: $base-radius;
+  }
+
+  @else {
+    @error "Please define the variable '$base-radius'.";
+  }
 }
 
 $element-height: 2rem;
 $base-radius: $element-height * 0.5;
 
 @mixin ticket-border-box-1 {
-    min-height: $element-height;
-    padding: 0.5rem;
-    border: 1px solid $color-black;
-    border-color: $color-light;
+  min-height: $element-height;
+  padding: 0.5rem;
+  border: 1px solid $color-black;
+  border-color: $color-light;
 
-    @include create-border-radius;
+  @include create-border-radius;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @mixin ticket-border-box-2 {
-    height: 4rem;
-    border: 1px solid $color-black;
-    border-radius: 1px;
-    border-color: $color-light;
-    display: flex;
-    align-items: center;
+  height: 4rem;
+  border: 1px solid $color-black;
+  border-radius: 1px;
+  border-color: $color-light;
+  display: flex;
+  align-items: center;
 }
 
 // upcoming
@@ -98,5 +99,5 @@ $base-opacity: 0.2;
 $base-color: $color-red;
 
 @mixin opaque-background {
-    background-color: rgba($color: $base-color, $alpha: $base-opacity);
+  background-color: rgba($color: $base-color, $alpha: $base-opacity);
 }

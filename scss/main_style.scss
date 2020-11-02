@@ -1,5 +1,3 @@
-/*# sourceMappingURL=main_style.scss.map */
-
 @import "_mixins.scss";
 @import "_colors.scss";
 @import "_fonts.scss";
@@ -11,395 +9,393 @@
 // General Styling
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 // Navbar styling
 
 .events-section .see-program a {
-    @include see-program-font;
+  @include see-program-font;
+}
+
+.events-section .event-articles article h2 a {
+  @include event-type-font;
 }
 
 .navbar-mobile {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 20vh;
-    background: $color-light;
-    z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 20vh;
+  background: $color-light;
+  z-index: 10;
 
-    .nav-dropdown {
-        position: relative;
-        z-index: 5;
+  .nav-dropdown {
+    position: relative;
+    z-index: 5;
 
-        .iconify {
-            margin: 20px 0 0 30px;
-            font-size: 33px;
-        }
-
-        .drop-content {
-            display: none;
-            padding-left: 30px;
-
-            a {
-                background: $color-black;
-                margin-right: 0.4rem;
-                padding: 0.4rem;
-
-                @include partners-header-font;
-            }
-        }
+    .iconify {
+      margin: 20px 0 0 30px;
+      font-size: 33px;
     }
 
-    .nav-dropdown:hover {
-        cursor: pointer;
-    }
+    .drop-content {
+      display: none;
+      padding-left: 30px;
 
-    .nav-dropdown:hover .drop-content {
-        display: flex;
+      a {
+        background: $color-black;
+        margin-right: 0.4rem;
+        padding: 0.4rem;
+
+        @include partners-header-font;
+      }
     }
+  }
+
+  .nav-dropdown:hover {
+    cursor: pointer;
+  }
+
+  .nav-dropdown:hover .drop-content {
+    display: flex;
+  }
 }
 
 .nav-lg {
-    ul {
-        list-style: none;
-    }
+  ul {
+    list-style: none;
+  }
 }
 
 .navbar-1 {
-    width: 100%;
+  width: 100%;
+  height: 25px;
+  background: $color-black;
+
+  .navbar1-ul {
+    float: right;
+    margin-right: 15%;
     height: 25px;
-    background: $color-black;
+    list-style: none;
+    display: flex;
+    align-items: center;
 
-    .navbar1-ul {
-        float: right;
-        margin-right: 15%;
-        height: 25px;
-        list-style: none;
-        display: flex;
-        align-items: center;
+    li {
+      @include min-font;
 
-        li {
-            @include min-font;
-
-            font-weight: $font-700;
-            color: $color-light;
-            margin-left: 1rem;
-        }
+      font-weight: $font-700;
+      color: $color-light;
+      margin-left: 1rem;
     }
+  }
 }
 
 .navbar-2 {
-    width: 100%;
-    height: 50px;
-    padding: 0 15% 0 15%;
-    background: lighten($color: $color-light, $amount: 40%);
+  width: 100%;
+  height: 50px;
+  padding: 0 15% 0 15%;
+  background: lighten($color: $color-light, $amount: 40%);
 
-    // border-bottom: fade-in($color: $color-light, $amount: 30%);
+  // border-bottom: fade-in($color: $color-light, $amount: 30%);
 
-    ul {
-        width: 65%;
-    }
+  ul {
+    width: 65%;
+  }
 }
 
 //main
 
 .main-home,
 .main-about {
-    width: 100%;
-    background-image: url("../assets/images/custom-background-big.png");
-    background-clip: content-box;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-x: hidden;
-    margin-top: 6.9rem;
+  width: 100%;
+  background-image: url("../assets/images/custom-background-big.png");
+  background-clip: content-box;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  margin-top: 6.9rem;
 
-    @media (min-width: 768px) {
-        margin-top: 0;
-    }
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .tickets-main {
-    width: 100%;
-    overflow-x: hidden;
-    margin-top: 6.9rem;
+  width: 100%;
+  overflow-x: hidden;
+  margin-top: 6.9rem;
 
-    @media (min-width: 768px) {
-        margin-top: 0;
-    }
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 // Front page section styling
 .concert-invite-wrapper {
-    position: relative;
-    object-fit: contain;
-    overflow: hidden;
-    display: none;
+  position: relative;
+  object-fit: contain;
+  overflow: hidden;
+  display: none;
 
-    @media (min-width: 768px) {
-        display: block;
-    }
+  @media (min-width: 768px) {
+    display: block;
+  }
 }
 
 .concert-invite {
-    width: 100%;
-    padding: 5px 18px 0 18px;
+  width: 100%;
+  padding: 5px 18px 0 18px;
+  position: relative;
+  overflow: hidden;
+  background-color: lighten($color: $color-light, $amount: 5%);
+
+  h3 {
+    @include invite-font;
+
     position: relative;
-    overflow: hidden;
-    background-color: lighten($color: $color-light, $amount: 5%);
+    z-index: 10;
+  }
 
-    h3 {
-        @include invite-font;
-
-        position: relative;
-        z-index: 10;
-    }
-
-    @media (min-width: 768px) {
-        display: block;
-        padding: 5rem 15% 0 15%;
-    }
+  @media (min-width: 768px) {
+    display: block;
+    padding: 5rem 15% 0 15%;
+  }
 }
 
 .front {
-    width: 100%;
-    padding: 0 18px 70px 18px;
+  width: 100%;
+  padding: 0 18px 70px 18px;
 
+  @media (min-width: 768px) {
+    padding: 0 15% 70px 15%;
+  }
+
+  .concert-invite-mobile {
     @media (min-width: 768px) {
-        padding: 0 15% 70px 15%;
+      display: none;
     }
 
-    .concert-invite-mobile {
-        @media (min-width: 768px) {
-            display: none;
-        }
-
-        h3 {
-            @include invite-font;
-        }
+    h3 {
+      @include invite-font;
     }
+  }
 
-    .concert-date {
-        @include date-font;
-    }
+  .concert-date {
+    @include date-font;
+  }
 
-    .concert-place {
-        @include place-font;
-    }
+  .concert-place {
+    @include place-font;
+  }
 }
 
 // Event section styling
 
 .partners-logo img {
-    max-width: 5rem;
-    margin: 3%;
+  max-width: 5rem;
+  margin: 3%;
 }
 
 .events-section {
-    width: 100%;
-    background: $color-black;
+  width: 100%;
+  background: $color-black;
+
+  @media (min-width: 768px) {
+    position: relative;
+  }
+
+  .event-header {
+    @include event-header-box;
+    @include events-header-font;
+  }
+
+  .event-articles {
+    padding-left: 5%;
+    padding-right: 5%;
 
     @media (min-width: 768px) {
-        position: relative;
+      display: flex;
+      padding: 0 10% 12% 10%;
     }
 
-    .event-header {
-        @include event-header-box;
+    article {
+      background-color: lighten($color: $color-black, $amount: 10%);
 
-        @include events-header-font;
-    }
+      @include event-box;
 
-    .event-articles {
-        padding-left: 5%;
-        padding-right: 5%;
+      @media (min-width: 768px) {
+        width: 20%;
+        margin: 0.2%;
+        text-align: center;
+      }
 
-        @media (min-width: 768px) {
-            display: flex;
-            padding: 0 10% 12% 10%;
-        }
-
-        article {
-            background-color: lighten($color: $color-black, $amount: 10%);
-
-            @include event-box;
-
-            @media (min-width: 768px) {
-                width: 20%;
-                margin: 0.2%;
-                text-align: center;
-            }
-
-            div {
-                display: flex;
-                justify-content: center;
-                width: 18%;
-                text-align: center;
-                margin: 0;
-
-                @media (min-width: 768px) {
-                    width: 100%;
-                    margin: 0.75rem;
-                }
-
-                img {
-                    width: 32px;
-                    height: 32px;
-                }
-            }
-
-            h2 {
-                width: 23%;
-                margin: 0;
-
-                @media (min-width: 768px) {
-                    width: 100%;
-                }
-
-                a {
-                    @include event-type-font;
-                }
-            }
-
-            p {
-                width: 59%;
-                padding: 10px;
-
-                @media (min-width: 768px) {
-                    width: 100%;
-                }
-
-                @include event-info-font;
-            }
-        }
-    }
-
-    .button-div {
+      div {
         display: flex;
         justify-content: center;
-        padding: 2rem;
+        width: 18%;
+        text-align: center;
+        margin: 0;
 
         @media (min-width: 768px) {
-            display: none;
+          width: 100%;
+          margin: 0.75rem;
         }
 
-        .join-button {
-            @include join-button;
-
-            font-family: sans-serif;
-            color: $color-light;
-            max-width: 20rem;
+        img {
+          width: 32px;
+          height: 32px;
         }
+      }
+
+      h2 {
+        width: 23%;
+        margin: 0;
+
+        @media (min-width: 768px) {
+          width: 100%;
+        }
+      }
+
+      p {
+        width: 59%;
+        padding: 10px;
+
+        @media (min-width: 768px) {
+          width: 100%;
+        }
+
+        @include event-info-font;
+      }
+    }
+  }
+
+  .button-div {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+    @media (min-width: 768px) {
+      display: none;
     }
 
-    .see-program {
-        position: absolute;
-        bottom: 3rem;
-        width: 100%;
-        text-align: center;
+    .join-button {
+      @include join-button;
+
+      font-family: sans-serif;
+      color: $color-light;
+      max-width: 20rem;
     }
+  }
+
+  .see-program {
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .artists {
-    width: 100%;
-    background: $color-light;
-    padding: 0 5% 0 5%;
+  width: 100%;
+  background: $color-light;
+  padding: 0 5% 0 5%;
 
-    .artists-header {
-        @include artists-header-box;
+  .artists-header {
+    @include artists-header-box;
+    @include artists-header-font;
+  }
 
-        @include artists-header-font;
+  .artists-article-wrapper {
+    @media (min-width: 768px) {
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%;
+      justify-content: center;
     }
 
-    .artists-article-wrapper {
-        @media (min-width: 768px) {
-            display: flex;
-            flex-flow: row wrap;
-            width: 100%;
-            justify-content: center;
+    .artists-article {
+      margin-bottom: 3rem;
+
+      @media (min-width: 768px) {
+        width: 50%;
+      }
+
+      .image {
+        height: 100%;
+        position: relative;
+
+        .img-front {
+          position: relative;
+          z-index: 2;
+          padding: 10% 0 0 10%;
         }
 
-        .artists-article {
-            margin-bottom: 3rem;
-
-            @media (min-width: 768px) {
-                width: 50%;
-            }
-
-            .image {
-                height: 100%;
-                position: relative;
-
-                .img-front {
-                    position: relative;
-                    z-index: 2;
-                    padding: 10% 0 0 10%;
-                }
-
-                .img-back {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 65%;
-                }
-            }
-
-            .artist-info {
-                h2 a {
-                    @include artists-name;
-
-                    padding-bottom: 0.5rem;
-                }
-
-                .about {
-                    @include artist-about-font;
-
-                    padding: 0.5rem 0 1.2rem 0;
-                }
-
-                .story {
-                    @include min-font;
-                }
-            }
+        .img-back {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 65%;
         }
+      }
+
+      .artist-info {
+        h2 a {
+          @include artists-name;
+
+          padding-bottom: 0.5rem;
+        }
+
+        .about {
+          @include artist-about-font;
+
+          padding: 0.5rem 0 1.2rem 0;
+        }
+
+        .story {
+          @include min-font;
+        }
+      }
     }
+  }
 
-    .button-more {
-        display: flex;
+  .button-more {
+    display: flex;
 
-        button {
-            @include more-button;
-            @include more-button-font;
+    button {
+      @include more-button;
+      @include more-button-font;
 
-            margin-bottom: 2rem;
-        }
+      margin-bottom: 2rem;
     }
+  }
 }
 
 // Footer section
 
 .footer-main {
-    width: 100%;
+  width: 100%;
 
-    .partners {
-        @include partners-box;
+  .partners {
+    @include partners-box;
 
-        @media (min-width: 768px) {
-            height: 10rem;
-        }
+    @media (min-width: 768px) {
+      height: 10rem;
     }
+  }
 
-    .copyright {
-        @media (min-width: 768px) {
-            height: 10rem;
-        }
+  .copyright {
+    @media (min-width: 768px) {
+      height: 10rem;
     }
+  }
 }
 
 .cc {
-    @include cc-font;
+  @include cc-font;
 }
 
 .cc-statement {
-    @include min-font;
+  @include min-font;
 }
