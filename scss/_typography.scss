@@ -12,14 +12,9 @@
   font-family: $font-coco-bold;
   line-height: $line-3;
 
-  @media (min-width: 425px) {
+  @media (min-width: 768px) {
     font-size: $h-1m;
     line-height: $line-3m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-1l;
-    line-height: $line-3l;
   }
 }
 
@@ -27,18 +22,13 @@
   font-size: $h-3;
   line-height: $line-2;
 
-  @media (min-width: 425px) {
-    font-size: $h-3m;
+  @media (min-width: 768px) {
+    font-size: $h-3l;
     line-height: $line-2m;
   }
 
-  @media (min-width: 425px) {
-    font-size: $h-3l;
-    line-height: $line-2l;
-  }
-
-  color: $color-red;
-  font-weight: 500;
+  color: $color-invite;
+  font-weight: 400;
 
   // font-family: "Roboto", sans-serif;
   font-family: $font-lato;
@@ -46,19 +36,14 @@
 
 @mixin concert-info-font {
   font-size: $h-7;
-  color: lighten($color: $color-black, $amount: 20%);
+  color: lighten($color: $color-black, $amount: 25%);
   line-height: $line-2;
-  font-weight: 800;
+  font-weight: 700;
   font-family: $font-lato;
 
-  @media (min-width: 425px) {
-    font-size: $h-7m;
-    line-height: $line-2m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-7l;
-    line-height: $line-2l;
+  @media (min-width: 768px) {
+    font-size: $h-9m;
+    line-height: $line-2;
   }
 }
 
@@ -70,30 +55,21 @@
   // font-family: "Roboto", sans-serif;
   font-family: sans-serif;
 
-  @media (min-width: 425px) {
-    font-size: $h-2m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-2l;
+  @media (min-width: 768px) {
+    font-size: $h-2;
   }
 }
 
 @mixin place-font {
-  font-size: $h-6;
+  font-size: $h-7;
   color: lighten($color: $color-black, $amount: 20%);
   line-height: 1.2rem;
   font-weight: 700;
   font-family: $font-lato;
 
-  @media (min-width: 425px) {
-    font-size: $h-6m;
+  @media (min-width: 768px) {
+    font-size: $h-6;
     line-height: $line-2m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-6l;
-    line-height: $line-2l;
   }
 }
 
@@ -102,17 +78,13 @@
 @mixin events-header-font {
   font-size: $h-4;
   color: $color-light;
-  font-weight: $font-500;
+  font-weight: $font-700;
 
   // font-family: "Roboto", sans-serif;
   font-family: $font-lato;
 
-  @media (min-width: 425px) {
-    font-size: $h-4m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-4l;
+  @media (min-width: 768px) {
+    font-size: $h-4;
   }
 }
 
@@ -125,34 +97,24 @@
   // font-family: "Roboto", sans-serif;
   font-family: $font-lato;
 
-  @media (min-width: 425px) {
-    font-size: $h-6m;
-    line-height: $line-1m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-6l;
-    line-height: $line-1l;
+  @media (min-width: 768px) {
+    font-size: $h-7;
+    line-height: $line-1;
   }
 }
 
 @mixin event-info-font {
   font-size: $h-7;
-  color: $color-light;
-  line-height: 1rem;
+  color: lighten($color: $color-light, $amount: 20%);
+  line-height: $line-2;
 
   // font-family: "Roboto", sans-serif;
   font-family: $font-lato;
-  font-weight: 800;
+  font-weight: 700;
 
-  @media (min-width: 425px) {
-    font-size: $h-7m;
-    line-height: $line-1m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-7l;
-    line-height: $line-1l;
+  @media (min-width: 768px) {
+    font-size: $h-8;
+    line-height: $line-1;
   }
 }
 
@@ -165,14 +127,9 @@
   // font-family: "Roboto", sans-serif;
   font-family: $font-lato;
 
-  @media (min-width: 425px) {
+  @media (min-width: 768px) {
     font-size: $h-5m;
     line-height: $line-1m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-5l;
-    line-height: $line-1l;
   }
 }
 
@@ -185,14 +142,9 @@
   // font-family: "Roboto", sans-serif;
   font-family: $font-lato;
 
-  @media (min-width: 425px) {
-    font-size: $h-8m;
-    line-height: $line-2m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-8l;
-    line-height: $line-2l;
+  @media (min-width: 768px) {
+    font-size: $h-8;
+    line-height: $line-2;
   }
 }
 
@@ -200,18 +152,14 @@
 
 @mixin artists-name {
   font-size: $h-6;
-  color: $color-black;
+  color: lighten($color: $color-black, $amount: 5%);
   font-weight: $font-700;
 
   // font-family: "Roboto", sans-serif;
   font-family: $font-lato;
 
-  @media (min-width: 425px) {
-    font-size: $h-6m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-6l;
+  @media (min-width: 768px) {
+    font-size: $h-6;
   }
 }
 
@@ -224,49 +172,40 @@
   font-family: $font-lato;
   font-style: italic;
 
-  @media (min-width: 425px) {
-    font-size: $h-7m;
-    line-height: $line-1m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-7l;
-    line-height: $line-1l;
+  @media (min-width: 768px) {
+    font-size: $h-8;
+    line-height: $line-1;
   }
 }
 
 @mixin artists-header-font {
-  @include events-header-font;
+  font-size: $h-4;
+  color: lighten($color: $color-black, $amount: 10%);
+  font-weight: $font-700;
 
-  color: $color-black;
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-lato;
+
+  @media (min-width: 768px) {
+    font-size: $h-4;
+  }
 }
 
 @mixin more-button-font {
-  font-size: $h-6;
+  font-size: $h-7;
   color: $color-black;
   font-family: $font-lato, sans-serif;
 
-  @media (min-width: 425px) {
+  @media (min-width: 768px) {
     font-size: $h-6m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-6l;
   }
 }
 
 @mixin see-program-font {
-  font-size: $h-6;
+  font-size: $h-7;
   color: $color-light;
-  font-family: "Roboto", sans-serif;
-
-  @media (min-width: 425px) {
-    font-size: $h-6m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-6l;
-  }
+  font-family: $font-lato;
+  text-decoration: underline;
 }
 
 //
@@ -281,14 +220,9 @@
   // font-family: "Roboto", sans-serif;
   font-family: $font-coco;
 
-  @media (min-width: 425px) {
+  @media (min-width: 768px) {
     font-size: $h-4m;
     line-height: $line-1m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-4l;
-    line-height: $line-1l;
   }
 }
 
@@ -301,14 +235,9 @@
   // font-family: "Roboto", sans-serif;
   font-family: $font-coco;
 
-  @media (min-width: 425px) {
+  @media (min-width: 768px) {
     font-size: $h-7m;
     line-height: $line-1m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-7l;
-    line-height: $line-1l;
   }
 }
 
@@ -319,14 +248,9 @@
   line-height: 1rem;
   font-family: $font-lato;
 
-  @media (min-width: 425px) {
+  @media (min-width: 768px) {
     font-size: $h-6m;
     line-height: $line-1m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-6l;
-    line-height: $line-1l;
   }
 }
 
@@ -337,14 +261,9 @@
   line-height: 1rem;
   font-family: $font-lato;
 
-  @media (min-width: 425px) {
+  @media (min-width: 768px) {
     font-size: $h-7m;
     line-height: $line-1m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-7l;
-    line-height: $line-1l;
   }
 }
 
@@ -357,12 +276,8 @@
   font-weight: $font-700;
   font-family: $font-lato;
 
-  @media (min-width: 425px) {
+  @media (min-width: 768px) {
     font-size: $h-5m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-5l;
   }
 }
 
@@ -372,12 +287,8 @@
   font-weight: $font-700;
   font-family: sans-serif;
 
-  @media (min-width: 425px) {
+  @media (min-width: 768px) {
     font-size: $h-4m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-4l;
   }
 }
 
@@ -389,12 +300,8 @@
   font-weight: $font-700;
   font-family: $font-lato;
 
-  @media (min-width: 425px) {
+  @media (min-width: 768px) {
     font-size: $h-6m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-6l;
   }
 }
 
@@ -404,12 +311,8 @@
   font-weight: $font-900;
   font-family: $font-lato;
 
-  @media (min-width: 425px) {
+  @media (min-width: 768px) {
     font-size: $h-5m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-5l;
   }
 }
 
@@ -419,12 +322,8 @@
   font-weight: $font-900;
   font-family: $font-lato;
 
-  @media (min-width: 425px) {
+  @media (min-width: 768px) {
     font-size: $h-7m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-7l;
   }
 }
 
@@ -432,16 +331,12 @@
 
 @mixin partners-header-font {
   font-size: $h-5;
-  color: $color-light;
+  color: lighten($color: $color-black, $amount: 30%);
   font-weight: $font-500;
   font-family: "Roboto", sans-serif;
 
-  @media (min-width: 425px) {
+  @media (min-width: 768px) {
     font-size: $h-5m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-5l;
   }
 }
 
@@ -451,11 +346,7 @@
   font-weight: $font-700;
   font-family: "Roboto", sans-serif;
 
-  @media (min-width: 425px) {
+  @media (min-width: 768px) {
     font-size: $h-7m;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: $h-7l;
   }
 }

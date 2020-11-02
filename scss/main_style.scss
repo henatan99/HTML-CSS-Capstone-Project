@@ -27,7 +27,7 @@ a {
   top: 0;
   width: 100%;
   height: 20vh;
-  background: $color-light;
+  background: rgb(247,249,251);
   z-index: 10;
 
   .nav-dropdown {
@@ -71,7 +71,7 @@ a {
 .navbar-1 {
   width: 100%;
   height: 25px;
-  background: $color-black;
+  background: rgb(62,62,62);
 
   .navbar1-ul {
     float: right;
@@ -82,10 +82,10 @@ a {
     align-items: center;
 
     li {
-      @include min-font;
-
-      font-weight: $font-700;
-      color: $color-light;
+      font-family: $font-lato;
+      font-size: $h-8;
+      font-weight: 600;
+      color: lighten($color: $color-light, $amount: 30%);      
       margin-left: 1rem;
     }
   }
@@ -101,6 +101,21 @@ a {
 
   ul {
     width: 65%;
+
+    a {
+      font-family: $font-lato;
+      font-size: $h-8;
+      font-weight: 500;
+      color: lighten($color: $color-black, $amount: 0);
+    }
+  }
+
+  .nav-logo {
+    p{
+      font-family: $font-lato;
+      font-size: $h-6;
+      font-weight: 700;
+    }
   }
 }
 
@@ -110,12 +125,13 @@ a {
 .main-about {
   width: 100%;
   background-image: url("../assets/images/custom-background-big.png");
+  background: rgb(247,247,247);
   background-clip: content-box;
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
-  margin-top: 6.9rem;
+  margin-top: 6.1rem;
 
   @media (min-width: 768px) {
     margin-top: 0;
@@ -149,7 +165,7 @@ a {
   padding: 5px 18px 0 18px;
   position: relative;
   overflow: hidden;
-  background-color: lighten($color: $color-light, $amount: 5%);
+  background-color: rgb(237,237,239);
 
   h3 {
     @include invite-font;
@@ -160,7 +176,7 @@ a {
 
   @media (min-width: 768px) {
     display: block;
-    padding: 5rem 15% 0 15%;
+    padding: 4.3rem 15% 0 15%;
   }
 }
 
@@ -195,7 +211,7 @@ a {
 
 .partners-logo img {
   max-width: 5rem;
-  margin: 3%;
+  margin: 0 3% 0 3%;
 }
 
 .events-section {
@@ -212,16 +228,13 @@ a {
   }
 
   .event-articles {
-    padding-left: 5%;
-    padding-right: 5%;
-
     @media (min-width: 768px) {
       display: flex;
       padding: 0 10% 12% 10%;
     }
 
     article {
-      background-color: lighten($color: $color-black, $amount: 10%);
+      background-color: rgb(59,62,69);
 
       @include event-box;
 
@@ -274,7 +287,8 @@ a {
   .button-div {
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 1.5rem 2.4rem 2.1rem 2.4rem;
+
 
     @media (min-width: 768px) {
       display: none;
@@ -283,7 +297,7 @@ a {
     .join-button {
       @include join-button;
 
-      font-family: sans-serif;
+      font-family: $font-lato;
       color: $color-light;
       max-width: 20rem;
     }
@@ -299,12 +313,16 @@ a {
 
 .artists {
   width: 100%;
-  background: $color-light;
+  background: white;
   padding: 0 5% 0 5%;
+
+  @media (min-width:768px) {
+    padding: 0 10% 0 10%;
+  }
 
   .artists-header {
     @include artists-header-box;
-    @include artists-header-font;
+    @include artists-header-font;    
   }
 
   .artists-article-wrapper {
@@ -343,6 +361,7 @@ a {
       .artist-info {
         h2 a {
           @include artists-name;
+          font-weight: 800;
 
           padding-bottom: 0.5rem;
         }
@@ -351,6 +370,10 @@ a {
           @include artist-about-font;
 
           padding: 0.5rem 0 1.2rem 0;
+
+          @media (min-width:768px) {
+            padding: 0 0 0.6rem 0;
+          }
         }
 
         .story {
@@ -394,6 +417,7 @@ a {
 
 .cc {
   @include cc-font;
+  
 }
 
 .cc-statement {

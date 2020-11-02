@@ -9,6 +9,9 @@ The website has The home page, the about page and the tickets page. Responsive d
 
 ![screenshot](assets/images/screencapture-henatan99-github-io-HTML-CSS-Capstone-Project-2020-11-02-14_06_12.png)
 
+![screenshot](assets/images/screencapture-henatan99-github-io-HTML-CSS-Capstone-Project-about-html-2020-11-02-14_59_59.png)
+
+![screenshot](assets/images/screencapture-chrome-extension-fdpohaocaechififmbbbbbknoalclacl-capture-html-2020-11-02-15_01_20.png)
 
 ### Home Page 
 The home page has navbar, front section, main events section, artists section and footer section
