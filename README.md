@@ -7,7 +7,7 @@ This is HTML/CSS Capstone project to design a website by personalizing an archiv
 
 The website has The home page, the about page and the tickets page. Responsive design is applied for small screen and large screen with min-width of 768px, a single breakpoint.
 
-![screenshot](assets/screencapture-file-home-henok-Documents-NewsWeek-page-bootstrap-clone-index-html-2020-10-22-06_22_45.png)
+![screenshot](assets/images/screencapture-henatan99-github-io-HTML-CSS-Capstone-Project-2020-11-02-14_06_12.png)
 
 
 ### Home Page 
