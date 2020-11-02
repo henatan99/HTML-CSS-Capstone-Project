@@ -656,7 +656,7 @@ h1 {
   width: 100%;
   padding: 0.25rem 0 0.25rem 0;
   background: #d3d3d3;
-  font-size: 0.96rem;
+  font-size: 0.787rem;
   color: #272a31;
   font-weight: 600;
   line-height: 1rem;
@@ -665,14 +665,14 @@ h1 {
 
 @media (min-width: 425px) {
   .category {
-    font-size: 1.152rem;
+    font-size: 1rem;
     line-height: 1.2rem;
   }
 }
 
 @media (min-width: 1024px) {
   .category {
-    font-size: 1.44rem;
+    font-size: 1.18rem;
     line-height: 1.5rem;
   }
 }
