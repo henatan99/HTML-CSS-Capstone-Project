@@ -166,7 +166,7 @@
 @mixin artists-name {
   font-size: $h-6;
   color: lighten($color: $color-black, $amount: 5%);
-  font-weight: $font-700;
+  font-weight: $font-800;
 
   // font-family: "Roboto", sans-serif;
   font-family: $font-lato;
@@ -207,7 +207,7 @@
 @mixin more-button-font {
   font-size: $h-7;
   color: $color-black;
-  font-family: $font-lato, sans-serif;
+  font-family: $font-lato;
 
   @media (min-width: 768px) {
     font-size: $h-6m;

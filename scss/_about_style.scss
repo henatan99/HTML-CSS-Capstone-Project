@@ -31,7 +31,7 @@
 }
 
 .cc-about a {
-  @include cc-font;
+  @include cc-logo-font;
 
   @media (min-width: 768px) {
     color: $color-light;
@@ -132,14 +132,6 @@
   color: $color-black;
   font-weight: 700;
   text-decoration: underline;
-}
-
-.cc-about a {
-  @include cc-logo-font;
-
-  @media (min-width: 768px) {
-    color: $color-light;
-  }
 }
 
 .cc-statement-about {
