@@ -9,8 +9,9 @@
     color: #f23a12;
     font-weight: 400;
     font-family: "Lato Medium", sans-serif;
-    position: relative;
-    z-index: 1; }
+    position: relative;z
+    z-index: 1; 
+  }
     @media (min-width: 768px) {
       .concert-invite-about h3 {
         font-size: 1.95rem;
@@ -561,7 +562,7 @@ a {
       font-weight: 500;
       color: #272a31; }
   .navbar-2 .nav-logo p {
-    font-family: "Lato Medium", sans-serif;
+    font-family: "Lato Heavy", sans-serif;
     font-size: 0.96rem;
     font-weight: 700; }
 
@@ -623,7 +624,7 @@ a {
 
 .front {
   width: 100%;
-  padding: 0 18px 70px 18px; }
+  padding: 12px 18px 70px 18px; }
   @media (min-width: 768px) {
     .front {
       padding: 0 15% 70px 15%; } }
