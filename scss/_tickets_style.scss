@@ -42,14 +42,26 @@ h1 {
 }
 
 .section-elements-wrapper {
-  padding: 0 15% 0 15%;
+  padding: 36px 5% 0 5%;
+
+  @media (min-width: 768px) {
+    padding: 36px 15% 0 15%;
+  }
 }
 
 .ticket-section {
   background: lighten($color: $color-light, $amount: 10%);
 
-  th {
-    @include tickets-font;
+  table {
+    border: 4px solid rgb(30, 47, 94);
+
+    th {
+      @include tickets-font-small;
+
+      a {
+        color: $color-red;
+      }
+    }
   }
 }
 
@@ -57,7 +69,11 @@ h1 {
 .select-service {
   @include ticket-border-box-1;
 
-  margin: 2rem;
+  margin: 2rem 0;
+
+  @media (min-width: 768px) {
+    margin: 2rem 9rem;
+  }
 }
 
 .category-1,
@@ -79,7 +95,7 @@ h1 {
       padding: 0.5rem 0 0 0;
 
       .form-check-label {
-        @include tickets-font;
+        @include tickets-font-small;
       }
     }
   }

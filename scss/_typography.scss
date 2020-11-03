@@ -42,7 +42,20 @@
   font-family: $font-lato;
 
   @media (min-width: 768px) {
-    font-size: $h-9m;
+    font-size: $h-7;
+    line-height: $line-2;
+  }
+}
+
+@mixin contact-font {
+  font-size: 0.7rem;
+  color: lighten($color: $color-black, $amount: 25%);
+  line-height: $line-2;
+  font-weight: 700;
+  font-family: $font-lato;
+
+  @media (min-width: 768px) {
+    font-size: 0.8rem;
     line-height: $line-2;
   }
 }
@@ -227,18 +240,23 @@
 }
 
 @mixin tickets-font {
-  font-size: $h-7;
+  font-size: $h-4m;
   color: $color-black;
   font-weight: 600;
   line-height: 1rem;
 
   // font-family: "Roboto", sans-serif;
-  font-family: $font-coco;
+  font-family: $font-lato;
+}
 
-  @media (min-width: 768px) {
-    font-size: $h-7m;
-    line-height: $line-1m;
-  }
+@mixin tickets-font-small {
+  font-size: $h-6;
+  color: $color-black;
+  font-weight: 600;
+  line-height: 1rem;
+
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-lato;
 }
 
 @mixin tickets-category-font {
@@ -271,21 +289,27 @@
 // About page styling
 
 @mixin logo-header-font {
-  font-size: $h-5;
+  font-size: $h-4;
   color: $color-black;
   font-weight: $font-700;
   font-family: $font-lato;
+  line-height: 1.7rem;
 
   @media (min-width: 768px) {
-    font-size: $h-5m;
+    font-size: $h-4m;
   }
 }
 
 @mixin logo-font {
-  font-size: $h-4;
+  font-size: 2.5rem;
   color: $color-black;
   font-weight: $font-700;
-  font-family: sans-serif;
+  font-family: $font-lato-h;
+  line-height: $line-3;
+
+  span {
+    font-size: 2rem;
+  }
 
   @media (min-width: 768px) {
     font-size: $h-4m;
@@ -295,13 +319,13 @@
 // upcoming section about page
 
 @mixin upcoming-header-font {
-  font-size: $h-6;
+  font-size: $h-4;
   color: $color-black;
   font-weight: $font-700;
   font-family: $font-lato;
 
   @media (min-width: 768px) {
-    font-size: $h-6m;
+    font-size: $h-4m;
   }
 }
 
@@ -330,10 +354,10 @@
 //  partners section
 
 @mixin partners-header-font {
-  font-size: $h-5;
-  color: lighten($color: $color-black, $amount: 30%);
-  font-weight: $font-500;
-  font-family: "Roboto", sans-serif;
+  font-size: $h-4;
+  color: lighten($color: $color-light, $amount: 0);
+  font-weight: $font-400;
+  font-family: $font-lato-h;
 
   @media (min-width: 768px) {
     font-size: $h-5m;
@@ -343,10 +367,21 @@
 @mixin cc-font {
   font-size: $h-7;
   color: $color-black;
-  font-weight: $font-700;
+  font-weight: $font-400;
   font-family: "Roboto", sans-serif;
 
   @media (min-width: 768px) {
     font-size: $h-7m;
+  }
+}
+
+@mixin cc-logo-font {
+  font-size: $h-7;
+  color: $color-black;
+  font-weight: $font-700;
+  font-family: "Roboto", sans-serif;
+
+  @media (min-width: 768px) {
+    font-size: $h-4;
   }
 }
