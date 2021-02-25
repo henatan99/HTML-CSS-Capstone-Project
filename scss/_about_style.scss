@@ -1,0 +1,278 @@
+@import "_mixins.scss";
+@import "_colors.scss";
+@import "_fonts.scss";
+@import "_typography.scss";
+
+// Front page section styling
+
+.concert-invite-about {
+  width: 100%;
+  padding: 5px 18px 0 18px;
+  position: relative;
+  overflow: hidden;
+
+  h3 {
+    @include invite-font;
+
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.front-about {
+  width: 100%;
+  text-align: center;
+  padding: 0 18px 25px 18px;
+  background: rgb(247, 247, 247);
+
+  @media (min-width: 768px) {
+    padding: 4rem 15% 40px 23%;
+  }
+}
+
+.cc-about a {
+  @include cc-logo-font;
+
+  @media (min-width: 768px) {
+    color: $color-light;
+  }
+}
+
+.concert-title {
+  padding-top: 0.8rem;
+
+  h1 a {
+    @include title-font;
+  }
+}
+
+.concert-info {
+  @include box-border;
+  @include concert-info-font;
+
+  background-color: rgb(255, 255, 255);
+
+  @media (min-width: 768px) {
+    width: 64%;
+  }
+}
+
+.concert-info-about {
+  @include box-border;
+  @include concert-info-font;
+
+  background-color: rgb(255, 255, 255);
+
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+}
+
+.logo-sections-wrapper {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  padding: 5% 0 5% 0;
+
+  @media (min-width: 768px) {
+    padding: 5% 0 0 0;
+  }
+}
+
+.contact {
+  width: 100%;
+  padding: 0 14% 0 14%;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  @include contact-font;
+
+  @media (min-width: 768px) {
+    padding: 0 22% 0 30%;
+  }
+}
+
+.logo {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 14% 0 14%;
+
+  @media (min-width: 768px) {
+    padding: 0 22% 0 30%;
+  }
+
+  h2 {
+    @include logo-header-font;
+
+    padding: 5% 0 5% 0;
+  }
+
+  p {
+    @include contact-font;
+
+    margin: 1% 7% 14% 7%;
+
+    @media (min-width: 768px) {
+      margin: 1% 7% 5% 7%;
+    }
+  }
+
+  .logo-img {
+    @include logo-font;
+
+    background-color: lighten($color: $color-light, $amount: 20%);
+    padding: 7% 0 7% 0;
+    margin-bottom: 10%;
+  }
+}
+
+.email {
+  font-family: $font-lato-h;
+  line-height: 1rem;
+  color: $color-black;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.cc-statement-about {
+  @include cc-font;
+
+  @media (min-width: 768px) {
+    color: $color-light;
+  }
+}
+
+.upcoming {
+  width: 100%;
+  padding: 0 10% 3rem 10%;
+  text-align: center;
+  background: lighten($color: $color-light, $amount: 20%);
+
+  @media (min-width: 768px) {
+    padding: 0 14% 16px 22%;
+  }
+
+  .upcoming-title {
+    @include upcoming-header-font;
+
+    padding: 5% 0 5% 0;
+
+    @media (min-width: 768px) {
+      padding: 5% 0 3% 0;
+    }
+  }
+
+  .upcoming-info {
+    margin-bottom: 1rem;
+
+    @include concert-info-font;
+
+    @media (min-width: 768px) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .upcoming-articles-wrapper {
+    @media (min-width: 768px) {
+      display: flex;
+      padding-bottom: 10%;
+    }
+
+    .upcoming-article {
+      @media (min-width: 768px) {
+        margin: 0.5rem;
+      }
+
+      width: 100%;
+      height: 12rem;
+      object-fit: cover;
+      margin-bottom: 3%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        padding: 0.5rem;
+
+        a {
+          @include upcoming-date-font;
+        }
+      }
+
+      h2 {
+        a {
+          @include upcoming-place-font;
+        }
+
+        padding: 0.5rem;
+      }
+    }
+
+    .upcoming-1 {
+      @include opaque-background;
+
+      background-image: url("../assets/images/thailand.jpg");
+    }
+
+    .upcoming-2 {
+      @include opaque-background;
+
+      background-image: url("../assets/images/london.jpg");
+    }
+  }
+}
+
+@mixin partners-box {
+  width: 100%;
+  height: 13rem;
+  padding: 1.2rem 4rem 1.4rem 4rem;
+  background: $color-black;
+  text-align: center;
+  line-height: 5%;
+}
+
+@mixin partners-box-about {
+  width: 100%;
+  height: 13rem;
+  padding: 1.2rem 1rem 1.4rem 1rem;
+  background: $color-black;
+  text-align: center;
+  line-height: 5%;
+}
+
+.partners-about {
+  @include partners-box-about;
+}
+
+.partners-header {
+  width: 100%;
+  padding: 1.5rem;
+
+  @include partners-header-font;
+}
+
+.partners-logo-about {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  img {
+    max-width: 5rem;
+  }
+}
+
+.copyright-about {
+  padding: 1rem;
+
+  @media (min-width: 768px) {
+    height: 11rem;
+    background: $color-black;
+  }
+}
+
+.footer-about {
+  width: 100%;
+}

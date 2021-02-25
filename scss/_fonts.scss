@@ -1,0 +1,71 @@
+$font-size: 2rem;
+$h-1: $font-size * 0.9;
+$h-2: $font-size * 0.7;
+$h-3: $font-size * 0.65;
+$h-4: $font-size * 0.6;
+$h-5: $font-size * 0.5;
+$h-6: $font-size * 0.48;
+$h-7: $font-size * 0.4;
+$h-8: $font-size * 0.28;
+$h-9: $font-size * 0.26;
+
+$mul-1: 1.2;
+
+$font-size-m: $font-size * $mul-1;
+$h-1m: $font-size-m;
+$h-2m: $font-size-m * 0.7;
+$h-3m: $font-size-m * 0.65;
+$h-4m: $font-size-m * 0.6;
+$h-5m: $font-size-m * 0.5;
+$h-6m: $font-size-m * 0.48;
+$h-7m: $font-size-m * 0.32;
+$h-8m: $font-size-m * 0.28;
+$h-9m: $font-size * 0.26;
+
+$mul-2: 1.5;
+
+$font-size-l: $font-size * $mul-2;
+$h-1l: $font-size;
+$h-2l: $font-size-l * 0.7;
+$h-3l: $font-size-l * 0.65;
+$h-4l: $font-size-l * 0.6;
+$h-5l: $font-size-l * 0.5;
+$h-6l: $font-size-l * 0.48;
+$h-7l: $font-size-l * 0.32;
+$h-8l: $font-size-l * 0.25;
+$h-9l: $font-size * 0.25;
+
+$font-900: 900;
+$font-800: 800;
+$font-700: 700;
+$font-600: 600;
+$font-500: 500;
+$font-400: 400;
+$font-300: 300;
+$font-200: 200;
+$font-100: 100;
+
+$line: 1rem;
+$line-1: $line;
+$line-2: $line * 1.2;
+$line-3: $line * 2;
+
+$line-m: $line * $mul-1;
+$line-1m: $line-m;
+$line-2m: $line-m * 1.2;
+$line-3m: $line-m * 2;
+
+$line-l: $line * $mul-2;
+$line-1l: $line-l;
+$line-2l: $line-l * 1.2;
+$line-3l: $line-l * 2;
+
+$font-lato: "Lato Medium", sans-serif;
+$font-lato-h: "Lato Heavy", sans-serif;
+$font-lato-sb: "Lato Semibold", sans-serif;
+
+$font-coco: "Cocogoose Pro", sans-serif;
+$font-coco-bold: "Cocogoose", sans-serif;
+
+// COCOGOOSE, Cocogoose Pro, Cocogoose Pro Light,
+// Cocogoose Pro SemiLight, Cocogoose Pro Thin, Cocogoose Pro UltraLight

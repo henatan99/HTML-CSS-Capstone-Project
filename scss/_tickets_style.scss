@@ -1,0 +1,131 @@
+@import "_mixins.scss";
+@import "_colors.scss";
+@import "_fonts.scss";
+@import "_typography.scss";
+
+//main section
+
+.tickets-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+// Middle arrow
+
+.arrow {
+  width: 100%;
+  height: 2rem;
+  transform: rotate(90deg);
+
+  span {
+    padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+    background: $color-red;
+    transform: rotate(-45deg);
+  }
+}
+
+// ticket section
+
+.ticket-section,
+.vip-service {
+  position: relative;
+
+  @include tickets-p-font;
+
+  padding: 2rem 0 2rem 0;
+}
+
+h1 {
+  @include tickets-font;
+}
+
+.section-elements-wrapper {
+  padding: 36px 5% 0 5%;
+
+  @media (min-width: 768px) {
+    padding: 36px 15% 0 15%;
+  }
+}
+
+.ticket-section {
+  background: lighten($color: $color-light, $amount: 10%);
+
+  table {
+    border: 4px solid rgb(30, 47, 94);
+
+    th {
+      @include tickets-font-small;
+
+      a {
+        color: $color-red;
+      }
+    }
+  }
+}
+
+.select-seat,
+.select-service {
+  @include ticket-border-box-1;
+
+  margin: 2rem 0;
+
+  @media (min-width: 768px) {
+    margin: 2rem 9rem;
+  }
+}
+
+.category-1,
+.category-2 {
+  @include ticket-border-box-2;
+
+  margin: 1rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+
+  .menu-category {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .form-check {
+      padding: 0.5rem 0 0 0;
+
+      .form-check-label {
+        @include tickets-font-small;
+      }
+    }
+  }
+}
+
+.category {
+  width: 100%;
+  padding: 0.25rem 0 0.25rem 0;
+  background: $color-light;
+
+  @include tickets-category-font;
+}
+
+// Submit button
+
+.button-div-ticket {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 8%;
+
+  .button-wrapper {
+    width: 20rem;
+
+    .button-ticket {
+      @include join-button-small;
+
+      a {
+        @include join-button-font;
+      }
+    }
+  }
+}

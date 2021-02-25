@@ -1,0 +1,1283 @@
+.concert-invite-about {
+  width: 100%;
+  padding: 5px 18px 0 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.concert-invite-about h3 {
+  font-size: 1.3rem;
+  line-height: 1.2rem;
+  color: #f23a12;
+  font-weight: 400;
+  font-family: "Lato Medium", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .concert-invite-about h3 {
+    font-size: 1.95rem;
+    line-height: 1.44rem;
+  }
+}
+
+.front-about {
+  width: 100%;
+  text-align: center;
+  padding: 0 18px 25px 18px;
+  background: #f7f7f7;
+}
+
+@media (min-width: 768px) {
+  .front-about {
+    padding: 4rem 15% 40px 23%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.cc-about a {
+  font-size: 0.8rem;
+  color: #272a31;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .cc-about a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .cc-about a {
+    color: #d3d3d3;
+  }
+}
+
+.concert-title {
+  padding-top: 0.8rem;
+}
+
+.concert-title h1 a {
+  font-size: 1.8rem;
+  color: #f51a01;
+  font-weight: 900;
+  font-style: normal;
+  font-family: "Cocogoose", sans-serif;
+  line-height: 2rem;
+}
+
+@media (min-width: 768px) {
+  .concert-title h1 a {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+}
+
+.concert-info {
+  border: 3px solid white;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  color: #606778;
+  line-height: 1.2rem;
+  font-weight: 700;
+  font-family: "Lato Medium", sans-serif;
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  .concert-info {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .concert-info {
+    width: 64%;
+  }
+}
+
+.concert-info-about {
+  border: 3px solid white;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  color: #606778;
+  line-height: 1.2rem;
+  font-weight: 700;
+  font-family: "Lato Medium", sans-serif;
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  .concert-info-about {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .concert-info-about {
+    width: 100%;
+  }
+}
+
+.logo-sections-wrapper {
+  width: 100%;
+  background: white;
+  padding: 5% 0 5% 0;
+}
+
+@media (min-width: 768px) {
+  .logo-sections-wrapper {
+    padding: 5% 0 0 0;
+  }
+}
+
+.contact {
+  width: 100%;
+  padding: 0 14% 0 14%;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 0.7rem;
+  color: #606778;
+  line-height: 1.2rem;
+  font-weight: 700;
+  font-family: "Lato Medium", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact {
+    padding: 0 22% 0 30%;
+  }
+}
+
+.logo {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 14% 0 14%;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    padding: 0 22% 0 30%;
+  }
+}
+
+.logo h2 {
+  font-size: 1.2rem;
+  color: #272a31;
+  font-weight: 700;
+  font-family: "Lato Medium", sans-serif;
+  line-height: 1.7rem;
+  padding: 5% 0 5% 0;
+}
+
+@media (min-width: 768px) {
+  .logo h2 {
+    font-size: 1.44rem;
+  }
+}
+
+.logo p {
+  font-size: 0.7rem;
+  color: #606778;
+  line-height: 1.2rem;
+  font-weight: 700;
+  font-family: "Lato Medium", sans-serif;
+  margin: 1% 7% 14% 7%;
+}
+
+@media (min-width: 768px) {
+  .logo p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo p {
+    margin: 1% 7% 5% 7%;
+  }
+}
+
+.logo .logo-img {
+  font-size: 2.5rem;
+  color: #272a31;
+  font-weight: 700;
+  font-family: "Lato Heavy", sans-serif;
+  line-height: 2rem;
+  background-color: white;
+  padding: 7% 0 7% 0;
+  margin-bottom: 10%;
+}
+
+.arrow span {
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  background: #ec5242;
+  transform: rotate(-45deg);
+}
+
+.logo .logo-img span {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .logo .logo-img {
+    font-size: 1.44rem;
+  }
+}
+
+.email {
+  font-family: "Lato Heavy", sans-serif;
+  line-height: 1rem;
+  color: #272a31;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.cc-statement-about {
+  font-size: 0.8rem;
+  color: #272a31;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .cc-statement-about {
+    font-size: 0.768rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .cc-statement-about {
+    color: #d3d3d3;
+  }
+}
+
+.upcoming {
+  width: 100%;
+  padding: 0 10% 3rem 10%;
+  text-align: center;
+  background: white;
+}
+
+@media (min-width: 768px) {
+  .upcoming {
+    padding: 0 14% 16px 22%;
+  }
+}
+
+.upcoming .upcoming-title {
+  font-size: 1.2rem;
+  color: #272a31;
+  font-weight: 700;
+  font-family: "Lato Medium", sans-serif;
+  padding: 5% 0 5% 0;
+}
+
+@media (min-width: 768px) {
+  .upcoming .upcoming-title {
+    font-size: 1.44rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .upcoming .upcoming-title {
+    padding: 5% 0 3% 0;
+  }
+}
+
+.upcoming .upcoming-info {
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  color: #606778;
+  line-height: 1.2rem;
+  font-weight: 700;
+  font-family: "Lato Medium", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .upcoming .upcoming-info {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .upcoming .upcoming-info {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .upcoming .upcoming-articles-wrapper {
+    display: flex;
+    padding-bottom: 10%;
+  }
+}
+
+.upcoming .upcoming-articles-wrapper .upcoming-article {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .upcoming .upcoming-articles-wrapper .upcoming-article {
+    margin: 0.5rem;
+  }
+}
+
+h1 {
+  font-size: 1.44rem;
+  color: #272a31;
+  font-weight: 600;
+  line-height: 1rem;
+  font-family: "Lato Medium", sans-serif;
+}
+
+.upcoming .upcoming-articles-wrapper .upcoming-article h1 {
+  padding: 0.5rem;
+}
+
+.ticket-section table th {
+  font-size: 0.96rem;
+  color: #272a31;
+  font-weight: 600;
+  line-height: 1rem;
+  font-family: "Lato Medium", sans-serif;
+}
+
+.navbar-2 ul a {
+  font-family: "Lato Medium", sans-serif;
+  font-size: 0.56rem;
+  font-weight: 500;
+  color: #272a31;
+}
+
+.ticket-section table th a {
+  color: #ec5242;
+}
+
+.events-section .see-program a {
+  font-size: 0.8rem;
+  color: #d3d3d3;
+  font-family: "Lato Medium", sans-serif;
+  text-decoration: underline;
+}
+
+.events-section .event-articles article h2 a {
+  font-size: 0.96rem;
+  color: #ec5242;
+  line-height: 1rem;
+  font-weight: 800;
+  font-family: "Lato Medium", sans-serif;
+}
+
+.navbar-mobile .nav-dropdown .drop-content a {
+  background: #272a31;
+  margin-right: 0.4rem;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  color: lightgray;
+  font-weight: 400;
+  font-family: "Lato Heavy", sans-serif;
+}
+
+.button-div-ticket .button-wrapper .button-ticket a {
+  font-size: 1rem;
+  color: #d3d3d3;
+  font-weight: 700;
+  line-height: 1rem;
+  font-family: "Lato Medium", sans-serif;
+}
+
+.upcoming .upcoming-articles-wrapper .upcoming-article h1 a {
+  font-size: 1rem;
+  color: #d3d3d3;
+  font-weight: 900;
+  font-family: "Lato Medium", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .upcoming .upcoming-articles-wrapper .upcoming-article h1 a {
+    font-size: 1.2rem;
+  }
+}
+
+.events-section .event-articles article h2 {
+  width: 23%;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .events-section .event-articles article h2 {
+    width: 100%;
+  }
+}
+
+.upcoming .upcoming-articles-wrapper .upcoming-article h2 {
+  padding: 0.5rem;
+}
+
+.upcoming .upcoming-articles-wrapper .upcoming-article h2 a {
+  font-size: 0.8rem;
+  color: #d3d3d3;
+  font-weight: 900;
+  font-family: "Lato Medium", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .upcoming .upcoming-articles-wrapper .upcoming-article h2 a {
+    font-size: 0.768rem;
+  }
+}
+
+.upcoming .upcoming-articles-wrapper .upcoming-1 {
+  background-color: rgba(236, 82, 66, 0.2);
+  background-image: url("../assets/images/thailand.jpg");
+}
+
+.upcoming .upcoming-articles-wrapper .upcoming-2 {
+  background-color: rgba(236, 82, 66, 0.2);
+  background-image: url("../assets/images/london.jpg");
+}
+
+.partners-about {
+  width: 100%;
+  height: 13rem;
+  padding: 1.2rem 1rem 1.4rem 1rem;
+  background: #272a31;
+  text-align: center;
+  line-height: 5%;
+}
+
+.partners-header {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  color: lightgray;
+  font-weight: 400;
+  font-family: "Lato Heavy", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .partners-header {
+    font-size: 1.2rem;
+  }
+}
+
+.partners-logo-about {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.partners-logo-about img {
+  max-width: 5rem;
+}
+
+.copyright-about {
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .copyright-about {
+    height: 11rem;
+    background: #272a31;
+  }
+}
+
+.footer-about {
+  width: 100%;
+}
+
+.tickets-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  overflow-x: hidden;
+  margin-top: 6.9rem;
+}
+
+@media (min-width: 768px) {
+  .tickets-main {
+    margin-top: 0;
+  }
+}
+
+.arrow {
+  width: 100%;
+  height: 2rem;
+  transform: rotate(90deg);
+}
+
+.ticket-section,
+.vip-service {
+  position: relative;
+  font-size: 0.8rem;
+  color: #272a31;
+  font-weight: 600;
+  line-height: 1rem;
+  font-family: "Lato Medium", sans-serif;
+  padding: 2rem 0 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .ticket-section,
+  .vip-service {
+    font-size: 0.768rem;
+    line-height: 1.2rem;
+  }
+}
+
+.section-elements-wrapper {
+  padding: 36px 5% 0 5%;
+}
+
+@media (min-width: 768px) {
+  .section-elements-wrapper {
+    padding: 36px 15% 0 15%;
+  }
+}
+
+.ticket-section {
+  background: #ededed;
+}
+
+.ticket-section table {
+  border: 4px solid #1e2f5e;
+}
+
+.select-seat,
+.select-service {
+  min-height: 2rem;
+  padding: 0.5rem;
+  border: 1px solid #272a31;
+  border-color: #d3d3d3;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .select-seat,
+  .select-service {
+    margin: 2rem 9rem;
+  }
+}
+
+.category-1,
+.category-2 {
+  height: 4rem;
+  border: 1px solid #272a31;
+  border-radius: 1px;
+  border-color: #d3d3d3;
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 1rem 0;
+  flex-direction: column;
+}
+
+.category-1 .menu-category,
+.category-2 .menu-category {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.category-1 .menu-category .form-check,
+.category-2 .menu-category .form-check {
+  padding: 0.5rem 0 0 0;
+}
+
+.category-1 .menu-category .form-check .form-check-label,
+.category-2 .menu-category .form-check .form-check-label {
+  font-size: 0.96rem;
+  color: #272a31;
+  font-weight: 600;
+  line-height: 1rem;
+  font-family: "Lato Medium", sans-serif;
+}
+
+.category {
+  width: 100%;
+  padding: 0.25rem 0 0.25rem 0;
+  background: #d3d3d3;
+  font-size: 0.96rem;
+  color: #272a31;
+  font-weight: 600;
+  line-height: 1rem;
+  font-family: "Lato Medium", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .category {
+    font-size: 1.152rem;
+    line-height: 1.2rem;
+  }
+}
+
+.button-div-ticket {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 8%;
+}
+
+.button-div-ticket .button-wrapper {
+  width: 20rem;
+}
+
+.button-div-ticket .button-wrapper .button-ticket {
+  border: 1px solid;
+  width: 100%;
+  padding: 0.5rem 5% 0.5rem 5%;
+  margin: 0;
+  background: #ec5242;
+}
+
+@media (min-width: 768px) {
+  .button-div-ticket .button-wrapper .button-ticket a {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+}
+
+@keyframes slideshow1 {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes slideshow2 {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.slider-background1,
+.slider-background2 {
+  background: url("../assets/images/slider-425.svg") repeat-x;
+  background-size: cover;
+  width: 100%;
+  height: 6rem;
+  position: absolute;
+  top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .slider-background1,
+  .slider-background2 {
+    background: url("../assets/images/slider-background-small.svg") repeat-x;
+    top: 0;
+  }
+}
+
+.slider-background1 {
+  left: 0;
+  animation: slideshow1 10s infinite;
+}
+
+.slider-background2 {
+  left: 100%;
+  animation: slideshow2 10s infinite;
+}
+
+@media (min-width: 768px) {
+  .events-section .event-articles article h2 a {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 20vh;
+  background: #f7f9fb;
+  z-index: 10;
+}
+
+.navbar-mobile .nav-dropdown {
+  position: relative;
+  z-index: 5;
+}
+
+.navbar-mobile .nav-dropdown .iconify {
+  margin: 20px 0 0 30px;
+  font-size: 33px;
+}
+
+.navbar-mobile .nav-dropdown .drop-content {
+  display: none;
+  padding-left: 30px;
+}
+
+@media (min-width: 768px) {
+  .navbar-mobile .nav-dropdown .drop-content a {
+    font-size: 1.2rem;
+  }
+}
+
+.navbar-mobile .nav-dropdown:hover {
+  cursor: pointer;
+}
+
+.navbar-mobile .nav-dropdown:hover .drop-content {
+  display: flex;
+}
+
+.nav-lg ul {
+  list-style: none;
+}
+
+.navbar-1 {
+  width: 100%;
+  height: 25px;
+  background: #3e3e3e;
+}
+
+.navbar-1 .navbar1-ul {
+  float: right;
+  margin-right: 15%;
+  height: 25px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-1 .navbar1-ul li {
+  font-family: "Lato Medium", sans-serif;
+  font-size: 0.56rem;
+  font-weight: 600;
+  color: white;
+  margin-left: 1rem;
+}
+
+.navbar-2 {
+  width: 100%;
+  height: 50px;
+  padding: 0 15% 0 15%;
+  background: white;
+}
+
+.navbar-2 ul {
+  width: 65%;
+}
+
+.navbar-2 .nav-logo p {
+  font-family: "Lato Medium", sans-serif;
+  font-size: 0.96rem;
+  font-weight: 700;
+}
+
+.main-home,
+.main-about {
+  width: 100%;
+  background-image: url("../assets/images/custom-background-big.png");
+  background-color: #f7f7f7;
+  background-clip: content-box;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  margin-top: 6.1rem;
+}
+
+@media (min-width: 768px) {
+  .main-home,
+  .main-about {
+    margin-top: 0;
+  }
+}
+
+.concert-invite-wrapper {
+  position: relative;
+  object-fit: contain;
+  overflow: hidden;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .concert-invite-wrapper {
+    display: block;
+  }
+}
+
+.concert-invite {
+  width: 100%;
+  padding: 5px 18px 0 18px;
+  position: relative;
+  overflow: hidden;
+  background-color: #ededef;
+}
+
+.concert-invite h3 {
+  font-size: 1.3rem;
+  line-height: 1.2rem;
+  color: #f23a12;
+  font-weight: 400;
+  font-family: "Lato Medium", sans-serif;
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .concert-invite h3 {
+    font-size: 1.95rem;
+    line-height: 1.44rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .concert-invite {
+    display: block;
+    padding: 4.3rem 15% 0 15%;
+  }
+}
+
+.front {
+  width: 100%;
+  padding: 12px 18px 70px 18px;
+}
+
+@media (min-width: 768px) {
+  .front {
+    padding: 0 15% 70px 15%;
+  }
+}
+
+@media (min-width: 768px) {
+  .front .concert-invite-mobile {
+    display: none;
+  }
+}
+
+.front .concert-invite-mobile h3 {
+  font-size: 1.3rem;
+  line-height: 1.2rem;
+  color: #f23a12;
+  font-weight: 400;
+  font-family: "Lato Medium", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .front .concert-invite-mobile h3 {
+    font-size: 1.95rem;
+    line-height: 1.44rem;
+  }
+}
+
+.front .concert-date {
+  font-size: 1.4rem;
+  color: #494f5c;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+
+@media (min-width: 768px) {
+  .front .concert-date {
+    font-size: 1.4rem;
+  }
+}
+
+.front .concert-place {
+  font-size: 0.8rem;
+  color: #545b6a;
+  line-height: 1.2rem;
+  font-weight: 700;
+  font-family: "Lato Medium", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .front .concert-place {
+    font-size: 0.96rem;
+    line-height: 1.44rem;
+  }
+}
+
+.partners-logo img {
+  max-width: 5rem;
+  margin: 0 3% 0 3%;
+}
+
+.events-section {
+  width: 100%;
+  background: #272a31;
+}
+
+@media (min-width: 768px) {
+  .events-section {
+    position: relative;
+  }
+}
+
+.events-section .event-header {
+  width: 100%;
+  min-height: 15vh;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #d3d3d3;
+  font-weight: 700;
+  font-family: "Lato Medium", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .events-section .event-header {
+    flex-direction: column;
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .events-section .event-header {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .events-section .event-articles {
+    display: flex;
+    padding: 0 10% 12% 10%;
+  }
+}
+
+.events-section .event-articles article {
+  background-color: #3b3e45;
+  width: 100%;
+  min-height: 15vh;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .events-section .event-articles article {
+    flex-direction: column;
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .events-section .event-articles article {
+    width: 20%;
+    margin: 0.2%;
+    text-align: center;
+  }
+}
+
+.events-section .event-articles article div {
+  display: flex;
+  justify-content: center;
+  width: 18%;
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .events-section .event-articles article div {
+    width: 100%;
+    margin: 0.75rem;
+  }
+}
+
+.events-section .event-articles article div img {
+  width: 32px;
+  height: 32px;
+}
+
+.events-section .event-articles article p {
+  width: 59%;
+  padding: 10px;
+  font-size: 0.8rem;
+  color: white;
+  line-height: 1.2rem;
+  font-family: "Lato Medium", sans-serif;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .events-section .event-articles article p {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .events-section .event-articles article p {
+    font-size: 0.56rem;
+    line-height: 1rem;
+  }
+}
+
+.events-section .button-div {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 2.4rem 2.1rem 2.4rem;
+}
+
+@media (min-width: 768px) {
+  .events-section .button-div {
+    display: none;
+  }
+}
+
+.events-section .button-div .join-button {
+  border: 0.1px solid #272a31;
+  width: 100%;
+  padding: 1.5rem 10% 1.5rem 10%;
+  margin: 0;
+  background: #f44d38;
+  font-weight: 600;
+  font-family: "Lato Medium", sans-serif;
+  color: #d3d3d3;
+  max-width: 20rem;
+}
+
+.events-section .see-program {
+  position: absolute;
+  bottom: 3rem;
+  width: 100%;
+  text-align: center;
+}
+
+.artists {
+  width: 100%;
+  background: white;
+  padding: 0 5% 0 5%;
+}
+
+@media (min-width: 768px) {
+  .artists {
+    padding: 0 10% 0 10%;
+  }
+}
+
+.artists .artists-header {
+  width: 100%;
+  min-height: 15vh;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #3e424d;
+  font-weight: 700;
+  font-family: "Lato Medium", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .artists .artists-header {
+    flex-direction: column;
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .artists .artists-header {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .artists .artists-article-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.artists .artists-article-wrapper .artists-article {
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .artists .artists-article-wrapper .artists-article {
+    width: 50%;
+  }
+}
+
+.artists .artists-article-wrapper .artists-article .image {
+  height: 100%;
+  position: relative;
+}
+
+.artists .artists-article-wrapper .artists-article .image .img-front {
+  position: relative;
+  z-index: 2;
+  padding: 10% 0 0 10%;
+}
+
+.artists .artists-article-wrapper .artists-article .image .img-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65%;
+}
+
+.artists .artists-article-wrapper .artists-article .artist-info h2 a {
+  font-size: 0.96rem;
+  color: #32363f;
+  font-weight: 800;
+  font-family: "Lato Medium", sans-serif;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .artists .artists-article-wrapper .artists-article .artist-info h2 a {
+    font-size: 0.96rem;
+  }
+}
+
+.artists .artists-article-wrapper .artists-article .artist-info .about {
+  font-size: 0.8rem;
+  color: #ec5242;
+  line-height: 1rem;
+  font-family: "Lato Medium", sans-serif;
+  font-style: italic;
+  padding: 0.5rem 0 1.2rem 0;
+}
+
+@media (min-width: 768px) {
+  .artists .artists-article-wrapper .artists-article .artist-info .about {
+    font-size: 0.56rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .artists .artists-article-wrapper .artists-article .artist-info .about {
+    padding: 0 0 0.6rem 0;
+  }
+}
+
+.artists .artists-article-wrapper .artists-article .artist-info .story {
+  font-size: 0.56rem;
+  color: #545b6a;
+  line-height: 1.2rem;
+  font-weight: 800;
+  font-family: "Lato Medium", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .artists .artists-article-wrapper .artists-article .artist-info .story {
+    font-size: 0.56rem;
+    line-height: 1.2rem;
+  }
+}
+
+.artists .button-more {
+  display: flex;
+}
+
+.artists .button-more button {
+  border: 1px solid;
+  border-color: #868d9e;
+  border-radius: 3px;
+  width: 100%;
+  padding: 0.8rem 0 0.8rem 0;
+  margin: 0;
+  background: white;
+  font-size: 0.8rem;
+  color: #272a31;
+  font-family: "Lato Medium", sans-serif;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .artists .button-more button {
+    font-size: 1.152rem;
+  }
+}
+
+.footer-main {
+  width: 100%;
+}
+
+.footer-main .partners {
+  width: 100%;
+  height: 13rem;
+  padding: 1.2rem 4rem 1.4rem 4rem;
+  background: #272a31;
+  text-align: center;
+  line-height: 5%;
+}
+
+@media (min-width: 768px) {
+  .footer-main .partners {
+    height: 10rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-main .copyright {
+    height: 10rem;
+  }
+}
+
+.cc {
+  font-size: 0.8rem;
+  color: #272a31;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .cc {
+    font-size: 0.768rem;
+  }
+}
+
+.cc-statement {
+  font-size: 0.56rem;
+  color: #545b6a;
+  line-height: 1.2rem;
+  font-weight: 800;
+  font-family: "Lato Medium", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .cc-statement {
+    font-size: 0.56rem;
+    line-height: 1.2rem;
+  }
+}

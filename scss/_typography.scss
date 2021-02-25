@@ -1,0 +1,387 @@
+@import "_fonts.scss";
+
+// Typography for home page
+
+// front section
+
+@mixin title-font {
+  font-size: $h-1;
+  color: $color-redish;
+  font-weight: 900;
+  font-style: normal;
+  font-family: $font-coco-bold;
+  line-height: $line-3;
+
+  @media (min-width: 768px) {
+    font-size: $h-1m;
+    line-height: $line-3m;
+  }
+}
+
+@mixin invite-font {
+  font-size: $h-3;
+  line-height: $line-2;
+
+  @media (min-width: 768px) {
+    font-size: $h-3l;
+    line-height: $line-2m;
+  }
+
+  color: $color-invite;
+  font-weight: 400;
+
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-lato;
+}
+
+@mixin concert-info-font {
+  font-size: $h-7;
+  color: lighten($color: $color-black, $amount: 25%);
+  line-height: $line-2;
+  font-weight: 700;
+  font-family: $font-lato;
+
+  @media (min-width: 768px) {
+    font-size: $h-7;
+    line-height: $line-2;
+  }
+}
+
+@mixin contact-font {
+  font-size: 0.7rem;
+  color: lighten($color: $color-black, $amount: 25%);
+  line-height: $line-2;
+  font-weight: 700;
+  font-family: $font-lato;
+
+  @media (min-width: 768px) {
+    font-size: 0.8rem;
+    line-height: $line-2;
+  }
+}
+
+@mixin date-font {
+  font-size: $h-2;
+  color: lighten($color-black, 15%);
+  font-weight: $font-900;
+
+  // font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
+
+  @media (min-width: 768px) {
+    font-size: $h-2;
+  }
+}
+
+@mixin place-font {
+  font-size: $h-7;
+  color: lighten($color: $color-black, $amount: 20%);
+  line-height: 1.2rem;
+  font-weight: 700;
+  font-family: $font-lato;
+
+  @media (min-width: 768px) {
+    font-size: $h-6;
+    line-height: $line-2m;
+  }
+}
+
+//   Events section
+
+@mixin events-header-font {
+  font-size: $h-4;
+  color: $color-light;
+  font-weight: $font-700;
+
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-lato;
+
+  @media (min-width: 768px) {
+    font-size: $h-4;
+  }
+}
+
+@mixin event-type-font {
+  font-size: $h-6;
+  color: $color-red;
+  line-height: 1rem;
+  font-weight: $font-800;
+
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-lato;
+
+  @media (min-width: 768px) {
+    font-size: $h-7;
+    line-height: $line-1;
+  }
+}
+
+@mixin event-info-font {
+  font-size: $h-7;
+  color: lighten($color: $color-light, $amount: 20%);
+  line-height: $line-2;
+
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-lato;
+  font-weight: 700;
+
+  @media (min-width: 768px) {
+    font-size: $h-8;
+    line-height: $line-1;
+  }
+}
+
+@mixin join-button-font {
+  font-size: $h-5;
+  color: $color-light;
+  font-weight: $font-700;
+  line-height: 1rem;
+
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-lato;
+
+  @media (min-width: 768px) {
+    font-size: $h-5m;
+    line-height: $line-1m;
+  }
+}
+
+@mixin min-font {
+  font-size: $h-8;
+  color: lighten($color: $color-black, $amount: 20%);
+  line-height: 1.2rem;
+  font-weight: 800;
+
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-lato;
+
+  @media (min-width: 768px) {
+    font-size: $h-8;
+    line-height: $line-2;
+  }
+}
+
+//   Artists section
+
+@mixin artists-name {
+  font-size: $h-6;
+  color: lighten($color: $color-black, $amount: 5%);
+  font-weight: $font-800;
+
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-lato;
+
+  @media (min-width: 768px) {
+    font-size: $h-6;
+  }
+}
+
+@mixin artist-about-font {
+  font-size: $h-7;
+  color: $color-red;
+  line-height: 1rem;
+
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-lato;
+  font-style: italic;
+
+  @media (min-width: 768px) {
+    font-size: $h-8;
+    line-height: $line-1;
+  }
+}
+
+@mixin artists-header-font {
+  font-size: $h-4;
+  color: lighten($color: $color-black, $amount: 10%);
+  font-weight: $font-700;
+
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-lato;
+
+  @media (min-width: 768px) {
+    font-size: $h-4;
+  }
+}
+
+@mixin more-button-font {
+  font-size: $h-7;
+  color: $color-black;
+  font-family: $font-lato;
+
+  @media (min-width: 768px) {
+    font-size: $h-6m;
+  }
+}
+
+@mixin see-program-font {
+  font-size: $h-7;
+  color: $color-light;
+  font-family: $font-lato;
+  text-decoration: underline;
+}
+
+//
+// Tickets page typography
+
+@mixin tickets-header-font {
+  font-size: $h-4;
+  color: $color-black;
+  font-weight: 600;
+  line-height: 1rem;
+
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-coco;
+
+  @media (min-width: 768px) {
+    font-size: $h-4m;
+    line-height: $line-1m;
+  }
+}
+
+@mixin tickets-font {
+  font-size: $h-4m;
+  color: $color-black;
+  font-weight: 600;
+  line-height: 1rem;
+
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-lato;
+}
+
+@mixin tickets-font-small {
+  font-size: $h-6;
+  color: $color-black;
+  font-weight: 600;
+  line-height: 1rem;
+
+  // font-family: "Roboto", sans-serif;
+  font-family: $font-lato;
+}
+
+@mixin tickets-category-font {
+  font-size: $h-6;
+  color: $color-black;
+  font-weight: 600;
+  line-height: 1rem;
+  font-family: $font-lato;
+
+  @media (min-width: 768px) {
+    font-size: $h-6m;
+    line-height: $line-1m;
+  }
+}
+
+@mixin tickets-p-font {
+  font-size: $h-7;
+  color: $color-black;
+  font-weight: 600;
+  line-height: 1rem;
+  font-family: $font-lato;
+
+  @media (min-width: 768px) {
+    font-size: $h-7m;
+    line-height: $line-1m;
+  }
+}
+
+//
+// About page styling
+
+@mixin logo-header-font {
+  font-size: $h-4;
+  color: $color-black;
+  font-weight: $font-700;
+  font-family: $font-lato;
+  line-height: 1.7rem;
+
+  @media (min-width: 768px) {
+    font-size: $h-4m;
+  }
+}
+
+@mixin logo-font {
+  font-size: 2.5rem;
+  color: $color-black;
+  font-weight: $font-700;
+  font-family: $font-lato-h;
+  line-height: $line-3;
+
+  span {
+    font-size: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    font-size: $h-4m;
+  }
+}
+
+// upcoming section about page
+
+@mixin upcoming-header-font {
+  font-size: $h-4;
+  color: $color-black;
+  font-weight: $font-700;
+  font-family: $font-lato;
+
+  @media (min-width: 768px) {
+    font-size: $h-4m;
+  }
+}
+
+@mixin upcoming-date-font {
+  font-size: $h-5;
+  color: $color-light;
+  font-weight: $font-900;
+  font-family: $font-lato;
+
+  @media (min-width: 768px) {
+    font-size: $h-5m;
+  }
+}
+
+@mixin upcoming-place-font {
+  font-size: $h-7;
+  color: $color-light;
+  font-weight: $font-900;
+  font-family: $font-lato;
+
+  @media (min-width: 768px) {
+    font-size: $h-7m;
+  }
+}
+
+//  partners section
+
+@mixin partners-header-font {
+  font-size: $h-4;
+  color: lighten($color: $color-light, $amount: 0);
+  font-weight: $font-400;
+  font-family: $font-lato-h;
+
+  @media (min-width: 768px) {
+    font-size: $h-5m;
+  }
+}
+
+@mixin cc-font {
+  font-size: $h-7;
+  color: $color-black;
+  font-weight: $font-400;
+  font-family: "Roboto", sans-serif;
+
+  @media (min-width: 768px) {
+    font-size: $h-7m;
+  }
+}
+
+@mixin cc-logo-font {
+  font-size: $h-7;
+  color: $color-black;
+  font-weight: $font-700;
+  font-family: "Roboto", sans-serif;
+
+  @media (min-width: 768px) {
+    font-size: $h-4;
+  }
+}
